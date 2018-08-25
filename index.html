@@ -66,7 +66,7 @@
 
 
 
-              <p>I am a Masters student in <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, <a href="https://www.cmu.edu/">CMU</a>, where I am advised by <a href="http://www.cs.cmu.edu/~kkitani/"> Kris Kitani</a>.
+              <p>I am a Masters student in <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, <a href="https://www.cmu.edu/">CMU</a>. I am advised by Prof. <a href="http://www.cs.cmu.edu/~kkitani/"> Kris Kitani</a>.
                 <br>
 
               </p><p align="center">
@@ -74,7 +74,8 @@
                 <!-- <a href="assets/DebidattaDwibedi_CV.pdf">CV</a> &nbsp;/&nbsp; -->
                 <a href="https://scholar.google.com/citations?user=CANstcsAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/sha2nkt"> GitHub</a>&nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/shashanktripathi123/"> LinkedIn </a>
+                <a href="https://www.linkedin.com/in/shashanktripathi123/"> LinkedIn </a> /
+                <a href="assets/CV_Shashank_CMU_V16_TOC.pdf"> CV </a>
                 <!-- <a href="https://www.twitter.com/debidatta/"> Twitter </a> -->
               </p>
 
@@ -102,11 +103,11 @@
         <tbody><tr><td>
           <h2>Research</h2>
 
-          I want to build intelligent agents that interact with our world in useful ways.
+          I want to build intelligent AI agents with human-level vision capabilities.
           <br/><br/>
-          My research lies at the intersection of machine learning, computer vision and robotics. Presently, I am working on imitation learning from videos.
+          My research lies at the intersection of machine learning, deep-learning, computer vision and robotics. Presently, I am working on applications of both 2D and 3D synthetic data in tasks such as object detection, pose-estimation, semantic segmentation and activity-forecasting. I am also interested in analysing deep neural-net sparsity for model compression.
           <br/><br/>
-          In the past, I have worked on human-object interaction recognition in videos, object detection, pose estimation, reinforcement learning, game rule learning and image segmentation.
+          In the past, I have worked on visual-servoing, medical-image analysis, pedestrian-detection and reinforcement learning.
           
         </td></tr>
 
@@ -119,259 +120,116 @@
           <h2 id="publications">Publications</h2></td></tr>
 
         <tr>
-          <td width="42%" valign="top"><a href="assets/cheetah.gif"><img src="assets/cheetah.gif" width="100%" height="60%" style="border-style: none"></a>
+            <td width="42%" valign="top"><a href="assets/c2f_img.PNG"><img src="assets/c2f_img.PNG" width="90%" height="30%" style="border-style: none"></a>
+            </td><td width="58%" valign="top">
+              <p><a href="https://www.eurekaselect.com/node/159218/article/c2f-coarse-to-fine-vision-control-system-for-automated-microassembly" id="C2F">
+                <heading>C2F: Coarse-to-Fine Vision Control System for Automated Microassembly</heading></a><br>
+                Shashank Tripathi, Devesh Jain and Himanshu Dutt Sharma<br>
+                <em><a href="https://benthamscience.com/journals/nanoscience-and-nanotechnology-asia/">Nanotechnology and Nanoscience-Asia 2018 </a></href> </em>
+                <br>
+                <br>
+                Automated, visual-servoing based closed loop system to perform 3D micromanipulation and microassembly tasks<br>
+
+              </p>
+
+              <div class="paper" id="c2f">
+                <a href="https://drive.google.com/file/d/0B0keZAN_TLL9VmZ2dlAxRlYzYjA/view">paper</a> |
+                <a href="javascript:toggleblock(&#39;c2f_abs&#39;)">abstract</a> |
+                <a href="https://www.youtube.com/watch?v=lAagBmqj_Nw">video</a>
+
+
+                <!-- <a shape="rect" href="javascript:togglebib(&#39;c2f&#39;)" class="togglebib">bibtex</a> -->
+
+
+                <p align="justify"> <i id="c2f_abs" style="display: none;">In this paper, authors present the development of a completely automated system to perform 3D micromanipulation and microassembly tasks. The microassembly workstation consists of a 3 degree-of-freedom (DOF) MM3A® micromanipulator arm attached to a microgripper, two 2 DOF PI® linear micromotion stages, one optical microscope coupled with a CCD image sensor, and two CMOS cameras for coarse vision. The whole control strategy is subdivided into sequential vision based routines: manipulator detection and coarse alignment, autofocus and fine alignment of microgripper, target object detection, and performing the required assembly tasks. A section comparing various objective functions useful in the autofocusing regime is included. The control system is built entirely in the image frame, eliminating the need for system calibration, hence improving speed of operation. A micromanipulation experiment performing pick- and-place of a micromesh is illustrated. This demonstrates a three-fold reduction in setup and run time for fundamental micromanipulation tasks, as compared to manual operation. Accuracy, repeatability and reliability of the programmed system is analyzed.</i> </p>
+
+                <!-- <div style="white-space: pre-wrap; display: none;" class="bib">
+                  @article{dwibedi2016deep,
+                  title={Deep cuboid detection: Beyond 2d bounding boxes},
+                  author={Dwibedi, Debidatta and Malisiewicz, Tomasz and Badrinarayanan, Vijay and Rabinovich, Andrew},
+                  journal={arXiv preprint arXiv:1611.10010},
+                  year={2016}
+                } -->
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="42%" valign="top"><a href="assets/isbi_image.png"><img src="assets/isbi_image.PNG" width="100%" height="40%" style="border-style: none"></a>
           </td><td width="58%" valign="top">
-            <p><a href="https://arxiv.org/abs/1808.00928" id="CHEETAH">
-              <heading>Learning  Actionable  Representations  from  Visual  Observations</heading></a><br>
-              Debidatta Dwibedi, <a href="https://cims.nyu.edu/~tompson/">Jonathan Tompson</a>, Corey Lynch and <a href="https://sermanet.github.io/home/">Pierre Sermanet</a><br>
-              <em><a href="https://www.iros2018.org/">International Conference on Intelligent Robots (IROS) 2018 </a></href> </em>
+            <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7950682" id="ALZHEIMERS">
+              <heading>Sub-cortical Shape Morphology and Voxel-based Features for Alzheimer's Disease Classification</heading></a><br>
+              Shashank Tripathi, Seyed Hossein Nozadi,  <a href="https://www.researchgate.net/profile/Mahsa_Shakeri2">Mahsa Shakeri</a> and <a href="http://www.polymtl.ca/expertises/en/kadoury-samuel">Samuel Kadoury</a><br>
+              <em><a href="https://biomedicalimaging.org/2017/">IEEE International Symposium on Biomedical Imaging (ISBI) 2017 </a></href> </em>
               <br>
               <br>
-              Control agents from pixels by learning self-supervised representations from videos.<br>
+              Alzheimer's disease patient classification using a combination of grey-matter voxel-based intensity variations and 3D structural (shape) features extracted from MRI brain scans <br>
 
             </p>
 
-            <div class="paper" id="mftcn">
-              <a href="https://arxiv.org/abs/1808.00928">paper</a> |
-              <a href="javascript:toggleblock(&#39;mftcn_abs&#39;)">abstract</a> |
-              <a shape="rect" href="javascript:togglebib(&#39;mftcn&#39;)" class="togglebib">bibtex</a> |
-              <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a>
+            <div class="paper" id="sub_cortical">
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7950682">paper</a> |
+              <a href="javascript:toggleblock(&#39;sub_cortical_abs&#39;)">abstract</a> |
+              <a shape="rect" href="javascript:togglebib(&#39;sub_cortical&#39;)" class="togglebib">bibtex</a> |
+              <a href="assets/sub_cortical_poster.pdf">poster</a>
+
+              <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
 
-              <p align="justify"> <i id="mftcn_abs" style="display: none;"> In this work we explore a new approach for robots to teach themselves about the world simply by observing it. In particular we investigate the effectiveness of learning task-agnostic representations for continuous control tasks. We extend Time-Contrastive Networks (TCN) that learn from visual observations by embedding multiple frames jointly in the embedding space as opposed to a single frame. We show that by doing so, we are now able to encode both position and velocity attributes significantly more accurately. We test the usefulness of this self-supervised approach in a reinforcement learning setting. We show that the representations learned by agents observing themselves take random actions, or other agents perform tasks successfully, can enable the learning of continuous control policies using algorithms like Proximal Policy Optimization (PPO) using only the learned embeddings as input. We also demonstrate significant improvements on the real-world Pouring dataset with a relative error reduction of 39.4% for motion attributes and 11.1% for static attributes compared to the single-frame baseline.</i> </p>
+              <p align="justify"> <i id="sub_cortical_abs" style="display: none;"> Neurodegenerative pathologies, such as Alzheimer’s disease, are linked with morphological alterations and tissue variations in subcortical structures which can be assessed from medical imaging and biological data. In this work, we present an unsupervised framework for the classification of Alzheimer’s disease (AD) patients, stratifying patients into four diagnostic groups, namely: AD, early Mild Cognitive Impairment (MCI), late MCI and normal controls by combining shape and voxel-based features from 12 sub-cortical areas. An automated anatomical labeling using an atlas-based segmentation approach is proposed to extract multiple regions of interest known to be linked with AD progression. We take advantage of gray-matter voxel-based intensity variations and structural alterations extracted with a spherical harmonics framework to learn the discriminative features between multiple diagnostic classes. The proposed method is validated on 600 patients from the ADNI database by training binary SVM classifiers of dimensionality reduced features, using both linear and RBF kernels. Results show near state-of-the-art approaches in classification accuracy (>88%), especially for the more challenging discrimination tasks: AD vs. LMCI (76.81%), NC vs. EMCI (75.46%) and EMCI vs. LMCI (70.95%). By combining multimodality features, this pipeline demonstrates the potential by exploiting complementary features to improve cognitive assessment. </i> </p>
 
               <div style="white-space: pre-wrap; display: none;" class="bib">
-                @article{dwibedi2018learning,
-                title={Learning Actionable Representations from Visual Observations},
-                author={Dwibedi, Debidatta and Tompson, Jonathan and Lynch, Corey and Sermanet, Pierre},
-                journal={arXiv preprint arXiv:1808.00928},
-                year={2018}
-              }
+                @inproceedings{tripathi2017sub,
+                  title={Sub-cortical shape morphology and voxel-based features for Alzheimer's disease classification},
+                  author={Tripathi, Shashank and Nozadi, Seyed Hossein and Shakeri, Mahsa and Kadoury, Samuel},
+                  booktitle={Biomedical Imaging (ISBI 2017), 2017 IEEE 14th International Symposium on},
+                  pages={991--994},
+                  year={2017},
+                  organization={IEEE}
+                }
             </div>
           </div>
         </td>
       </tr>
 
       <tr>
-        <td width="42%" valign="top"><a href="https://arxiv.org/abs/1708.01642"><img src="assets/cutpaste.png" width="100%" style="border-style: none"></a>
+        <td width="42%" valign="top"><a href="assets/miccai_img.png"><img src="assets/miccai_img.png" width="100%" height="15%" style="border-style: none"></a>
         </td><td width="58%" valign="top">
-          <p><a href="https://arxiv.org/abs/1708.01642" id="CUTPASTE">
-            <heading>Cut, Paste and Learn: Surprisingly Easy Synthesis for Instance Detection</heading></a><br>
-            Debidatta Dwibedi, <a href="http://imisra.github.io/">Ishan Misra</a> and <a href="http://www.cs.cmu.edu/~hebert/">Martial Hebert</a><br>
-            <em><a href="http://iccv2017.thecvf.com/">International Conference on Computrer Vision (ICCV) 2017</a></em>
+          <p><a href="https://link.springer.com/chapter/10.1007/978-3-319-51237-2_2" id="DEEP_SPECTRAL">
+            <heading>Deep Spectral-Based Shape Features for Alzheimer’s Disease Classification</heading></a><br>
+            <a href="https://www.researchgate.net/profile/Mahsa_Shakeri2">Mahsa Shakeri</a>, <a href="https://profs.etsmtl.ca/hlombaert/">Hervé Lombaert</a>, Shashank Tripathi and <a href="http://www.polymtl.ca/expertises/en/kadoury-samuel">Samuel Kadoury</a><br>
+            <em><a href="http://www.miccai2016.org/en/">MICCAI Spectral and Shape Analysis in Medical Imaging (SeSAMI) 2016</a></em>
             <br>
             <br>
-            Generate synthetic data for detecting objects in scenes.<br>
+            Alzheimer's disease classification by using deep learning variational auto-encoder on shape based features<br>
 
           </p>
 
-          <div class="paper" id="cutpaste">
-            <a href="https://arxiv.org/abs/1708.01642">paper</a> |
-            <a href="javascript:toggleblock(&#39;cutpaste_abs&#39;)">abstract</a> |
-            <a shape="rect" href="javascript:togglebib(&#39;cutpaste&#39;)" class="togglebib">bibtex</a> |
-            <a href="https://github.com/debidatta/syndata-generation">code</a> |
-            <a href="assets/cutpaste_poster.pdf">poster</a>
+          <div class="paper" id="deepspectral">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-319-51237-2_2">paper</a> |
+            <a href="javascript:toggleblock(&#39;deepspectral_abs&#39;)">abstract</a> |
+            <a shape="rect" href="javascript:togglebib(&#39;deepspectral&#39;)" class="togglebib">bibtex</a> |
+            <!-- <a href="https://github.com/debidatta/syndata-generation">code</a> |
+            <a href="assets/cutpaste_poster.pdf">poster</a> -->
 
 
-            <p align="justify"> <i id="cutpaste_abs" style="display: none;">A major impediment in rapidly deploying object detection models for instance detection is the lack of large annotated datasets. For example, finding a large labeled dataset containing instances in a particular kitchen is unlikely. Each new environment with new instances requires expensive data collection and annotation. In this paper, we propose a simple approach to generate large annotated instance datasets with minimal effort. Our key insight is that ensuring only patch-level realism provides enough training signal for current object detector models. We automatically `cut' object instances and `paste' them on random backgrounds. A naive way to do this results in pixel artifacts which result in poor performance for trained models. We show how to make detectors ignore these artifacts during training and generate data that gives competitive performance on real data. Our method outperforms existing synthesis approaches and when combined with real images improves relative performance by more than 21% on benchmark datasets. In a cross-domain setting, our synthetic data combined with just 10% real data outperforms models trained on all real data.</i> </p>
+            <p align="justify"> <i id="deepspectral_abs" style="display: none;">Alzheimer’s disease (AD) and mild cognitive impairment (MCI) are the most prevalent neurodegenerative brain diseases in elderly population. Recent studies on medical imaging and biological data have shown morphological alterations of subcortical structures in patients with these pathologies. In this work, we take advantage of these structural deformations for classification purposes. First, triangulated surface meshes are extracted from segmented hippocampus structures in MRI and point-to-point correspondences are established among population of surfaces using a spectral matching method. Then, a deep learning variational auto-encoder is applied on the vertex coordinates of the mesh models to learn the low dimensional feature representation. A multi-layer perceptrons using softmax activation is trained simultaneously to classify Alzheimer’s patients from normal subjects. Experiments on ADNI dataset demonstrate the potential of the proposed method in classification of normal individuals from early MCI (EMCI), late MCI (LMCI), and AD subjects with classification rates outperforming standard SVM based approach.</i> </p>
 
             <div style="white-space: pre-wrap; display: none;" class="bib">
-              @InProceedings{Dwibedi_2017_ICCV,
-              author = {Dwibedi, Debidatta and Misra, Ishan and Hebert, Martial},
-              title = {Cut, Paste and Learn: Surprisingly Easy Synthesis for Instance Detection},
-              booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-              month = {Oct},
-              year = {2017}
+              @inproceedings{shakeri2016deep,
+              title={Deep spectral-based shape features for alzheimer’s disease classification},
+              author={Shakeri, Mahsa and Lombaert, Herve and Tripathi, Shashank and Kadoury, Samuel and Alzheimer’s Disease Neuroimaging Initiative and others},
+              booktitle={International Workshop on Spectral and Shape Analysis in Medical Imaging},
+              pages={15--24},
+              year={2016},
+              organization={Springer}
             }
           </div>
         </div>
       </td>
     </tr>
 
-    <tr>
-      <td width="42%" valign="top"><a href="assets/cuboid.png"><img src="assets/cuboid.png" width="100%" style="border-style: none"></a>
-      </td><td width="58%" valign="top">
-        <p><a href="https://arxiv.org/abs/1611.10010v1" id="CUBOID">
-          <heading>Deep Cuboid Detection: Beyond 2D Bounding Boxes</heading></a><br>
-          Debidatta Dwibedi, <a href="http://people.csail.mit.edu/tomasz/">Tomasz Malisiewicz</a>, <a href="https://sites.google.com/site/vijaybacademichomepage/home">Vijay Badrinarayanan</a> and <a href="https://ai.google/research/people/AndrewRabinovich">Andrew Rabinovich</a><br>
-          <em>Arxiv Preprint</em>, 2016
-          <br>
-          <br>
-          Cuboid detector using deep learning: finds cuboids in scenes and localizes their corners.<br>
-
-        </p>
-
-        <div class="paper" id="cuboid">
-          <a href="https://arxiv.org/abs/1611.10010v1">paper</a> |
-          <a href="javascript:toggleblock(&#39;cuboid_abs&#39;)">abstract</a> |
-          <a shape="rect" href="javascript:togglebib(&#39;cuboid&#39;)" class="togglebib">bibtex</a>
-
-
-          <p align="justify"> <i id="cuboid_abs" style="display: none;">We present a Deep Cuboid Detector which takes a consumer-quality RGB image of a cluttered scene and localizes all 3D cuboids (box-like objects). Contrary to classical approaches which fit a 3D model from low-level cues like corners, edges, and vanishing points, we propose an end-to-end deep learning system to detect cuboids across many semantic categories (e.g., ovens, shipping boxes, and furniture). We localize cuboids with a 2D bounding box, and simultaneously localize the cuboid's corners, effectively producing a 3D interpretation of box-like objects. We refine keypoints by pooling convolutional features iteratively, improving the baseline method significantly. Our deep learning cuboid detector is trained in an end-to-end fashion and is suitable for real-time applications in augmented reality (AR) and robotics.</i> </p>
-
-          <div style="white-space: pre-wrap; display: none;" class="bib">
-            @article{dwibedi2016deep,
-            title={Deep cuboid detection: Beyond 2d bounding boxes},
-            author={Dwibedi, Debidatta and Malisiewicz, Tomasz and Badrinarayanan, Vijay and Rabinovich, Andrew},
-            journal={arXiv preprint arXiv:1611.10010},
-            year={2016}
-          }
-        </div>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="42%" valign="top"><a href="assets/semantic_graph.png"><img src="assets/semantic_graph.png" width="100%" style="border-style: none"></a>
-    </td><td width="58%" valign="top">
-      <p><a href="http://link.springer.com/chapter/10.1007/978-3-319-16181-5_23" id="PA13">
-        <heading>Characterizing Predicate Arity and Spatial Structure for Inductive Learning of Game Rules</heading></a><br>
-        Debidatta Dwibedi and <a href="http://www.cse.iitk.ac.in/users/amit/">Amitabha Mukerjee</a><br>
-        <em><a href="http://profs.sci.univr.it/~cristanm/contact2014/">ECCV 2014 Workshop on Computer Vision + Ontology Applied Cross-Disciplinary Technologies 2014</a></em>
-        <br>
-        <br>
-        Represent videos as dynamic graphs. Learn rules of games from observing people play games in Kinect videos.<br>
-
-      </p>
-
-      <div class="paper" id="pa13">
-        <a href="http://link.springer.com/chapter/10.1007/978-3-319-16181-5_23">paper</a> |
-        <a href="javascript:toggleblock(&#39;pa13_abs&#39;)">abstract</a> |
-        <a shape="rect" href="javascript:togglebib(&#39;pa13&#39;)" class="togglebib">bibtex</a> |
-        <a href="https://www.youtube.com/playlist?list=PLDd4RddCgh3ctcftujGoS6CzC47fipqWt">videos</a>
-
-
-        <p align="justify"> <i id="pa13_abs" style="display: none;">Where do the predicates in a game ontology come from? We use RGBD vision to learn a) the spatial structure of a board, and b) the number of parameters in a move or transition. These are used to define state-transition predicates for a logical description of each game state. Given a set of videos for a game, we use an improved 3D multi-object tracking to obtain the positions of each piece in games such as 4-peg solitaire or Towers of Hanoi. The spatial positions occupied by pieces over the entire game is clustered, revealing the structure of the board. Each frame is represented as a Semantic Graph with edges encoding spatial relations between pieces. Changes in the graphs between game states reveal the structure of a “move”. Knowledge from spatial structure and semantic graphs is mapped to FOL descriptions of the moves and used in an Inductive Logic framework to infer the valid moves and other rules of the game. Discovered predicate structures and induced rules are demonstrated for several games with varying board layouts and move structures.</i> </p>
-
-        <div style="white-space: pre-wrap; display: none;" class="bib">
-          @inproceedings{dwibedi2014characterizing,
-          title={Characterizing Predicate Arity and Spatial Structure for Inductive Learning of Game Rules},
-          author={Dwibedi, Debidatta and Mukerjee, Amitabha},
-          booktitle={European Conference on Computer Vision},
-          pages={323--338},
-          year={2014},
-          organization={Springer}
-        }
-      </div>
-    </div>
-  </td>
-</tr>
-
-
-
-</tbody></table>
-
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tbody><tr><td>
-    <h2 id="patents">Patents</h2>
-  </td></tr>
-</tbody></table>
-
-<table width="100%" align="center" border="0" cellpadding="20">
-  <tbody><tr>
-    <td width="42%" valign="top"><a href="https://patents.google.com/patent/US20180137642A1/en"><img src="assets/cuboid2.png" width="100%" style="border-style: none"></a>
-    </td><td width="58%" valign="center">
-      <p>
-        <a href="https://patents.google.com/patent/US20180137642A1/en"><heading>Deep learning system for cuboid detection</heading></a><br>
-      </p>
-
-    </td>
-  </tr>
-
-</tbody></table>
-
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tbody><tr><td>
-    <h2 id="talks">Talks</h2>
-  </td></tr>
-</tbody></table>
-
-<table width="100%" align="center" border="0" cellpadding="20">
-  <tbody><tr>
-    <td width="42%" valign="top"><a href="assets/bivu2018.pdf"><img src="assets/bivu_teaser.png" width="100%" style="border-style: none"></a>
-    </td><td width="58%" valign="center">
-      <p>
-        <a href="assets/bivu2018.pdf"><heading>Temporal Reasoning in Videos Using Convolutional Gated Recurrent Units</heading></a><br>
-        <em><a href="https://bivu2018.github.io/#program">2nd Workshop in Brave New Ideas in Video Understanding</a> at <a href="http://cvpr2018.thecvf.com/">CVPR 2018</a></em>
-      </p>
-      <div class="paper" id="temporal_ws">
-        <a href="assets/bivu2018.pdf">paper</a> | <a href="assets/bnivu_slides.pdf">slides</a> | <a href="assets/bnivu_poster.pdf">poster</a> | <a shape="rect" href="javascript:togglebib(&#39;temporal_ws&#39;)" class="togglebib">bibtex</a>
-
-        <div style="white-space: pre-wrap; display: none;" class="bib">
-          @InProceedings{Dwibedi_2018_CVPR_Workshops,
-          author = {Dwibedi, Debidatta and Sermanet, Pierre and Tompson, Jonathan},
-          title = {Temporal Reasoning in Videos Using Convolutional Gated Recurrent Units},
-          booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-          month = {June},
-          year = {2018}
-        }
-
-      </div>
-
-    </div>
-  </td>
-</tr>    
-</tbody>
-</table>
-
-<table width="100%" align="center" border="0" cellpadding="20">
-  <tbody><tr>
-    <td width="42%" valign="top"><a href="assets/mftcn_mlpc_paper.pdf"><img src="assets/mftcn_sampling.png" width="100%" style="border-style: none"></a>
-    </td><td width="58%" valign="center">
-      <p>
-        <a href="assets/mftcn_mlpc_paper.pdf"><heading>Self-Supervised Representation Learning for Continuous Control</heading></a><br>
-        <em><a href="http://www.cs.unm.edu/amprg/Workshops/MLPC18/schedule.html">3rd Workshop in Machine Learning in the Planning and Control of Robot Motion</a> at <a href="https://icra2018.org/">ICRA 2018</a></em>
-      </p>
-      <div class="paper" id="mlpc">
-        <a href="assets/mftcn_mlpc_paper.pdf">paper</a> | <a href="assets/mftcn_mlpc_slides.pdf">slides</a> | <a href="assets/mftcn_mlpc_poster.pdf">poster</a>
-
-      </div>
-    </td>
-  </tr>    
-</tbody>
-</table>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tbody><tr><td>
-    <h2 id="theses">Theses</h2>
-  </td></tr>
-</tbody></table>
-
-<table width="100%" align="center" border="0" cellpadding="20">
-  <tbody><tr>
-    <td width="42%" valign="top"><a href="assets/ms_thesis.pdf"><img src="assets/ms_teaser.png" width="100%" style="border-style: none"></a>
-    </td><td width="58%" valign="center">
-      <p>
-        <a href="assets/ms_thesis.pdf"><heading>Synthesizing Scenes for Instance Detection</heading></a><br>
-        How can we create annotated datasets without humans for tasks like object detection and pose estimation?
-      </p>
-      <div class="paper" id="ms">
-        <a href="assets/ms_thesis.pdf">thesis</a> | <a href="assets/ms_slides.pdf">slides</a> 
-
-      </div>
-    </td>
-  </tr>    
-</tbody>
-</table>
-
-<table width="100%" align="center" border="0" cellpadding="20">
-  <tbody><tr>
-    <td width="42%" valign="top"><a href="assets/mtech_thesis.pdf"><img src="assets/gamerules.png" width="100%" style="border-style: none"></a>
-    </td><td width="58%" valign="center">
-      <p>
-        <a href="assets/mtech_thesis.pdf"><heading>Observational  Learning  of Rules  of  Games</heading></a><br>
-        Can we learn the rules of a game by observing people playing them?
-      </p>
-      <div class="paper" id="mtech">
-        <a href="assets/mtech_thesis.pdf">thesis</a> | <a href="assets/mtech_slides.pdf">slides</a> 
-
-      </div>
-    </td>
-  </tr>    
-</tbody>
-</table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tbody><tr><td>
@@ -382,60 +240,54 @@
 
 <table width="100%" align="center" border="0" cellpadding="20">
   <tbody><tr>
-    <td width="42%" valign="top"><a href="assets/drl.png"><img src="assets/drl.png" width="100%" style="border-style: none"></a>
+    <td width="42%" valign="top"><a href="assets/supercnn_img.png"><img src="assets/supercnn_img.png" width="100%" height="30%" style="border-style: none"></a>
     </td><td width="58%" valign="center">
       <p>
-        <a href="assets/10701_final.pdf"><heading>Playing Games with Deep Reinforcement Learning</heading></a><br>
+        <a href="assets/learning_salient_objects.pdf"><heading>Learning Salient Objects in a Scene using Superpixel-augmented Convolutional Neural Networks</heading></a><br>
       </p>
-      <div class="paper" id="mlpc">
-        <a href="assets/10701_final.pdf"> report </a> | 
-        <a href="https://www.youtube.com/watch?v=TqIUM7qlDC0">video</a> 
+      <div class="paper" id="super_cnn">
+        <a href="assets/learning_salient_objects.pdf"> report </a> |
+        <a href="assets/SuperCNN.pdf"> slides </a> |
+        <a href="https://github.com/sha2nkt/SuperCNN"> code </a>
+
+
+
 
       </div>
 
     </td>
   </tr>
   <tr>
-    <td width="42%" valign="top"><a href="assets/pose.png"><img src="assets/pose.png" width="100%" style="border-style: none"></a>
+    <td width="42%" valign="top"><a href="assets/tracking_combined.gif"><img src="assets/tracking_combined.gif" width="100%" style="border-style: none"></a>
+
     </td><td width="58%" valign="center">
       <p>
-        <a href="assets/16811_project.pdf"><heading>Towards Pose Estimation of 3D Objects in Monocular Images via Keypoint Detection</heading></a><br>
+        <a href="assets/tracking.pdf"><heading>Moving object detection, tracking and classification from an unsteady camera</heading></a><br>
       </p>
+      <div class="paper" id="tracking">
+          <a href="assets/tracking.pdf"> slides </a> |
+          <a href="https://www.youtube.com/watch?v=g_nTKhVyPHw"> video </a>
+
 
     </td>
-  </tr>    
+
+
+  </tr>
+
 
   <tr>
-    <td width="42%" valign="top"><a href="assets/handnet.png"><img src="assets/handnet.png" width="100%" style="border-style: none"></a>
+    <td width="42%" valign="top"><a href="assets/model_combined.gif"><img src="assets/model_combined.gif" width="100%" height="120%" style="border-style: none"></a>
     </td><td width="58%" valign="center">
       <p>
-        <a href="assets/handnet.png"><heading>HandNet: Using Faster R-CNN to Detect Hands in Egocentric Videos</heading></a><br>
+        <a href="assets/deep-rl-final.pdf"><heading>Towards integrating model dynamics for sample efficient reinforcement learning</heading></a><br>
       </p>
+      <div class="paper" id="model_based">
+          <a href="assets/deep-rl-final.pdf"> report </a> |
+          <a href="https://github.com/sha2nkt/QD_learning"> code </a>
+      </div>
 
     </td>
   </tr>   
-
-  <tr>
-    <td width="42%" valign="top"><a href="https://www.youtube.com/watch?v=VKo1L9OzB2c"><img src="assets/nao.png" width="100%" style="border-style: none"></a>
-    </td><td width="58%" valign="center">
-      <p>
-        <a href="assets/se367report.pdf"><heading>A Grounded Framework for Gestures and its Applications</heading></a><br>
-      </p>
-
-    </td>
-  </tr>    
-
-</tbody></table>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tbody><tr><td>
-    <br>
-    <p align="right"><font size="2">
-      <a href="https://www.cs.berkeley.edu/~barron/">this guy's webpage is awesome</a>
-    </font></p>
-
-  </td></tr>
-
 
 </tbody></table>
 
