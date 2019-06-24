@@ -66,7 +66,9 @@
 
 
 
-              <p>I am a Masters student in <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, <a href="https://www.cmu.edu/">CMU</a>. I am advised by Prof. <a href="http://www.cs.cmu.edu/~kkitani/"> Kris Kitani</a>.
+              <p>I am a researcher at Amazon Lab126. I completed my Masters in Computer Vision (MSCV) at <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, <a href="https://www.cmu.edu/">CMU</a>, where I was advised by Prof. <a href="http://www.cs.cmu.edu/~kkitani/"> Kris Kitani</a>. 
+                <br>
+              <p>At Amazon Lab126, I am being advised by Prof. <a href="https://rehg.org/"> James Rehg</a>, Dr. <a href="https://scholar.google.com/citations?user=Q3puGtcAAAAJ&hl=en"> Amit Agrawal</a> and Dr. <a href="https://scholar.google.com/citations?user=GaSWCoUAAAAJ&hl=en"> Ambrish Tyagi</a>. It has been my great fortune to be guided by excellent mentors and advisors. 
                 <br>
 
               </p><p align="center">
@@ -75,7 +77,7 @@
                 <a href="https://scholar.google.com/citations?user=CANstcsAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/sha2nkt"> GitHub</a>&nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/shashanktripathi123/"> LinkedIn </a> /
-                <a href="assets/CV_Shashank_CMU_V16_TOC.pdf"> CV </a>
+                <a href="assets/CV_Shashank_PHD_V22.pdf"> CV </a>
                 <!-- <a href="https://www.twitter.com/debidatta/"> Twitter </a> -->
               </p>
 
@@ -105,7 +107,7 @@
 
           I want to build intelligent AI agents with human-level vision capabilities.
           <br/><br/>
-          My research lies at the intersection of machine learning, deep-learning, computer vision and robotics. Presently, I am working on applications of both 2D and 3D synthetic data in tasks such as object detection, pose-estimation, semantic segmentation and activity-forecasting. I am also interested in analysing deep neural-net sparsity for model compression.
+          My research lies at the intersection of deep-learning, computer vision, computer graphics and robotics. Presently, I am working on applications of both 2D and 3D synthetic data in tasks such as object detection, pose-estimation, semantic segmentation and activity-forecasting. I am also interested in analysing deep neural-net sparsity for model compression.
           <br/><br/>
           In the past, I have worked on visual-servoing, medical-image analysis, pedestrian-detection and reinforcement learning.
           
@@ -118,6 +120,44 @@
 
         <tbody><tr><td>
           <h2 id="publications">Publications</h2></td></tr>
+
+          <tr>
+            <td width="42%" valign="top"><a href="assets/terse_teaser.png"><img src="assets/terse_teaser.png" width="100%" height="80%" style="border-style: none"></a>
+            </td><td width="58%" valign="top">
+              <p><a href="https://arxiv.org/abs/1904.05475" id="TERSE">
+                <heading>Learning to Generate Synthetic Data via Compositing</heading></a><br>
+                Shashank Tripathi, <a href="https://siddharthachandra.github.io/">Siddhartha Chandra</a>,  Amit Agrawal, Ambrish Tyagi, <a href="https://rehg.org/"> James Rehg</a> and Visesh Chari<br>
+                <em><a href="http://cvpr2019.thecvf.com/">Computer Vision and Pattern Recognition (CVPR) 2019 </a></href> </em>
+                <br>
+                <br>
+                Efficient, task-aware and realisitic synthesis of composite images for training classification and object detection models<br>
+
+              </p>
+
+              <div class="paper" id="terse">
+                <a href="https://arxiv.org/abs/1904.05475">paper</a> |
+                <a href="javascript:toggleblock(&#39;terse_abs&#39;)">abstract</a> |
+                <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> |
+                <a href="assets/poster_v5_final_print.pdf">poster</a>
+
+                <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+
+
+                <p align="justify"> <i id="terse_abs" style="display: none;"> We present a task-aware approach to synthetic data generation. Our framework employs a trainable synthesizer network that is optimized to produce meaningful training samples by assessing the strengths and weaknesses of a `target' network. The synthesizer and target networks are trained in an adversarial manner wherein each network is updated with a goal to outdo the other. Additionally, we ensure the synthesizer generates realistic data by pairing it with a discriminator trained on real-world images. Further, to make the target classifier invariant to blending artefacts, we introduce these artefacts to background regions of the training images so the target does not over-fit to them. 
+                We demonstrate the efficacy of our approach by applying it to different target networks including a classification network on AffNIST, and two object detection networks (SSD, Faster-RCNN) on different datasets. On the AffNIST benchmark, our approach is able to surpass the baseline results with just half the training examples. On the VOC person detection benchmark, we show improvements of up to 2.7% as a result of our data augmentation. Similarly on the GMU detection benchmark, we report a performance boost of 3.5% in mAP over the baseline method, outperforming the previous state of the art approaches by up to 7.5% on specific categories. </i> </p>
+
+                <div style="white-space: pre-wrap; display: none;" class="bib">
+                  @inproceedings{tripathi2019learning,
+                    title={Learning to generate synthetic data via compositing},
+                    author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and Tyagi, Ambrish and Rehg, James M and Chari, Visesh},
+                    booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+                    pages={461--470},
+                    year={2019}
+                  }
+              </div>
+            </div>
+          </td>
+        </tr>
 
         <tr>
             <td width="42%" valign="top"><a href="assets/c2f_img.PNG"><img src="assets/c2f_img.PNG" width="90%" height="30%" style="border-style: none"></a>
