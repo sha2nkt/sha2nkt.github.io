@@ -164,6 +164,55 @@
 
                 <tr>
                     <td style="padding:20px;width:20%;vertical-align:middle">
+                        <a href="assets/teaser_ipman_square.jpeg">
+                            <img src="assets/teaser_ipman_square.jpeg" width="200"></a>
+                    </td>
+                    <td width="58%" valign="top">
+                        <p><a href="https://cvml.page.link/ipman" id="IPMAN">
+                            <heading>3D Human Pose Estimation via Intuitive Physics</heading>
+                        </a><br>
+                            Shashank Tripathi, Lea Müller, Chun-Hao P. Huang, Omid Taheri, Michael Black, Dimitrios Tzionas<br>
+                            <em><a href="http://cvpr2023.thecvf.com/">Computer Vision and Pattern Recognition (CVPR)
+                                2023 </a></href> </em>
+                            <!-- <em>(under submission)</a></href> </em> -->
+                            <br>
+                            <br>
+                            IPMAN estimates a 3D body from a color image in a "stable" configuration by encouraging plausible floor contact and
+                            overlapping CoP and CoM. It exploits interpenetration of the body mesh with the ground plane as a heuristic for pressure.
+                            <br>
+
+                        </p>
+
+                        <div class="paper" id="ipman">
+<!--                            <a href="https://arxiv.org/abs/xxxx>">paper</a> |-->
+                            <a href="javascript:toggleblock(&#39;ipman_abs&#39;)">abstract</a> |
+<!--                            <a href="https://rawalkhirodkar.github.io/ochmr">project</a> |-->
+                            <!-- <a href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s">video</a> -->
+                             <a shape="rect" href="javascript:togglebib(&#39;ipman&#39;)" class="togglebib">bibtex</a>
+                            <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
+
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+
+
+                            <p align="justify"><i id="ipman_abs" style="display: none;"> The estimation of 3D human body shape and pose from images has advanced rapidly. While the results are often well aligned with image features in the camera view, the 3D pose is often physically implausible; bodies lean, float, or penetrate the floor. This is because most methods ignore the fact that bodies are typically supported by the scene. To address this, some methods exploit physics engines to enforce physical plausibility. Such methods, however, are not differentiable, rely on unrealistic proxy bodies, and are difficult to integrate into existing optimization and learning frameworks. To account for this, we take a different approach that exploits novel intuitive-physics (IP) terms that can be inferred from a 3D SMPL body interacting with the scene. Specifically, we infer biomechanically relevant features such as the pressure heatmap of the body on the floor, the Center of Pressure (CoP) from the heatmap, and the SMPL body’s Center of Mass (CoM) projected on the floor. With these, we develop IPMAN, to estimate a 3D body from a color image in a “stable” configuration by encouraging plausible floor contact and overlapping CoP and CoM. Our IP terms are intuitive, easy to implement, fast to compute, and can be integrated into any SMPL-based optimization or regression method; we show examples of both. To evaluate our method, we present MoYo, a dataset with synchronized multi-view color images and 3D bodies with complex poses, body-floor contact, and ground-truth CoM and pressure. Evaluation on MoYo, RICH and Human3.6M show that our IP terms produce more plausible results than the state of the art; they improve accuracy for static poses, while not hurting dynamic ones. Code and data will be available for research. </i></p>
+
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
+                                @inproceedings{tripathi2023ipman,
+                                  title = {{3D} Human Pose Estimation via Intuitive Physics},
+                                  author = {Tripathi, Shashank and M{\"u}ller, Lea and Huang, Chun-Hao P. and Taheri Omid and Black, Michael J. and Tzionas, Dimitrios},
+                                  booktitle = {IEEE/CVF Conf.~on Computer Vision and Pattern Recognition (CVPR)},
+                                  month = jun,
+                                  year = {2023},
+                                  doi = {},
+                                  month_numeric = {6}
+                                }
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:20%;vertical-align:middle">
                         <a href="assets/teaser_ochmr_square.png">
                             <img src="assets/teaser_ochmr_square.png" width="200"></a>
                     </td>
@@ -172,7 +221,7 @@
                             <heading>Occluded Human Mesh Recovery</heading>
                         </a><br>
                             Rawal Khirodkar, Shashank Tripathi, Kris Kitani<br>
-                            <em><a href="http://cvpr2020.thecvf.com/">Computer Vision and Pattern Recognition (CVPR)
+                            <em><a href="http://cvpr2022.thecvf.com/">Computer Vision and Pattern Recognition (CVPR)
                                 2022 </a></href> </em>
                             <!-- <em>(under submission)</a></href> </em> -->
                             <br>
