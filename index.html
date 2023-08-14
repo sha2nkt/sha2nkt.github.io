@@ -168,7 +168,7 @@
                             <img src="assets/teaser_ipman_square.jpeg" width="200"></a>
                     </td>
                     <td width="58%" valign="top">
-                        <p><a href="https://cvml.page.link/ipman" id="IPMAN">
+                        <p><a href="https://ipman.is.tue.mpg.de/" id="IPMAN">
                             <heading>3D Human Pose Estimation via Intuitive Physics</heading>
                         </a><br>
                             Shashank Tripathi, Lea Müller, Chun-Hao P. Huang, Omid Taheri, Michael Black, Dimitrios Tzionas<br>
@@ -184,12 +184,13 @@
                         </p>
 
                         <div class="paper" id="ipman">
-<!--                            <a href="https://arxiv.org/abs/xxxx>">paper</a> |-->
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tripathi_3D_Human_Pose_Estimation_via_Intuitive_Physics_CVPR_2023_paper.html">paper</a> |
                             <a href="javascript:toggleblock(&#39;ipman_abs&#39;)">abstract</a> |
-<!--                            <a href="https://rawalkhirodkar.github.io/ochmr">project</a> |-->
-                            <!-- <a href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s">video</a> -->
-                             <a shape="rect" href="javascript:togglebib(&#39;ipman&#39;)" class="togglebib">bibtex</a>
-                            <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
+                            <a href="https://ipman.is.tue.mpg.de/">project</a> |
+                            <a href="https://moyo.is.tue.mpg.de/">dataset</a> |
+                             <a href="https://www.youtube.com/watch?v=eZTtLUMnGIg">video</a> |
+                             <a shape="rect" href="javascript:togglebib(&#39;ipman&#39;)" class="togglebib">bibtex</a> |
+                             <a href="https://drive.google.com/file/d/1n8QeOI_WRqcVDUMrB-lG2NCJURhBjppG/view?usp=sharing">poster</a>
 
                             <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
@@ -197,15 +198,110 @@
                             <p align="justify"><i id="ipman_abs" style="display: none;"> The estimation of 3D human body shape and pose from images has advanced rapidly. While the results are often well aligned with image features in the camera view, the 3D pose is often physically implausible; bodies lean, float, or penetrate the floor. This is because most methods ignore the fact that bodies are typically supported by the scene. To address this, some methods exploit physics engines to enforce physical plausibility. Such methods, however, are not differentiable, rely on unrealistic proxy bodies, and are difficult to integrate into existing optimization and learning frameworks. To account for this, we take a different approach that exploits novel intuitive-physics (IP) terms that can be inferred from a 3D SMPL body interacting with the scene. Specifically, we infer biomechanically relevant features such as the pressure heatmap of the body on the floor, the Center of Pressure (CoP) from the heatmap, and the SMPL body’s Center of Mass (CoM) projected on the floor. With these, we develop IPMAN, to estimate a 3D body from a color image in a “stable” configuration by encouraging plausible floor contact and overlapping CoP and CoM. Our IP terms are intuitive, easy to implement, fast to compute, and can be integrated into any SMPL-based optimization or regression method; we show examples of both. To evaluate our method, we present MoYo, a dataset with synchronized multi-view color images and 3D bodies with complex poses, body-floor contact, and ground-truth CoM and pressure. Evaluation on MoYo, RICH and Human3.6M show that our IP terms produce more plausible results than the state of the art; they improve accuracy for static poses, while not hurting dynamic ones. Code and data will be available for research. </i></p>
 
                             <div style="white-space: pre-wrap; display: none;" class="bib">
-                                @inproceedings{tripathi2023ipman,
-                                title = {{3D} Human Pose Estimation via Intuitive Physics},
-                                author = {Tripathi, Shashank and M{\"u}ller, Lea and Huang, Chun-Hao P. and Taheri Omid
-                                and Black, Michael J. and Tzionas, Dimitrios},
-                                booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
-                                Recognition (CVPR)},
-                                month = {June},
-                                year = {2023}
-                                }
+@inproceedings{tripathi2023ipman,
+title = {{3D} Human Pose Estimation via Intuitive Physics},
+author = {Tripathi, Shashank and M{\"u}ller, Lea and Huang, Chun-Hao P. and Taheri Omid
+and Black, Michael J. and Tzionas, Dimitrios},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition (CVPR)},
+month = {June},
+year = {2023}
+}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:20%;vertical-align:middle">
+                        <a href="assets/bite_teaser_2.gif">
+                            <img src="assets/bite_teaser_2.gif" width="200"></a>
+                    </td>
+                    <td width="58%" valign="top">
+                        <p><a href="https://bite.is.tue.mpg.de/" id="IPMAN">
+                            <heading>BITE: Beyond Priors for Improved Three-D Dog Pose Estimation</heading>
+                        </a><br>
+                            Nadine Rüegg, Shashank Tripathi, Konrad Schindler, Michael J. Black, Silvia Zuffi<br>
+                            <em><a href="http://cvpr2023.thecvf.com/">Computer Vision and Pattern Recognition (CVPR)
+                                2023 </a></href> </em>
+                            <!-- <em>(under submission)</a></href> </em> -->
+                            <br>
+                            <br>
+                            BITE enables 3D shape and pose estimation of dogs from a single input image. The model handles a wide range of shapes and breeds, as well as challenging postures far from the available training poses, like sitting or lying on the ground.
+                            <br>
+
+                        </p>
+
+                        <div class="paper" id="bite">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Ruegg_BITE_Beyond_Priors_for_Improved_Three-D_Dog_Pose_Estimation_CVPR_2023_paper.html">paper</a> |
+                            <a href="javascript:toggleblock(&#39;bite_abs&#39;)">abstract</a> |
+                            <a href="https://bite.is.tue.mpg.de/">project</a> |
+                             <a href="https://www.youtube.com/watch?v=mOeLtNk070E">video</a> |
+                             <a shape="rect" href="javascript:togglebib(&#39;bite&#39;)" class="togglebib">bibtex</a>
+<!--                             <a href="assets/poster_v5_final_print.pdf">poster</a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+
+
+                            <p align="justify"><i id="mime_abs" style="display: none;"> We address the problem of inferring the 3D shape and pose of dogs from images. Given the lack of 3D training data, this problem is challenging, and the best methods lag behind those designed to estimate human shape and pose. To make progress, we attack the problem from multiple sides at once. First, we need a good 3D shape prior, like those available for humans. To that end, we learn a dog-specific 3D parametric model, called D-SMAL. Second, existing methods focus on dogs in standing poses because when they sit or lie down, their legs are self occluded and their bodies deform. Without access to a good pose prior or 3D data, we need an alternative approach. To that end, we exploit contact with the ground as a form of side information. We consider an existing large dataset of dog images and label any 3D contact of the dog with the ground. We exploit body-ground contact in estimating dog pose and find that it significantly improves results. Third, we develop a novel neural network architecture to infer and exploit this contact information. Fourth, to make progress, we have to be able to measure it. Current evaluation metrics are based on 2D features like keypoints and silhouettes, which do not directly correlate with 3D errors. To address this, we create a synthetic dataset containing rendered images of scanned 3D dogs. With these advances, our method recovers significantly better dog shape and pose than the state of the art, and we evaluate this improvement in 3D. Our code, model and test dataset are publicly available for research purposes at https://bite.is.tue.mpg.de. </i></p>
+
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
+@inproceedings{bite2023rueegg,
+title = {{BITE}: Beyond Priors for Improved Three-{D} Dog Pose Estimation},
+author = {R\"uegg, Nadine and Tripathi, Shashank and Schindler, Konrad and Black, Michael J. and Zuffi, Silvia},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition (CVPR)},
+pages = {8867-8876},
+month = {June},
+year = {2023}
+}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:20%;vertical-align:middle">
+                        <a href="assets/mime_teaser.gif">
+                            <img src="assets/mime_teaser.gif" width="200"></a>
+                    </td>
+                    <td width="58%" valign="top">
+                        <p><a href="https://mime.is.tue.mpg.de/" id="IPMAN">
+                            <heading>MIME: Human-Aware 3D Scene Generation</heading>
+                        </a><br>
+                            Hongwei Yi, Chun-Hao P. Huang, Shashank tripathi, Lea Hering, Justus Thies, Michael J. Black<br>
+                            <em><a href="http://cvpr2023.thecvf.com/">Computer Vision and Pattern Recognition (CVPR)
+                                2023 </a></href> </em>
+                            <!-- <em>(under submission)</a></href> </em> -->
+                            <br>
+                            <br>
+                            MIME takes 3D human motion capture and generates plausible 3D scenes that are consistent with the motion. Why? Most mocap sessions capture the person but not the scene.
+                            <br>
+
+                        </p>
+
+                        <div class="paper" id="mime">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Yi_MIME_Human-Aware_3D_Scene_Generation_CVPR_2023_paper.html">paper</a> |
+                            <a href="javascript:toggleblock(&#39;mime_abs&#39;)">abstract</a> |
+                            <a href="https://mime.is.tue.mpg.de/">project</a> |
+                             <a href="https://drive.google.com/file/d/1LfaS9ijbTJZ4rDacJa3Syzljj1lRiYss/view?usp=sharing">video</a> |
+                             <a shape="rect" href="javascript:togglebib(&#39;mime&#39;)" class="togglebib">bibtex</a>
+<!--                             <a href="assets/poster_v5_final_print.pdf">poster</a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+
+
+                            <p align="justify"><i id="mime_abs" style="display: none;"> Generating realistic 3D worlds occupied by moving humans has many applications in games, architecture, and synthetic data creation. But generating such scenes is expensive and labor intensive. Recent work generates human poses and motions given a 3D scene. Here, we take the opposite approach and generate 3D indoor scenes given 3D human motion. Such motions can come from archival motion capture or from IMU sensors worn on the body, effectively turning human movement in a "scanner" of the 3D world. Intuitively, human movement indicates the free-space in a room and human contact indicates surfaces or objects that support activities such as sitting, lying or touching. We propose MIME (Mining Interaction and Movement to infer 3D Environments), which is a generative model of indoor scenes that produces furniture layouts that are consistent with the human movement. MIME uses an auto-regressive transformer architecture that takes the already generated objects in the scene as well as the human motion as input, and outputs the next plausible object. To train MIME, we build a dataset by populating the 3D FRONT scene dataset with 3D humans. Our experiments show that MIME produces more diverse and plausible 3D scenes than a recent generative scene method that does not know about human movement. Code and data will be available for research. </i></p>
+
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
+@inproceedings{yi2022mime,
+title = {{MIME}: Human-Aware {3D} Scene Generation},
+author = {Yi, Hongwei and Huang, Chun-Hao P. and Tripathi, Shashank and Hering, Lea and
+Thies, Justus and Black, Michael J.},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition (CVPR)},
+pages={12965-12976},
+month = {June},
+year = {2023}
+}
                             </div>
                         </div>
                     </td>
@@ -217,7 +313,7 @@
                             <img src="assets/teaser_ochmr_square.png" width="200"></a>
                     </td>
                     <td width="58%" valign="top">
-                        <p><a href="https://cvml.page.link/agora" id="AGORA">
+                        <p><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Khirodkar_Occluded_Human_Mesh_Recovery_CVPR_2022_paper.html" id="AGORA">
                             <heading>Occluded Human Mesh Recovery</heading>
                         </a><br>
                             Rawal Khirodkar, Shashank Tripathi, Kris Kitani<br>
@@ -245,15 +341,15 @@
                             <p align="justify"><i id="agora_abs" style="display: none;"> Top-down methods for monocular human mesh recovery have two stages: (1) detect human bounding boxes; (2) treat each bounding box as an independent single-human mesh recovery task. Unfortunately, the single-human assumption does not hold in images with multi-human occlusion and crowding. Consequently, top-down methods have difficulties in recovering accurate 3D human meshes under severe person-person occlusion. To address this, we present Occluded Human Mesh Recovery (OCHMR) - a novel top-down mesh recovery approach that incorporates image spatial context to overcome the limitations of the single-human assumption. The approach is conceptually simple and can be applied to any existing top-down architecture. Along with the input image, we condition the top-down model on spatial context from the image in the form of body-center heatmaps. To reason from the predicted body centermaps, we introduce Contextual Normalization (CoNorm) blocks to adaptively modulate intermediate features of the top-down model. The contextual conditioning helps our model disambiguate between two severely overlapping human bounding-boxes, making it robust to multi-person occlusion. Compared with state-of-the-art methods, OCHMR achieves superior performance on challenging multi-person benchmarks like 3DPW, CrowdPose and OCHuman. Specifically, our proposed contextual reasoning architecture applied to the SPIN model with ResNet-50 backbone results in 75.2 PMPJPE on 3DPW-PC, 23.6 AP on CrowdPose and 37.7 AP on OCHuman datasets, a significant improvement of 6.9 mm, 6.4 AP and 20.8 AP respectively over the baseline. Code and models will be released. </i></p>
 
                             <div style="white-space: pre-wrap; display: none;" class="bib">
-                                @inproceedings{khirodkar_ochmr_2022,
-                                  title = {Occluded Human Mesh Recovery},
-                                  author = {Khirodkar, Rawal and Tripathi, Shashank and Kitani, Kris},
-                                  booktitle = {IEEE/CVF Conf.~on Computer Vision and Pattern Recognition (CVPR)},
-                                  month = jun,
-                                  year = {2022},
-                                  doi = {},
-                                  month_numeric = {6}
-                                }
+@inproceedings{khirodkar_ochmr_2022,
+  title = {Occluded Human Mesh Recovery},
+  author = {Khirodkar, Rawal and Tripathi, Shashank and Kitani, Kris},
+  booktitle = {IEEE/CVF Conf.~on Computer Vision and Pattern Recognition (CVPR)},
+  month = jun,
+  year = {2022},
+  doi = {},
+  month_numeric = {6}
+}
                             </div>
                         </div>
                     </td>
@@ -293,15 +389,15 @@
                             <p align="justify"><i id="agora_abs" style="display: none;"> While the accuracy of 3D human pose estimation from images has steadily improved on benchmark datasets, the best methods still fail in many real-world scenarios. This suggests that there is a domain gap between current datasets and common scenes containing people. To obtain ground-truth 3D pose, current datasets limit the complexity of clothing, environmental conditions, number of subjects, and occlusion. Moreover, current datasets evaluate sparse 3D joint locations corresponding to the major joints of the body, ignoring the hand pose and the face shape. To evaluate the current state-of-the-art methods on more challenging images, and to drive the field to address new problems, we introduce AGORA, a synthetic dataset with high realism and highly accurate ground truth. Here we use 4240 commercially-available, high-quality, textured human scans in diverse poses and natural clothing; this includes 257 scans of children. We create reference 3D poses and body shapes by fitting the SMPL-X body model (with face and hands) to the 3D scans, taking into account clothing. We create around 14K training and 3K test images by rendering between 5 and 15 people per image us- ing either image-based lighting or rendered 3D environments, taking care to make the images physically plausible and photoreal. In total, AGORA consists of 173K individual person crops. We evaluate existing state-of-the- art methods for 3D human pose estimation on this dataset. and find that most methods perform poorly on images of children. Hence, we extend the SMPL-X model to better capture the shape of children. Additionally, we fine- tune methods on AGORA and show improved performance on both AGORA and 3DPW, confirming the realism of the dataset. We provide all the registered 3D reference training data, rendered images, and a web-based evaluation site at https://agora.is.tue.mpg.de/. </i></p>
 
                             <div style="white-space: pre-wrap; display: none;" class="bib">
-                                @inproceedings{tripathi2019learning,
-                                title={Learning to generate synthetic data via compositing},
-                                author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and Tyagi, Ambrish
-                                and Rehg, James M and Chari, Visesh},
-                                booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern
-                                Recognition},
-                                pages={461--470},
-                                year={2019}
-                                }
+@inproceedings{tripathi2019learning,
+title={Learning to generate synthetic data via compositing},
+author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and Tyagi, Ambrish
+and Rehg, James M and Chari, Visesh},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern
+Recognition},
+pages={461--470},
+year={2019}
+}
                             </div>
                         </div>
                     </td>
@@ -353,15 +449,15 @@
                                 realistic, and flow smoothly over consecutive frames. </i></p>
 
                             <div style="white-space: pre-wrap; display: none;" class="bib">
-                                @inproceedings{tripathi2019learning,
-                                title={Learning to generate synthetic data via compositing},
-                                author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and Tyagi, Ambrish
-                                and Rehg, James M and Chari, Visesh},
-                                booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern
-                                Recognition},
-                                pages={461--470},
-                                year={2019}
-                                }
+@inproceedings{tripathi2019learning,
+title={Learning to generate synthetic data via compositing},
+author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and Tyagi, Ambrish
+and Rehg, James M and Chari, Visesh},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern
+Recognition},
+pages={461--470},
+year={2019}
+}
                             </div>
                         </div>
                     </td>
@@ -414,15 +510,15 @@
                                 approaches by up to 7.5% on specific categories. </i></p>
 
                             <div style="white-space: pre-wrap; display: none;" class="bib">
-                                @inproceedings{tripathi2019learning,
-                                title={Learning to generate synthetic data via compositing},
-                                author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and Tyagi, Ambrish
-                                and Rehg, James M and Chari, Visesh},
-                                booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern
-                                Recognition},
-                                pages={461--470},
-                                year={2019}
-                                }
+@inproceedings{tripathi2019learning,
+title={Learning to generate synthetic data via compositing},
+author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and Tyagi, Ambrish
+and Rehg, James M and Chari, Visesh},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern
+Recognition},
+pages={461--470},
+year={2019}
+}
                             </div>
                         </div>
                     </td>
@@ -528,16 +624,16 @@
                                 by exploiting complementary features to improve cognitive assessment. </i></p>
 
                             <div style="white-space: pre-wrap; display: none;" class="bib">
-                                @inproceedings{tripathi2017sub,
-                                title={Sub-cortical shape morphology and voxel-based features for Alzheimer's disease
-                                classification},
-                                author={Tripathi, Shashank and Nozadi, Seyed Hossein and Shakeri, Mahsa and Kadoury,
-                                Samuel},
-                                booktitle={Biomedical Imaging (ISBI 2017), 2017 IEEE 14th International Symposium on},
-                                pages={991--994},
-                                year={2017},
-                                organization={IEEE}
-                                }
+@inproceedings{tripathi2017sub,
+title={Sub-cortical shape morphology and voxel-based features for Alzheimer's disease
+classification},
+author={Tripathi, Shashank and Nozadi, Seyed Hossein and Shakeri, Mahsa and Kadoury,
+Samuel},
+booktitle={Biomedical Imaging (ISBI 2017), 2017 IEEE 14th International Symposium on},
+pages={991--994},
+year={2017},
+organization={IEEE}
+}
                             </div>
                         </div>
                     </td>
@@ -589,15 +685,15 @@
                             </p>
 
                             <div style="white-space: pre-wrap; display: none;" class="bib">
-                                @inproceedings{shakeri2016deep,
-                                title={Deep spectral-based shape features for alzheimer’s disease classification},
-                                author={Shakeri, Mahsa and Lombaert, Herve and Tripathi, Shashank and Kadoury, Samuel
-                                and Alzheimer’s Disease Neuroimaging Initiative and others},
-                                booktitle={International Workshop on Spectral and Shape Analysis in Medical Imaging},
-                                pages={15--24},
-                                year={2016},
-                                organization={Springer}
-                                }
+@inproceedings{shakeri2016deep,
+title={Deep spectral-based shape features for alzheimer’s disease classification},
+author={Shakeri, Mahsa and Lombaert, Herve and Tripathi, Shashank and Kadoury, Samuel
+and Alzheimer’s Disease Neuroimaging Initiative and others},
+booktitle={International Workshop on Spectral and Shape Analysis in Medical Imaging},
+pages={15--24},
+year={2016},
+organization={Springer}
+}
                             </div>
                         </div>
                     </td>
