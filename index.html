@@ -84,7 +84,7 @@
             margin-bottom: 12px;
             letter-spacing: -0.5px;
             position: relative;
-            animation: fadeInUp 0.8s ease-out;
+            animation: fadeInUp 0.4s ease-out;
         }
 
         .tagline {
@@ -93,7 +93,7 @@
             font-weight: 500;
             margin-bottom: 25px;
             position: relative;
-            animation: fadeInUp 0.8s ease-out 0.1s both;
+            animation: fadeInUp 0.4s ease-out 0.05s both;
         }
 
         .tagline::after {
@@ -103,7 +103,7 @@
             height: 2px;
             background: linear-gradient(90deg, var(--accent-color), transparent);
             margin: 10px auto 0;
-            animation: slideIn 0.8s ease-out 0.4s both;
+            animation: slideIn 0.4s ease-out 0.2s both;
         }
 
         @keyframes fadeInUp {
@@ -134,7 +134,7 @@
             list-style: none;
             margin-bottom: 30px;
             flex-wrap: wrap;
-            animation: fadeInUp 1s ease-out 0.4s both;
+            animation: fadeInUp 0.5s ease-out 0.2s both;
         }
 
         .nav-link {
@@ -143,7 +143,7 @@
             font-weight: 600;
             padding: 12px 20px;
             border-radius: 25px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             font-size: 0.95rem;
             position: relative;
             background: rgba(255, 255, 255, 0.8);
@@ -163,7 +163,7 @@
             background: linear-gradient(135deg, var(--accent-color), #2980b9);
             border-radius: 25px;
             opacity: 0;
-            transition: opacity 0.4s ease;
+            transition: opacity 0.3s ease;
             z-index: -1;
         }
 
@@ -188,7 +188,7 @@
             gap: 15px;
             margin-top: 35px;
             flex-wrap: wrap;
-            animation: fadeInUp 1s ease-out 0.6s both;
+            animation: fadeInUp 0.5s ease-out 0.3s both;
         }
 
         .social-link {
@@ -199,7 +199,7 @@
             border-radius: 25px;
             font-size: 0.85rem;
             font-weight: 500;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
@@ -214,7 +214,7 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.6s ease;
+            transition: left 0.4s ease;
         }
 
         .social-link:hover::before {
@@ -244,18 +244,60 @@
         .social-link i {
             margin-right: 10px;
             transition: all 0.4s ease;
+            opacity: 0.8;
+        }
+
+        /* Colorful Social Icons - Brand Colors */
+        .social-link .fa-envelope {
+            color: #ea4335;
+        }
+        
+        .social-link .fa-graduation-cap {
+            color: #4285f4;
+        }
+        
+        .social-link .fa-github {
+            color: #333;
+        }
+        
+        .social-link .fa-linkedin {
+            color: #0077b5;
+        }
+        
+        .social-link .fa-twitter {
+            color: #1da1f2;
+        }
+        
+        .social-link .fa-file-pdf {
+            color: #dc3545;
+        }
+
+        /* Enhanced hover effects for social icons */
+        .social-link:hover i {
+            opacity: 1;
+            filter: brightness(1.1);
+            transform: scale(1.1);
+        }
+
+        /* Keep social link text subtle while icons are colorful */
+        .social-link {
+            color: #6b7280;
+        }
+
+        .social-link:hover {
+            color: white;
         }
 
         /* Floating Animation for Icons */
         .nav-link i {
-            animation: float 3s ease-in-out infinite;
+            animation: float 2s ease-in-out infinite;
         }
 
         .nav-link:nth-child(1) i { animation-delay: 0s; }
-        .nav-link:nth-child(2) i { animation-delay: 0.2s; }
-        .nav-link:nth-child(3) i { animation-delay: 0.4s; }
-        .nav-link:nth-child(4) i { animation-delay: 0.6s; }
-        .nav-link:nth-child(5) i { animation-delay: 0.8s; }
+        .nav-link:nth-child(2) i { animation-delay: 0.1s; }
+        .nav-link:nth-child(3) i { animation-delay: 0.2s; }
+        .nav-link:nth-child(4) i { animation-delay: 0.3s; }
+        .nav-link:nth-child(5) i { animation-delay: 0.4s; }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
