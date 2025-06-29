@@ -1,57 +1,345 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Tripathi - Computer Vision Researcher</title>
+    <meta name="description" content="Shashank Tripathi - PhD Student at Max Planck Institute, Computer Vision and Human Motion Understanding">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <style type="text/css">
-        /* Stolen from Sergey and Jon Barron */
-        /* with significant help from Debidatta Dwibedi's webpage */
-        a {
-            color: #1772d0;
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #2c3e50;
+            --text-light: #7f8c8d;
+            --background: #ffffff;
+            --background-light: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 2px 10px rgba(0,0,0,0.08);
+            --shadow-hover: 0 4px 20px rgba(0,0,0,0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--background);
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--background);
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .name {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        /* Navigation */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-link:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            align-items: start;
+            margin-bottom: 60px;
+        }
+
+        .profile-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .profile-text p {
+            margin-bottom: 20px;
+        }
+
+        .profile-text a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .profile-text a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-image {
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--shadow);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        /* Research Section */
+        .research-section {
+            background: var(--background-light);
+            padding: 50px 0;
+            margin: 60px 0;
+            border-radius: 10px;
+        }
+
+        .research-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        /* Publications */
+        .publication {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 25px;
+            margin-bottom: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .publication:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .publication-image img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .publication-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .publication-content h3 a {
+            color: inherit;
             text-decoration: none;
         }
 
-        a:focus,
-        a:hover {
-            color: #f09228;
+        .publication-content h3 a:hover {
+            color: var(--accent-color);
+        }
+
+        .authors {
+            color: var(--text-light);
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .venue {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .award {
+            color: #e74c3c;
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        .description {
+            margin-bottom: 12px;
+            line-height: 1.5;
+            font-size: 0.9rem;
+        }
+
+        .paper-links {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .paper-link {
+            padding: 4px 10px;
+            background: var(--background-light);
+            color: var(--text-color);
             text-decoration: none;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
         }
 
-        body,
-        td,
-        th {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 15px
+        .paper-link:hover {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
         }
 
-        strong {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-
-
-            font-size: 14px
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .name {
+                font-size: 2.2rem;
+            }
+            
+            .profile-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .publication {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .publication-image img {
+                height: 120px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .social-links {
+                gap: 10px;
+            }
         }
 
-        strongred {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            color: 'red'
-
-                font-size: 14px
+        /* Abstract and BibTeX styles */
+        .abstract {
+            background: var(--background-light);
+            padding: 20px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-style: italic;
+            line-height: 1.6;
+            font-size: 0.9rem;
         }
 
-        heading {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            */ font-size: 15px;
-            font-weight: 700
+        .bib {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.8rem;
+            border-left: 3px solid var(--accent-color);
+            overflow-x: auto;
         }
     </style>
-    <!-- <link rel="icon" type="image/png" href="seal_icon.png"> -->
+    
     <script type="text/javascript" src="hidebib.js"></script>
-    <title>Shashank Tripathi</title>
-    <meta name="Shashank Tripathi&#39;s CMU Homepage" http-equiv="Content-Type"
-        content="Shashank Tripathi&#39;s Homepage">
-
-    <link href="css" rel="stylesheet" type="text/css">
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -67,284 +355,94 @@
 
         ga('create', 'UA-90857215-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 </head>
 
 <body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="name">Shashank Tripathi</h1>
+            <p class="tagline">PhD Student • Computer Vision Researcher • Human Motion Understanding</p>
+            
+            <!-- Navigation -->
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#patents" class="nav-link">Patents</a></li>
+                <li><a href="#misc" class="nav-link">Misc</a></li>
+            </ul>
+            
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="mailto:shashank.tripathi123@gmail.com" class="social-link">Email</a>
+                <a href="https://scholar.google.com/citations?user=CANstcsAAAAJ&hl=en" class="social-link">Google Scholar</a>
+                <a href="https://github.com/sha2nkt" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/shashanktripathi123/" class="social-link">LinkedIn</a>
+                <a href="https://twitter.com/sha2nk_t" class="social-link">Twitter</a>
+                <a href="assets/CV_Shashank_LongPhD_V33.pdf" class="social-link">CV</a>
+            </div>
+        </div>
+    </header>
 
-    <table width="960" border="0" align="center" cellspacing="0" cellpadding="20">
-        <tbody>
-            <tr>
-                <td>
-                    <p align="center">
-                        <font size="7">Shashank Tripathi</font><br>
-                    </p>
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td width="67%" valign="middle" align="justify">
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- About Section -->
+            <section id="about" class="profile-section">
+                <div class="profile-text">
+                    <p>I am a PhD student (2021-) at the <strong>Max Planck Institute for Intelligent Systems</strong> where I am advised by MPI Director <a href="https://ps.is.mpg.de/person/black">Michael Black</a>. Earlier, I worked as an Applied Scientist at Amazon (2019-2021). I earned my Masters (2017-2019) from the Robotics Institute, Carnegie Mellon University, working with Prof. <a href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>. I am a recipient of the <a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta Research PhD Fellowship award</a> in 2023.</p>
 
+                    <p>At Amazon Lab126, I closely collaborated with Prof. <a href="https://rehg.org/">James Rehg</a>, Dr. <a href="https://scholar.google.com/citations?user=Q3puGtcAAAAJ&hl=en">Amit Agrawal</a> and Dr. <a href="https://scholar.google.com/citations?user=GaSWCoUAAAAJ&hl=en">Ambrish Tyagi</a>. In 2023, I also spent time at <a href="https://www.unrealengine.com/en-US/">Epic Games</a> as a research intern working with Dr. <a href="https://www.linkedin.com/in/carstenstoll/">Carsten Stoll</a>, Dr. <a href="https://christophlassner.de/">Christoph Lassner</a> and Dr. <a href="https://theorangeduck.com/">Daniel Holden</a>. It has been my great fortune to have worked with excellent mentors and advisors.</p>
+                </div>
+                
+                <div class="profile-image">
+                    <img src="assets/shashank.jpg" alt="Shashank Tripathi">
+                </div>
+            </section>
 
-                                    <p>I am a PhD student (2021-) at the Max Planck Institute for Intelligent Systems
-                                        where I am
-                                        advised by MPI Director <a href="https://ps.is.mpg.de/person/black"> Michael
-                                            Black</a>.
-                                        Earlier, I worked as an Applied Scientist at Amazon (2019-2021). I earned my
-                                        Masters
-                                        (2017-2019) from the Robotics Institute, Carnegie Mellon University, working
-                                        with Prof. <a href="http://www.cs.cmu.edu/~kkitani/"> Kris Kitani</a>. I am a
-                                        recipient of the <a
-                                            href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta
-                                            Research PhD Fellowship award</a> in 2023.
-                                        <br>
-                                    <p>At Amazon Lab126, I closely collaborated with Prof. <a href="https://rehg.org/">
-                                            James
-                                            Rehg</a>, Dr. <a
-                                            href="https://scholar.google.com/citations?user=Q3puGtcAAAAJ&hl=en"> Amit
-                                            Agrawal</a> and Dr. <a
-                                            href="https://scholar.google.com/citations?user=GaSWCoUAAAAJ&hl=en">
-                                            Ambrish Tyagi</a>. In 2023, I also spent time at <a
-                                            href="https://www.unrealengine.com/en-US/">Epic Games</a> as a research
-                                        intern working with Dr. <a
-                                            href="https://www.linkedin.com/in/carstenstoll/">Carsten Stoll</a>, Dr. <a
-                                            href="https://christophlassner.de/">Christoph Lassner</a> and Dr. <a
-                                            href="https://theorangeduck.com/">Daniel Holden</a>. It has been my great
-                                        fortune to have worked with excellent mentors and
-                                        advisors.
-                                        <br>
+            <!-- Research Section -->
+            <section id="research" class="research-section">
+                <div class="container">
+                    <h2 class="section-title">Research</h2>
+                    <div class="research-content">
+                        <p>My research lies at the intersection of <strong>machine learning</strong>, <strong>computer vision</strong> and <strong>computer graphics</strong>. Specifically, I am interested in 3D modeling of human bodies, modeling human-object interactions and physics-inspired human motion understanding. In the past, I have worked on synthetic data for applications like object detection and human pose estimation from limited supervision.</p>
+                        
+                        <p>Before diving into human body research, I dabbled in visual-servoing, medical-image analysis, pedestrian-detection and reinforcement learning.</p>
+                    </div>
+                </div>
+            </section>
 
-                                    </p>
-                                    <p align="center" style="margin: 20px 0;">
-                                        <!-- Add Font Awesome CSS -->
-                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <!-- Publications Section -->
+            <section id="publications">
+                <h2 class="section-title">Publications</h2>
 
-                                        <style>
-                                            .nav-button {
-                                                display: inline-flex;
-                                                align-items: center;
-                                                justify-content: center;
-                                                padding: 8px 16px;
-                                                margin: 4px;
-                                                background: linear-gradient(135deg, #A8E6CF 0%, #8ED4BC 100%);
-                                                color: #2C3E50;
-                                                text-decoration: none;
-                                                border-radius: 25px;
-                                            }
-
-                                            /* First row buttons - grey gradient */
-                                            .button-group:first-of-type .nav-button {
-                                                background: linear-gradient(135deg, #E0E0E0 0%, #BDBDBD 100%);
-                                                color: #424242;
-                                            }
-
-                                            .button-group:first-of-type .nav-button:hover {
-                                                background: linear-gradient(135deg, #BDBDBD 0%, #9E9E9E 100%);
-                                            }
-
-                                            /* Second row buttons - beige gradient */
-                                            .button-group:last-of-type .nav-button {
-                                                background: linear-gradient(135deg, #E8DCD1 0%, #D4C3B3 100%);
-                                                color: #4A4A4A;
-                                            }
-
-                                            .button-group:last-of-type .nav-button:hover {
-                                                background: linear-gradient(135deg, #D4C3B3 0%, #C0AD99 100%);
-                                                font-size: 15px;
-                                                font-weight: 500;
-                                                transition: all 0.3s ease;
-                                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                                                border: none;
-                                            }
-
-                                            .nav-button i {
-                                                margin-right: 8px;
-                                                font-size: 16px;
-                                            }
-
-                                            .nav-button:hover {
-                                                background: linear-gradient(135deg, #8ED4BC 0%, #7BC5AB 100%);
-                                                transform: translateY(-2px);
-                                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                                                color: #2C3E50;
-                                            }
-
-                                            .nav-button:active {
-                                                transform: translateY(0);
-                                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                                            }
-
-                                            .button-group {
-                                                margin: 8px 0;
-                                                text-align: center;
-                                                width: 100%;
-                                                display: flex;
-                                                justify-content: center;
-                                                flex-wrap: wrap;
-                                                gap: 4px;
-                                            }
-
-                                            /* Special styling for different button types */
-                                            .nav-button[href*="mailto"] {
-                                                background: linear-gradient(135deg, #FFB5E8 0%, #FFA8DC 100%);
-                                            }
-
-                                            .nav-button[href*="scholar"] {
-                                                background: linear-gradient(135deg, #B5EAD7 0%, #A7E1CD 100%);
-                                            }
-
-                                            .nav-button[href*="github"] {
-                                                background: linear-gradient(135deg, #E2F0CB 0%, #D4E5B9 100%);
-                                            }
-
-                                            .nav-button[href*="linkedin"] {
-                                                background: linear-gradient(135deg, #C7CEEA 0%, #B6C0E2 100%);
-                                            }
-
-                                            .nav-button[href*="twitter"] {
-                                                background: linear-gradient(135deg, #FFDAC1 0%, #FFC8A2 100%);
-                                            }
-
-                                            .nav-button[href*="CV"] {
-                                                background: linear-gradient(135deg, #FF9AA2 0%, #FF8B93 100%);
-                                            }
-                                        </style>
-
-                                        <div class="button-group"></div>
-                                        <div class="button-group">
-                                            <a href="mailto:shashank.tripathi123@gmail.com" class="nav-button">
-                                                <i class="fas fa-envelope"></i>Email
-                                            </a>
-                                            <a href="https://scholar.google.com/citations?user=CANstcsAAAAJ&hl=en" class="nav-button">
-                                                <i class="fas fa-graduation-cap"></i>Google Scholar
-                                            </a>
-                                            <a href="https://github.com/sha2nkt" class="nav-button">
-                                                <i class="fab fa-github"></i>GitHub
-                                            </a>
-                                            <a href="https://www.linkedin.com/in/shashanktripathi123/" class="nav-button">
-                                                <i class="fab fa-linkedin"></i>LinkedIn
-                                            </a>
-                                            <a href="https://twitter.com/sha2nk_t" class="nav-button">
-                                                <i class="fab fa-twitter"></i>Twitter
-                                            </a>
-                                            <a href="assets/CV_Shashank_LongPhD_V33.pdf" class="nav-button">
-                                                <i class="fas fa-file-alt"></i>CV
-                                            </a>
-                                        </div>
-
-                                        <div class="button-group">
-                                            <a href="#publications" class="nav-button">
-                                                <i class="fas fa-book"></i>Publications
-                                            </a>
-                                            <a href="#patents" class="nav-button">
-                                                <i class="fas fa-award"></i>Patents
-                                            </a>
-                                            <a href="#misc" class="nav-button">
-                                                <i class="fas fa-ellipsis-h"></i>Misc
-                                            </a>
-                                        </div>
-                                    </p>
-
-                                    <!--
-                      </p><p align="center">
-                        <a href="#publications">Publications</a> &nbsp;/&nbsp;
-
-                        <a href="#patents">Patents</a> &nbsp/&nbsp
-                        <a href="#talks">Talks</a>&nbsp;/&nbsp;
-                        <a href="#theses">Theses</a>&nbsp;/&nbsp;
-                        <a href="#misc">Misc</a>
-                      </p>
-                        -->
-
-
-                                </td>
-                                <td width="33%"><img src="assets/shashank.jpg" width="90%"
-                                        style="background-repeat: no-repeat;background-position: 50%;border-radius: 50%;width: 200px;height: 200px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h2>Research</h2>
-                                    My research lies at the intesection of machine-learning, computer vision and
-                                    computer graphics.
-                                    Specifically, I am interested in 3D modeling of human bodies, modeling human-object
-                                    interactions and physics-inspired human motion understanding. In the past, I have
-                                    worked on synthetic data
-                                    for applications like object detection and human pose estimation from limited
-                                    supervision.
-                                    <br /><br />
-                                    Before diving into human body research, I dabbled in visual-servoing, medical-image
-                                    analysis, pedestrian-detection and
-                                    reinforcement learning.
-
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h2 id="publications">Publications</h2>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/interactvlm_teaser.png">
-                                        <img src="assets/interactvlm_teaser.png" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://interactvlm.is.tue.mpg.de/" id="INTERACTVLM">
-                                            <heading>InteractVLM: 3D Interaction Reasoning from 2D Foundational Models</heading>
-                                        </a><br>
-                                        Sai Kumar Dwivedi, Dimitrije Antić, <strong>Shashank Tripathi</strong>, Omid Taheri, Cordelia Schmid, Michael J. Black, Dimitrios Tzionas<br>
-                                        <em><a href="https://cvpr.thecvf.com/Conferences/2025">Computer Vision and
-                                                Pattern
-                                                Recognition (CVPR)
-                                                2025 </a></href> </em>
-                                        <!--                            <br>-->
-                                        <!--                            <em><font color="red">(Oral presentation)</font></a></href> </em>-->
-                                        <br>
-                                        <em>
-                                            <font color="red">(Winner of the contact estimation tracks at CVPR 2025 - <a
-                                            href="https://rhobin-challenge.github.io/">see here</a>)</font></a></href>
-                                        </em>
-                                        <br>
-                                        <br>
-                                        InteractVLM is a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate joint reconstruction by leveraging large foundational model.
-                                        <br>
-                                    </p>
-
-                                    <div class="paper" id="interactvlm">
-                                        <a
-                                            href="https://interactvlm.is.tue.mpg.de/media/upload/paper.pdf">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;interactvlm_abs&#39;)">abstract</a> |
-                                        <a href="https://interactvlm.is.tue.mpg.de/">project</a> |
-                                        <a
-                                            href="https://interactvlm.is.tue.mpg.de/media/upload/InteractVLM_Poster.pdf">poster</a>
-                                        |
-                                        <!--                            <a href="https://pico.is.tue.mpg.de/">dataset</a> |-->
-                                        <a href="https://www.youtube.com/watch?v=brxygxM1nRk">video</a> |
-                                        <a shape="rect" href="javascript:togglebib(&#39;interactvlm&#39;)"
-                                            class="togglebib">bibtex</a>
-
-                                        <p align="justify"><i id="interactvlm_abs" style="display: none;"> We introduce InteractVLM, a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate human-object joint reconstruction in 3D. This is challenging due to occlusions, depth ambiguities, and widely varying object shapes. Existing methods rely on 3D contact annotations collected via expensive motion-capture systems or tedious manual labeling, limiting scalability and generalization. To overcome this, InteractVLM harnesses the broad visual knowledge of large Vision-Language Models (VLMs), fine-tuned with limited 3D contact data. However, directly applying these models is non-trivial, as they reason only in 2D, while human-object contact is inherently 3D. Thus we introduce a novel Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D space via multi-view rendering, (2) trains a novel multi-view localization model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D. Additionally, we propose a new task called Semantic Human Contact estimation, where human contact predictions are conditioned explicitly on object semantics, enabling richer interaction modeling. InteractVLM outperforms existing work on contact estimation and also facilitates 3D reconstruction from an in-the wild image. Code and models are available.
-                                            </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <!-- InteractVLM Publication -->
+                <article class="publication">
+                    <div class="publication-image">
+                        <a href="assets/interactvlm_teaser.png">
+                            <img src="assets/interactvlm_teaser.png" alt="InteractVLM Teaser">
+                        </a>
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://interactvlm.is.tue.mpg.de/">InteractVLM: 3D Interaction Reasoning from 2D Foundational Models</a></h3>
+                        <div class="authors">Sai Kumar Dwivedi, Dimitrije Antić, <strong>Shashank Tripathi</strong>, Omid Taheri, Cordelia Schmid, Michael J. Black, Dimitrios Tzionas</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2025</div>
+                        <div class="award">(Winner of the contact estimation tracks at CVPR 2025 - <a href="https://rhobin-challenge.github.io/">see here</a>)</div>
+                        <div class="description">InteractVLM is a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate joint reconstruction by leveraging large foundational model.</div>
+                        <div class="paper-links">
+                            <a href="https://interactvlm.is.tue.mpg.de/media/upload/paper.pdf" class="paper-link">paper</a>
+                            <a href="javascript:toggleblock('interactvlm_abs')" class="paper-link">abstract</a>
+                            <a href="https://interactvlm.is.tue.mpg.de/" class="paper-link">project</a>
+                            <a href="https://interactvlm.is.tue.mpg.de/media/upload/InteractVLM_Poster.pdf" class="paper-link">poster</a>
+                            <a href="https://www.youtube.com/watch?v=brxygxM1nRk" class="paper-link">video</a>
+                            <a href="javascript:togglebib('interactvlm')" class="paper-link">bibtex</a>
+                        </div>
+                        <div class="abstract" id="interactvlm_abs" style="display: none;">
+                            We introduce InteractVLM, a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate human-object joint reconstruction in 3D. This is challenging due to occlusions, depth ambiguities, and widely varying object shapes. Existing methods rely on 3D contact annotations collected via expensive motion-capture systems or tedious manual labeling, limiting scalability and generalization. To overcome this, InteractVLM harnesses the broad visual knowledge of large Vision-Language Models (VLMs), fine-tuned with limited 3D contact data. However, directly applying these models is non-trivial, as they reason only in 2D, while human-object contact is inherently 3D. Thus we introduce a novel Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D space via multi-view rendering, (2) trains a novel multi-view localization model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D. Additionally, we propose a new task called Semantic Human Contact estimation, where human contact predictions are conditioned explicitly on object semantics, enabling richer interaction modeling. InteractVLM outperforms existing work on contact estimation and also facilitates 3D reconstruction from an in-the wild image. Code and models are available.
+                        </div>
+                        <div class="bib" id="interactvlm" style="display: none;">
 @inproceedings{dwivedi_interactvlm_2025,
   title     = {{InteractVLM}: {3D} Interaction Reasoning from {2D} Foundational Models},
   author    = {Dwivedi, Sai Kumar and Antić, Dimitrije and Tripathi, Shashank and Taheri, Omid and Schmid, Cordelia and Black, Michael J. and Tzionas, Dimitrios},
@@ -352,81 +450,32 @@
   month     = {June},
   year      = {2025},
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/pico_teaser.gif">
-                                        <img src="assets/pico_teaser.gif" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://pico.is.tue.mpg.de/" id="PICO">
-                                            <heading>PICO: Reconstructing 3D People In Contact with Objects</heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, Alpár Cseke, Sai Kumar Dwivedi, Arjun
-                                        Lakshmipathy, Agniv Chatterjee, Michael J. Black, Dimitrios Tzionas<br>
-                                        <em><a href="https://cvpr.thecvf.com/Conferences/2025">Computer Vision and
-                                                Pattern
-                                                Recognition (CVPR)
-                                                2025 </a></href> </em>
-                                        <!--                            <br>-->
-                                        <!--                            <em><font color="red">(Oral presentation)</font></a></href> </em>-->
-                                        <br>
-                                        <br>
-                                        PICO recovers humans, objects, and their interactions (HOI) - all in 3D, from
-                                        just a single internet image. To this end, (1) we collect a new dataset, called PICO-db, by
-                                        transferring body contact annotations from DAMON data onto the object and (2) we
-                                        use the 3D contact correspondences from PICO-db in a three-stage optimization
-                                        framework PICO-fit.
-                                        <br>
-                                    </p>
-
-                                    <div class="paper" id="pico">
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/CVPR2025/html/Cseke_PICO_Reconstructing_3D_People_In_Contact_with_Objects_CVPR_2025_paper.html">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;pico_abs&#39;)">abstract</a> |
-                                        <a href="https://pico.is.tue.mpg.de/">project</a> |
-                                        <a
-                                            href="https://pico.is.tue.mpg.de/media/upload/static/images/CVPR2025_PICO_Poster.pdf">poster</a>
-                                        |
-                                        <!--                            <a href="https://pico.is.tue.mpg.de/">dataset</a> |-->
-                                        <a href="https://www.youtube.com/watch?v=w-LncKIjgSw">video</a> |
-                                        <a shape="rect" href="javascript:togglebib(&#39;pico&#39;)"
-                                            class="togglebib">bibtex</a> |
-                                        <a href="https://pico.is.tue.mpg.de/dataexploration.html">dataset</a>
-
-                                        <p align="justify"><i id="pico_abs" style="display: none;"> Recovering 3D
-                                                Human-Object Interaction (HOI) from single color images is challenging
-                                                due to depth ambiguities, occlusions, and the huge variation in object
-                                                shape and appearance. Thus, past work requires controlled settings such
-                                                as known object shapes and contacts, and tackles only limited object
-                                                classes. Instead, we need methods that generalize to natural images and
-                                                novel object classes. We tackle this in two main ways: (1) We collect
-                                                PICO-db, a new dataset of natural images uniquely paired with dense 3D
-                                                contact on both body and object meshes. To this end, we use images from
-                                                the recent DAMON dataset that are paired with contacts, but these
-                                                contacts are only annotated on a canonical 3D body. In contrast, we seek
-                                                contact labels on both the body and the object. To infer these given an
-                                                image, we retrieve an appropriate 3D object mesh from a database by
-                                                leveraging vision foundation models. Then, we project DAMON's body
-                                                contact patches onto the object via a novel method needing only 2 clicks
-                                                per patch. This minimal human input establishes rich contact
-                                                correspondences between bodies and objects. (2) We exploit our new
-                                                dataset of contact correspondences in a novel render-and-compare fitting
-                                                method, called PICO-fit, to recover 3D body and object meshes in
-                                                interaction. PICO-fit infers contact for the SMPL-X body, retrieves a
-                                                likely 3D object mesh and contact from PICO-db for that object, and uses
-                                                the contact to iteratively fit the 3D body and object meshes to image
-                                                evidence via optimization. Uniquely, PICO-fit works well for many object
-                                                categories that no existing method can tackle. This is crucial to enable
-                                                HOI understanding to scale in the wild. Our data and code are available.
-                                            </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/pico_teaser.gif" alt="PICO: Reconstructing 3D People In Contact with Objects">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://pico.is.tue.mpg.de/" id="PICO">PICO: Reconstructing 3D People In Contact with Objects</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, Alpár Cseke, Sai Kumar Dwivedi, Arjun Lakshmipathy, Agniv Chatterjee, Michael J. Black, Dimitrios Tzionas</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2025</div>
+                        <div class="description">
+                            PICO recovers humans, objects, and their interactions (HOI) - all in 3D, from just a single internet image. To this end, (1) we collect a new dataset, called PICO-db, by transferring body contact annotations from DAMON data onto the object and (2) we use the 3D contact correspondences from PICO-db in a three-stage optimization framework PICO-fit.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Cseke_PICO_Reconstructing_3D_People_In_Contact_with_Objects_CVPR_2025_paper.html" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('pico_abs')" class="paper-link">Abstract</a>
+                            <a href="https://pico.is.tue.mpg.de/" class="paper-link">Project</a>
+                            <a href="https://pico.is.tue.mpg.de/media/upload/static/images/CVPR2025_PICO_Poster.pdf" class="paper-link">Poster</a>
+                            <a href="https://www.youtube.com/watch?v=w-LncKIjgSw" class="paper-link">Video</a>
+                            <a href="javascript:togglebib('pico')" class="paper-link togglebib">BibTeX</a>
+                            <a href="https://pico.is.tue.mpg.de/dataexploration.html" class="paper-link">Dataset</a>
+                        </div>
+                        <p style="text-align: justify;"><i id="pico_abs" style="display: none;">Recovering 3D Human-Object Interaction (HOI) from single color images is challenging due to depth ambiguities, occlusions, and the huge variation in object shape and appearance. Thus, past work requires controlled settings such as known object shapes and contacts, and tackles only limited object classes. Instead, we need methods that generalize to natural images and novel object classes. We tackle this in two main ways: (1) We collect PICO-db, a new dataset of natural images uniquely paired with dense 3D contact on both body and object meshes. To this end, we use images from the recent DAMON dataset that are paired with contacts, but these contacts are only annotated on a canonical 3D body. In contrast, we seek contact labels on both the body and the object. To infer these given an image, we retrieve an appropriate 3D object mesh from a database by leveraging vision foundation models. Then, we project DAMON's body contact patches onto the object via a novel method needing only 2 clicks per patch. This minimal human input establishes rich contact correspondences between bodies and objects. (2) We exploit our new dataset of contact correspondences in a novel render-and-compare fitting method, called PICO-fit, to recover 3D body and object meshes in interaction. PICO-fit infers contact for the SMPL-X body, retrieves a likely 3D object mesh and contact from PICO-db for that object, and uses the contact to iteratively fit the 3D body and object meshes to image evidence via optimization. Uniquely, PICO-fit works well for many object categories that no existing method can tackle. This is crucial to enable HOI understanding to scale in the wild. Our data and code are available.</i></p>
+                        <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{cseke_tripathi_2025_pico,
 title = {{PICO}: Reconstructing {3D} People In Contact with Objects},
 author = {Cseke, Alp\'{a}r and Tripathi, Shashank and Dwivedi, Sai Kumar and
@@ -437,69 +486,31 @@ Pattern Recognition (CVPR)},
 month = {June},
 year = {2025},
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/teaser_humos.gif">
-                                        <img src="assets/teaser_humos.gif" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://carstenepic.github.io/humos/" id="HUMOS">
-                                            <heading>HUMOS: HUman MOtion Model Conditioned on Body Shape</heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, Omid Taheri, Christoph Lassner, Michael J. Black, Daniel
-                                        Holden, Carsten Stoll<br>
-                                        <em><a href="https://eccv.ecva.net/">European Conference on Computer Vision
-                                                (ECCV)
-                                                2024 </a></href> </em>
-                                        <!--                            <br>-->
-                                        <!--                            <em><font color="red">(Oral presentation)</font></a></href> </em>-->
-                                        <br>
-                                        <br>
-                                        People with different body shapes perform the same motion differently. Our
-                                        method, HUMOS, generates natural, physically plausible, and dynamically stable
-                                        human motions based on body shape. HUMOS introduces a novel identity-preserving
-                                        cycle consistency loss and uses differentiable dynamic stability and physics
-                                        terms to learn an identity-conditioned manifold of human motions.
-                                        <br>
-
-                                    </p>
-
-                                    <div class="paper" id="humos">
-                                        <a href="https://eccv.ecva.net/virtual/2024/poster/262">paper</a> |
-                                        <a href="javascript:toggleblock(&#39;humos_abs&#39;)">abstract</a> |
-                                        <a href="https://carstenepic.github.io/humos/">project</a> |
-                                        <!--                            <a href="https://deco.is.tue.mpg.de/download.php">dataset</a> |-->
-                                        <a href="https://www.youtube.com/watch?v=yLXX7TxBA4o">video</a> |
-                                        <a shape="rect" href="javascript:togglebib(&#39;humos&#39;)"
-                                            class="togglebib">bibtex</a> |
-                                        <a
-                                            href="https://www.dropbox.com/scl/fi/nxtj4svwe5dcfvaffou0u/ECCV2024_HUMOS_Poster_v2.pdf?rlkey=3cku1bxgio9ec7o4bumetqiu7&st=un1ub1c9&dl=0">poster</a>
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
-
-
-                                        <p align="justify"><i id="humos_abs" style="display: none;"> Generating
-                                                realistic human motion is an important task in many computer vision and
-                                                graphics applications. The rich diversity of human body shapes and sizes
-                                                significantly influences how people move. However, existing motion
-                                                models typically ignore these differences and use a normalized, average
-                                                body size. This leads to a homogenization of motion across human bodies
-                                                that limits diversity and that may not align with their physical
-                                                attributes. We propose a novel approach to learn a generative motion
-                                                model conditioned on body shape. We demonstrate that it is possible to
-                                                learn such a model from unpaired training data using cycle consistency
-                                                and intuitive physics and stability constraints that model the
-                                                correlation between identity and movement. The resulting model produces
-                                                diverse, physically plausible, dynamically stable human motions that are
-                                                quantitatively and qualitatively more realistic than the existing state
-                                                of the art. </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/teaser_humos.gif" alt="HUMOS: HUman MOtion Model Conditioned on Body Shape">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://carstenepic.github.io/humos/" id="HUMOS">HUMOS: HUman MOtion Model Conditioned on Body Shape</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, Omid Taheri, Christoph Lassner, Michael J. Black, Daniel Holden, Carsten Stoll</div>
+                        <div class="venue">European Conference on Computer Vision (ECCV) 2024</div>
+                        <div class="description">
+                            People with different body shapes perform the same motion differently. Our method, HUMOS, generates natural, physically plausible, and dynamically stable human motions based on body shape. HUMOS introduces a novel identity-preserving cycle consistency loss and uses differentiable dynamic stability and physics terms to learn an identity-conditioned manifold of human motions.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://eccv.ecva.net/virtual/2024/poster/262" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('humos_abs')" class="paper-link">Abstract</a>
+                            <a href="https://carstenepic.github.io/humos/" class="paper-link">Project</a>
+                            <a href="https://www.youtube.com/watch?v=yLXX7TxBA4o" class="paper-link">Video</a>
+                            <a href="javascript:togglebib('humos')" class="paper-link togglebib">BibTeX</a>
+                            <a href="https://www.dropbox.com/scl/fi/nxtj4svwe5dcfvaffou0u/ECCV2024_HUMOS_Poster_v2.pdf?rlkey=3cku1bxgio9ec7o4bumetqiu7&st=un1ub1c9&dl=0" class="paper-link">Poster</a>
+                        </div>
+                        <p style="text-align: justify;"><i id="humos_abs" style="display: none;">Generating realistic human motion is an important task in many computer vision and graphics applications. The rich diversity of human body shapes and sizes significantly influences how people move. However, existing motion models typically ignore these differences and use a normalized, average body size. This leads to a homogenization of motion across human bodies that limits diversity and that may not align with their physical attributes. We propose a novel approach to learn a generative motion model conditioned on body shape. We demonstrate that it is possible to learn such a model from unpaired training data using cycle consistency and intuitive physics and stability constraints that model the correlation between identity and movement. The resulting model produces diverse, physically plausible, dynamically stable human motions that are quantitatively and qualitatively more realistic than the existing state of the art.</i></p>
+                        <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{tripathi2024humos,
 title = {{HUMOS}: Human Motion Model Conditioned on Body Shape},
 author = {Tripathi, Shashank and Taheri, Omid and Lassner, Christoph and
@@ -509,81 +520,33 @@ pages = {133--152},
 year = {2025},
 organization = {Springer}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/teaser_deco_square.png">
-                                        <img src="assets/teaser_deco_square.png" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://deco.is.tue.mpg.de/" id="DECO">
-                                            <heading>DECO: Dense Estimation of 3D Human-Scene COntact in the Wild
-                                            </heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, Agniv Chatterjee, Jean-Claude Passy, Hongwei Yi, Dimitrios
-                                        Tzionas, Michael J. Black<br>
-                                        <em><a href="http://iccv2023.thecvf.com/">International Conference on Computer
-                                                Vision (ICCV)
-                                                2023 </a></href> </em>
-                                        <br>
-                                        <em>
-                                            <font color="red">(Oral presentation)</font></a></href>
-                                        </em>
-                                        <br>
-                                        <br>
-                                        DECO estimates dense vertex-level 3D human-scene and human-object contact across
-                                        the full body mesh and works on diverse and challenging human-object
-                                        interactions in arbitrary in-the-wild images. DECO is trained on DAMON, a new
-                                        and unique dataset with 3D contact annotations for in-the-wild images, manually
-                                        annotated using a custom 3D contact labeling tool.
-                                        <br>
-
-                                    </p>
-
-                                    <div class="paper" id="deco">
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/ICCV2023/html/Tripathi_DECO_Dense_Estimation_of_3D_Human-Scene_Contact_In_The_Wild_ICCV_2023_paper.html">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;deco_abs&#39;)">abstract</a> |
-                                        <a href="https://deco.is.tue.mpg.de/">project</a> |
-                                        <a href="https://deco.is.tue.mpg.de/download.php">dataset</a> |
-                                        <a href="https://www.youtube.com/watch?v=o7MLobqAFTQ&feature=youtu.be">video</a>
-                                        |
-                                        <a shape="rect" href="javascript:togglebib(&#39;deco&#39;)"
-                                            class="togglebib">bibtex</a> |
-                                        <a
-                                            href="https://www.dropbox.com/scl/fi/kvhpfnkvga2pt19ayko8u/ICCV2023_DECO_Poster_v2.pptx?rlkey=ihbf3fi6u9j0ha9x1gfk2cwd0&dl=0">poster</a>
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
-
-
-                                        <p align="justify"><i id="deco_abs" style="display: none;"> Understanding how
-                                                humans use physical contact to interact with the world is key to
-                                                enabling human-centric artificial intelligence. While inferring 3D
-                                                contact is crucial for modeling realistic and physically-plausible
-                                                human-object interactions, existing methods either focus on 2D, consider
-                                                body joints rather than the surface, use coarse 3D body regions, or do
-                                                not generalize to in-the-wild images. In contrast, we focus on inferring
-                                                dense, 3D contact between the full body surface and objects in arbitrary
-                                                images. To achieve this, we first collect DAMON, a new dataset
-                                                containing dense vertex-level contact annotations paired with RGB images
-                                                containing complex human-object and human-scene contact. Second, we
-                                                train DECO, a novel 3D contact detector that uses both body-part-driven
-                                                and scene-context-driven attention to estimate vertex-level contact on
-                                                the SMPL body. DECO builds on the insight that human observers recognize
-                                                contact by reasoning about the contacting body parts, their proximity to
-                                                scene objects, and the surrounding scene context. We perform extensive
-                                                evaluations of our detector on DAMON as well as on the RICH and BEHAVE
-                                                datasets. We significantly outperform existing SOTA methods across all
-                                                benchmarks. We also show qualitatively that DECO generalizes well to
-                                                diverse and challenging real-world human interactions in natural images.
-                                                The code, data, and models are available for research purposes. </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/teaser_deco_square.png" alt="DECO: Dense Estimation of 3D Human-Scene COntact in the Wild">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://deco.is.tue.mpg.de/" id="DECO">DECO: Dense Estimation of 3D Human-Scene COntact in the Wild</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, Agniv Chatterjee, Jean-Claude Passy, Hongwei Yi, Dimitrios Tzionas, Michael J. Black</div>
+                        <div class="venue">International Conference on Computer Vision (ICCV) 2023</div>
+                        <div class="award">(Oral presentation)</div>
+                        <div class="description">
+                            DECO estimates dense vertex-level 3D human-scene and human-object contact across the full body mesh and works on diverse and challenging human-object interactions in arbitrary in-the-wild images. DECO is trained on DAMON, a new and unique dataset with 3D contact annotations for in-the-wild images, manually annotated using a custom 3D contact labeling tool.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Tripathi_DECO_Dense_Estimation_of_3D_Human-Scene_Contact_In_The_Wild_ICCV_2023_paper.html" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('deco_abs')" class="paper-link">Abstract</a>
+                            <a href="https://deco.is.tue.mpg.de/" class="paper-link">Project</a>
+                            <a href="https://deco.is.tue.mpg.de/download.php" class="paper-link">Dataset</a>
+                            <a href="https://www.youtube.com/watch?v=o7MLobqAFTQ&feature=youtu.be" class="paper-link">Video</a>
+                            <a href="javascript:togglebib('deco')" class="paper-link togglebib">BibTeX</a>
+                            <a href="https://www.dropbox.com/scl/fi/kvhpfnkvga2pt19ayko8u/ICCV2023_DECO_Poster_v2.pptx?rlkey=ihbf3fi6u9j0ha9x1gfk2cwd0&dl=0" class="paper-link">Poster</a>
+                        </div>
+                        <p style="text-align: justify;"><i id="deco_abs" style="display: none;">Understanding how humans use physical contact to interact with the world is key to enabling human-centric artificial intelligence. While inferring 3D contact is crucial for modeling realistic and physically-plausible human-object interactions, existing methods either focus on 2D, consider body joints rather than the surface, use coarse 3D body regions, or do not generalize to in-the-wild images. In contrast, we focus on inferring dense, 3D contact between the full body surface and objects in arbitrary images. To achieve this, we first collect DAMON, a new dataset containing dense vertex-level contact annotations paired with RGB images containing complex human-object and human-scene contact. Second, we train DECO, a novel 3D contact detector that uses both body-part-driven and scene-context-driven attention to estimate vertex-level contact on the SMPL body. DECO builds on the insight that human observers recognize contact by reasoning about the contacting body parts, their proximity to scene objects, and the surrounding scene context. We perform extensive evaluations of our detector on DAMON as well as on the RICH and BEHAVE datasets. We significantly outperform existing SOTA methods across all benchmarks. We also show qualitatively that DECO generalizes well to diverse and challenging real-world human interactions in natural images. The code, data, and models are available for research purposes.</i></p>
+                        <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{tripathi2023deco,
 title = {{DECO}: Dense Estimation of {3D} Human-Scene Contact In The Wild},
 author = {Tripathi, Shashank and Chatterjee, Agniv and Passy, Jean-Claude
@@ -594,80 +557,29 @@ month = {October},
 year = {2023},
 pages = {8001-8013}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/teaser_emote.png">
-                                        <img src="assets/teaser_emote.png" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://emote.is.tue.mpg.de/" id="EMOTE">
-                                            <heading>EMOTE: Emotional Speech-Driven Animation with Content-Emotion
-                                                Disentanglement</heading>
-                                        </a><br>
-                                        Radek Danecek, Kiran Chhatre, <strong>Shashank Tripathi</strong>, Yandong Wen,
-                                        Michael J. Black,
-                                        Timo Bolkart<br>
-                                        <em><a href="https://asia.siggraph.org/2023/">SIGGRAPH ASIA 2023 </a></href>
-                                        </em>
-                                        <!-- <br> -->
-                                        <!-- <em><font color="red">(Oral presentation)</font></a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        Given audio input and an emotion label, EMOTE generates an animated 3D head that
-                                        has state-of-the-art lip synchronization while expressing the emotion. The
-                                        method is trained from 2D video sequences using a novel video emotion loss and a
-                                        mechanism to disentangle emotion from speech.
-                                        <br>
-
-                                    </p>
-
-                                    <div class="paper" id="emote">
-                                        <a href="https://arxiv.org/abs/2306.08990">paper</a> |
-                                        <a href="javascript:toggleblock(&#39;emote_abs&#39;)">abstract</a> |
-                                        <a href="https://emote.is.tue.mpg.de/">project</a> |
-                                        <!-- <a href="https://www.youtube.com/watch?v=o7MLobqAFTQ&feature=youtu.be">video</a> | -->
-                                        <a shape="rect" href="javascript:togglebib(&#39;emote&#39;)"
-                                            class="togglebib">bibtex</a>
-                                        <!-- <a href="https://www.dropbox.com/scl/fi/kvhpfnkvga2pt19ayko8u/ICCV2023_DECO_Poster_v2.pptx?rlkey=ihbf3fi6u9j0ha9x1gfk2cwd0&dl=0">poster</a> -->
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
-
-
-                                        <p align="justify"><i id="emote_abs" style="display: none;"> To be widely
-                                                adopted, 3D facial avatars must be animated easily, realistically, and
-                                                directly from speech signals. While the best recent methods generate 3D
-                                                animations that are synchronized with the input audio, they largely
-                                                ignore the impact of emotions on facial expressions. Realistic facial
-                                                animation requires lip-sync together with the natural expression of
-                                                emotion. To that end, we propose EMOTE (Expressive Model Optimized for
-                                                Talking with Emotion), which generates 3D talking-head avatars that
-                                                maintain lip-sync from speech while enabling explicit control over the
-                                                expression of emotion. To achieve this, we supervise EMOTE with
-                                                decoupled losses for speech (i.e., lip-sync) and emotion. These losses
-                                                are based on two key observations: (1) deformations of the face due to
-                                                speech are spatially localized around the mouth and have high temporal
-                                                frequency, whereas (2) facial expressions may deform the whole face and
-                                                occur over longer intervals. Thus, we train EMOTE with a per-frame
-                                                lip-reading loss to preserve the speech-dependent content, while
-                                                supervising emotion at the sequence level. Furthermore, we employ a
-                                                content-emotion exchange mechanism in order to supervise different
-                                                emotions on the same audio, while maintaining the lip motion
-                                                synchronized with the speech. To employ deep perceptual losses without
-                                                getting undesirable artifacts, we devise a motion prior in the form of a
-                                                temporal VAE. Due to the absence of high-quality aligned emotional 3D
-                                                face datasets with speech, EMOTE is trained with 3D pseudo-ground-truth
-                                                extracted from an emotional video dataset (i.e., MEAD). Extensive
-                                                qualitative and perceptual evaluations demonstrate that EMOTE produces
-                                                speech-driven facial animations with better lip-sync than
-                                                state-of-the-art methods trained on the same data, while offering
-                                                additional, high-quality emotional control. </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/teaser_emote.png" alt="EMOTE: Emotional Speech-Driven Animation with Content-Emotion Disentanglement">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://emote.is.tue.mpg.de/" id="EMOTE">EMOTE: Emotional Speech-Driven Animation with Content-Emotion Disentanglement</a></h3>
+                        <div class="authors">Radek Danecek, Kiran Chhatre, <strong>Shashank Tripathi</strong>, Yandong Wen, Michael J. Black, Timo Bolkart</div>
+                        <div class="venue">SIGGRAPH ASIA 2023</div>
+                        <div class="description">
+                            Given audio input and an emotion label, EMOTE generates an animated 3D head that has state-of-the-art lip synchronization while expressing the emotion. The method is trained from 2D video sequences using a novel video emotion loss and a mechanism to disentangle emotion from speech.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/2306.08990" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('emote_abs')" class="paper-link">Abstract</a>
+                            <a href="https://emote.is.tue.mpg.de/" class="paper-link">Project</a>
+                            <a href="javascript:togglebib('emote')" class="paper-link togglebib">BibTeX</a>
+                        </div>
+                        <p style="text-align: justify;"><i id="emote_abs" style="display: none;">To be widely adopted, 3D facial avatars must be animated easily, realistically, and directly from speech signals. While the best recent methods generate 3D animations that are synchronized with the input audio, they largely ignore the impact of emotions on facial expressions. Realistic facial animation requires lip-sync together with the natural expression of emotion. To that end, we propose EMOTE (Expressive Model Optimized for Talking with Emotion), which generates 3D talking-head avatars that maintain lip-sync from speech while enabling explicit control over the expression of emotion. To achieve this, we supervise EMOTE with decoupled losses for speech (i.e., lip-sync) and emotion. These losses are based on two key observations: (1) deformations of the face due to speech are spatially localized around the mouth and have high temporal frequency, whereas (2) facial expressions may deform the whole face and occur over longer intervals. Thus, we train EMOTE with a per-frame lip-reading loss to preserve the speech-dependent content, while supervising emotion at the sequence level. Furthermore, we employ a content-emotion exchange mechanism in order to supervise different emotions on the same audio, while maintaining the lip motion synchronized with the speech. To employ deep perceptual losses without getting undesirable artifacts, we devise a motion prior in the form of a temporal VAE. Due to the absence of high-quality aligned emotional 3D face datasets with speech, EMOTE is trained with 3D pseudo-ground-truth extracted from an emotional video dataset (i.e., MEAD). Extensive qualitative and perceptual evaluations demonstrate that EMOTE produces speech-driven facial animations with better lip-sync than state-of-the-art methods trained on the same data, while offering additional, high-quality emotional control.</i></p>
+                        <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{EMOTE,
 title = {Emotional Speech-Driven Animation with Content-Emotion
 Disentanglement},
@@ -678,10 +590,9 @@ year = {2023},
 doi = {10.1145/3610548.3618183},
 url = {https://emote.is.tue.mpg.de/index.html}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
                             <tr>
                                 <td style="padding:20px;width:20%;vertical-align:middle">
