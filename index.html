@@ -393,9 +393,10 @@
 
         .publication-image img {
             width: 100%;
-            height: 140px;
-            object-fit: cover;
+            max-height: 180px;
+            object-fit: contain;
             border-radius: 6px;
+            background: var(--background-light);
         }
 
         .publication-content h3 {
@@ -494,7 +495,8 @@
             }
             
             .publication-image img {
-                height: 120px;
+                max-height: 120px;
+                object-fit: contain;
             }
             
             .nav-links {
