@@ -594,75 +594,28 @@ url = {https://emote.is.tue.mpg.de/index.html}
                     </div>
                 </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/teaser_ipman_square.jpeg">
-                                        <img src="assets/teaser_ipman_square.jpeg" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://ipman.is.tue.mpg.de/" id="IPMAN">
-                                            <heading>3D Human Pose Estimation via Intuitive Physics</heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, Lea Müller, Chun-Hao P. Huang, Omid Taheri, Michael Black,
-                                        Dimitrios Tzionas<br>
-                                        <em><a href="http://cvpr2023.thecvf.com/">Computer Vision and Pattern
-                                                Recognition (CVPR)
-                                                2023 </a></href> </em>
-                                        <!-- <em>(under submission)</a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        IPMAN estimates a 3D body from a color image in a "stable" configuration by
-                                        encouraging plausible floor contact and
-                                        overlapping CoP and CoM. It exploits interpenetration of the body mesh with the
-                                        ground plane as a heuristic for pressure.
-                                        <br>
-
-                                    </p>
-
-                                    <div class="paper" id="ipman">
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/CVPR2023/html/Tripathi_3D_Human_Pose_Estimation_via_Intuitive_Physics_CVPR_2023_paper.html">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;ipman_abs&#39;)">abstract</a> |
-                                        <a href="https://ipman.is.tue.mpg.de/">project</a> |
-                                        <a href="https://moyo.is.tue.mpg.de/">dataset</a> |
-                                        <a href="https://www.youtube.com/watch?v=eZTtLUMnGIg">video</a> |
-                                        <a shape="rect" href="javascript:togglebib(&#39;ipman&#39;)"
-                                            class="togglebib">bibtex</a> |
-                                        <a
-                                            href="https://drive.google.com/file/d/1n8QeOI_WRqcVDUMrB-lG2NCJURhBjppG/view?usp=sharing">poster</a>
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
-
-
-                                        <p align="justify"><i id="ipman_abs" style="display: none;"> The estimation of
-                                                3D human body shape and pose from images has advanced rapidly. While the
-                                                results are often well aligned with image features in the camera view,
-                                                the 3D pose is often physically implausible; bodies lean, float, or
-                                                penetrate the floor. This is because most methods ignore the fact that
-                                                bodies are typically supported by the scene. To address this, some
-                                                methods exploit physics engines to enforce physical plausibility. Such
-                                                methods, however, are not differentiable, rely on unrealistic proxy
-                                                bodies, and are difficult to integrate into existing optimization and
-                                                learning frameworks. To account for this, we take a different approach
-                                                that exploits novel intuitive-physics (IP) terms that can be inferred
-                                                from a 3D SMPL body interacting with the scene. Specifically, we infer
-                                                biomechanically relevant features such as the pressure heatmap of the
-                                                body on the floor, the Center of Pressure (CoP) from the heatmap, and
-                                                the SMPL body’s Center of Mass (CoM) projected on the floor. With these,
-                                                we develop IPMAN, to estimate a 3D body from a color image in a “stable”
-                                                configuration by encouraging plausible floor contact and overlapping CoP
-                                                and CoM. Our IP terms are intuitive, easy to implement, fast to compute,
-                                                and can be integrated into any SMPL-based optimization or regression
-                                                method; we show examples of both. To evaluate our method, we present
-                                                MoYo, a dataset with synchronized multi-view color images and 3D bodies
-                                                with complex poses, body-floor contact, and ground-truth CoM and
-                                                pressure. Evaluation on MoYo, RICH and Human3.6M show that our IP terms
-                                                produce more plausible results than the state of the art; they improve
-                                                accuracy for static poses, while not hurting dynamic ones. Code and data
-                                                will be available for research. </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/teaser_ipman_square.jpeg" alt="3D Human Pose Estimation via Intuitive Physics">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://ipman.is.tue.mpg.de/" id="IPMAN">3D Human Pose Estimation via Intuitive Physics</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, Lea Müller, Chun-Hao P. Huang, Omid Taheri, Michael Black, Dimitrios Tzionas</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2023</div>
+                        <div class="description">
+                            IPMAN estimates a 3D body from a color image in a "stable" configuration by encouraging plausible floor contact and overlapping CoP and CoM. It exploits interpenetration of the body mesh with the ground plane as a heuristic for pressure.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tripathi_3D_Human_Pose_Estimation_via_Intuitive_Physics_CVPR_2023_paper.html" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('ipman_abs')" class="paper-link">Abstract</a>
+                            <a href="https://ipman.is.tue.mpg.de/" class="paper-link">Project</a>
+                            <a href="https://moyo.is.tue.mpg.de/" class="paper-link">Dataset</a>
+                            <a href="https://www.youtube.com/watch?v=eZTtLUMnGIg" class="paper-link">Video</a>
+                            <a href="javascript:togglebib('ipman')" class="paper-link togglebib">BibTeX</a>
+                            <a href="https://drive.google.com/file/d/1n8QeOI_WRqcVDUMrB-lG2NCJURhBjppG/view?usp=sharing" class="paper-link">Poster</a>
+                        </div>
+                        <p style="text-align: justify;"><i id="ipman_abs" style="display: none;">The estimation of 3D human body shape and pose from images has advanced rapidly. While the results are often well aligned with image features in the camera view, the 3D pose is often physically implausible; bodies lean, float, or penetrate the floor. This is because most methods ignore the fact that bodies are typically supported by the scene. To address this, some methods exploit physics engines to enforce physical plausibility. Such methods, however, are not differentiable, rely on unrealistic proxy bodies, and are difficult to integrate into existing optimization and learning frameworks. To account for this, we take a different approach that exploits novel intuitive-physics (IP) terms that can be inferred from a 3D SMPL body interacting with the scene. Specifically, we infer biomechanically relevant features such as the pressure heatmap of the body on the floor, the Center of Pressure (CoP) from the heatmap, and the SMPL body's Center of Mass (CoM) projected on the floor. With these, we develop IPMAN, to estimate a 3D body from a color image in a "stable" configuration by encouraging plausible floor contact and overlapping CoP and CoM. Our IP terms are intuitive, easy to implement, fast to compute, and can be integrated into any SMPL-based optimization or regression method; we show examples of both. To evaluate our method, we present MoYo, a dataset with synchronized multi-view color images and 3D bodies with complex poses, body-floor contact, and ground-truth CoM and pressure. Evaluation on MoYo, RICH and Human3.6M show that our IP terms produce more plausible results than the state of the art; they improve accuracy for static poses, while not hurting dynamic ones. Code and data will be available for research.</i></p>
+                        <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{tripathi2023ipman,
 title = {{3D} Human Pose Estimation via Intuitive Physics},
 author = {Tripathi, Shashank and M{\"u}ller, Lea and Huang, Chun-Hao P. and
@@ -674,75 +627,33 @@ Recognition (CVPR)},
 month = {June},
 year = {2023}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/bite_teaser_2.gif">
-                                        <img src="assets/bite_teaser_2.gif" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://bite.is.tue.mpg.de/" id="IPMAN">
-                                            <heading>BITE: Beyond Priors for Improved Three-D Dog Pose Estimation
-                                            </heading>
-                                        </a><br>
-                                        Nadine Rüegg, <strong>Shashank Tripathi</strong>, Konrad Schindler, Michael J. Black, Silvia
-                                        Zuffi<br>
-                                        <em><a href="http://cvpr2023.thecvf.com/">Computer Vision and Pattern
-                                                Recognition (CVPR)
-                                                2023 </a></href> </em>
-                                        <!-- <em>(under submission)</a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        BITE enables 3D shape and pose estimation of dogs from a single input image. The
-                                        model handles a wide range of shapes and breeds, as well as challenging postures
-                                        far from the available training poses, like sitting or lying on the ground.
-                                        <br>
+                <!-- ...existing code... (next publication) -->
 
-                                    </p>
-
-                                    <div class="paper" id="bite">
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/CVPR2023/html/Ruegg_BITE_Beyond_Priors_for_Improved_Three-D_Dog_Pose_Estimation_CVPR_2023_paper.html">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;bite_abs&#39;)">abstract</a> |
-                                        <a href="https://bite.is.tue.mpg.de/">project</a> |
-                                        <a href="https://www.youtube.com/watch?v=mOeLtNk070E">video</a> |
-                                        <a shape="rect" href="javascript:togglebib(&#39;bite&#39;)"
-                                            class="togglebib">bibtex</a>
-                                        <!--                             <a href="assets/poster_v5_final_print.pdf">poster</a> -->
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
-
-
-                                        <p align="justify"><i id="mime_abs" style="display: none;"> We address the
-                                                problem of inferring the 3D shape and pose of dogs from images. Given
-                                                the lack of 3D training data, this problem is challenging, and the best
-                                                methods lag behind those designed to estimate human shape and pose. To
-                                                make progress, we attack the problem from multiple sides at once. First,
-                                                we need a good 3D shape prior, like those available for humans. To that
-                                                end, we learn a dog-specific 3D parametric model, called D-SMAL. Second,
-                                                existing methods focus on dogs in standing poses because when they sit
-                                                or lie down, their legs are self occluded and their bodies deform.
-                                                Without access to a good pose prior or 3D data, we need an alternative
-                                                approach. To that end, we exploit contact with the ground as a form of
-                                                side information. We consider an existing large dataset of dog images
-                                                and label any 3D contact of the dog with the ground. We exploit
-                                                body-ground contact in estimating dog pose and find that it
-                                                significantly improves results. Third, we develop a novel neural network
-                                                architecture to infer and exploit this contact information. Fourth, to
-                                                make progress, we have to be able to measure it. Current evaluation
-                                                metrics are based on 2D features like keypoints and silhouettes, which
-                                                do not directly correlate with 3D errors. To address this, we create a
-                                                synthetic dataset containing rendered images of scanned 3D dogs. With
-                                                these advances, our method recovers significantly better dog shape and
-                                                pose than the state of the art, and we evaluate this improvement in 3D.
-                                                Our code, model and test dataset are publicly available for research
-                                                purposes at https://bite.is.tue.mpg.de. </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/bite_teaser_2.gif" alt="BITE: Beyond Priors for Improved Three-D Dog Pose Estimation">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://bite.is.tue.mpg.de/" id="BITE">BITE: Beyond Priors for Improved Three-D Dog Pose Estimation</a></h3>
+                        <div class="authors">Nadine Rüegg, <strong>Shashank Tripathi</strong>, Konrad Schindler, Michael J. Black, Silvia Zuffi</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2023</div>
+                        <div class="description">
+                            BITE enables 3D shape and pose estimation of dogs from a single input image. The model handles a wide range of shapes and breeds, as well as challenging postures far from the available training poses, like sitting or lying on the ground.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Ruegg_BITE_Beyond_Priors_for_Improved_Three-D_Dog_Pose_Estimation_CVPR_2023_paper.html" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('bite_abs')" class="paper-link">Abstract</a>
+                            <a href="https://bite.is.tue.mpg.de/" class="paper-link">Project</a>
+                            <a href="https://www.youtube.com/watch?v=mOeLtNk070E" class="paper-link">Video</a>
+                            <a href="javascript:togglebib('bite')" class="paper-link togglebib">BibTeX</a>
+                            <a href="assets/poster_v5_final_print.pdf" class="paper-link">Poster</a>
+                        </div>
+                        <p style="text-align: justify;"><i id="bite_abs" style="display: none;">We address the problem of inferring the 3D shape and pose of dogs from images. Given the lack of 3D training data, this problem is challenging, and the best methods lag behind those designed to estimate human shape and pose. To make progress, we attack the problem from multiple sides at once. First, we need a good 3D shape prior, like those available for humans. To that end, we learn a dog-specific 3D parametric model, called D-SMAL. Second, existing methods focus on dogs in standing poses because when they sit or lie down, their legs are self occluded and their bodies deform. Without access to a good pose prior or 3D data, we need an alternative approach. To that end, we exploit contact with the ground as a form of side information. We consider an existing large dataset of dog images and label any 3D contact of the dog with the ground. We exploit body-ground contact in estimating dog pose and find that it significantly improves results. Third, we develop a novel neural network architecture to infer and exploit this contact information. Fourth, to make progress, we have to be able to measure it. Current evaluation metrics are based on 2D features like keypoints and silhouettes, which do not directly correlate with 3D errors. To address this, we create a synthetic dataset containing rendered images of scanned 3D dogs. With these advances, our method recovers significantly better dog shape and pose than the state of the art, and we evaluate this improvement in 3D. Our code, model and test dataset are publicly available for research purposes at https://bite.is.tue.mpg.de.</i></p>
+                        <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{bite2023rueegg,
 title = {{BITE}: Beyond Priors for Improved Three-{D} Dog Pose Estimation},
 author = {R\"uegg, Nadine and Tripathi, Shashank and Schindler, Konrad and
@@ -754,79 +665,35 @@ pages = {8867-8876},
 month = {June},
 year = {2023}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/mime_teaser.gif">
-                                        <img src="assets/mime_teaser.gif" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://mime.is.tue.mpg.de/" id="IPMAN">
-                                            <heading>MIME: Human-Aware 3D Scene Generation</heading>
-                                        </a><br>
-                                        Hongwei Yi, Chun-Hao P. Huang, <strong>Shashank Tripathi</strong>, Lea Hering,
-                                        Justus Thies,
-                                        Michael J. Black<br>
-                                        <em><a href="http://cvpr2023.thecvf.com/">Computer Vision and Pattern
-                                                Recognition (CVPR)
-                                                2023 </a></href> </em>
-                                        <!-- <em>(under submission)</a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        MIME takes 3D human motion capture and generates plausible 3D scenes that are
-                                        consistent with the motion. Why? Most mocap sessions capture the person but not
-                                        the scene.
-                                        <br>
-
-                                    </p>
-
-                                    <div class="paper" id="mime">
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/CVPR2023/html/Yi_MIME_Human-Aware_3D_Scene_Generation_CVPR_2023_paper.html">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;mime_abs&#39;)">abstract</a> |
-                                        <a href="https://mime.is.tue.mpg.de/">project</a> |
-                                        <a
-                                            href="https://drive.google.com/file/d/1LfaS9ijbTJZ4rDacJa3Syzljj1lRiYss/view?usp=sharing">video</a>
-                                        |
-                                        <a shape="rect" href="javascript:togglebib(&#39;mime&#39;)"
-                                            class="togglebib">bibtex</a>
-                                        <!--                             <a href="assets/poster_v5_final_print.pdf">poster</a> -->
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
-
-
-                                        <p align="justify"><i id="mime_abs" style="display: none;"> Generating realistic
-                                                3D worlds occupied by moving humans has many applications in games,
-                                                architecture, and synthetic data creation. But generating such scenes is
-                                                expensive and labor intensive. Recent work generates human poses and
-                                                motions given a 3D scene. Here, we take the opposite approach and
-                                                generate 3D indoor scenes given 3D human motion. Such motions can come
-                                                from archival motion capture or from IMU sensors worn on the body,
-                                                effectively turning human movement in a "scanner" of the 3D world.
-                                                Intuitively, human movement indicates the free-space in a room and human
-                                                contact indicates surfaces or objects that support activities such as
-                                                sitting, lying or touching. We propose MIME (Mining Interaction and
-                                                Movement to infer 3D Environments), which is a generative model of
-                                                indoor scenes that produces furniture layouts that are consistent with
-                                                the human movement. MIME uses an auto-regressive transformer
-                                                architecture that takes the already generated objects in the scene as
-                                                well as the human motion as input, and outputs the next plausible
-                                                object. To train MIME, we build a dataset by populating the 3D FRONT
-                                                scene dataset with 3D humans. Our experiments show that MIME produces
-                                                more diverse and plausible 3D scenes than a recent generative scene
-                                                method that does not know about human movement. Code and data will be
-                                                available for research. </i></p>
-
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/mime_teaser.gif" alt="MIME: Human-Aware 3D Scene Generation">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://mime.is.tue.mpg.de/" id="MIME">MIME: Human-Aware 3D Scene Generation</a></h3>
+                        <div class="authors">Hongwei Yi, Chun-Hao P. Huang, <strong>Shashank Tripathi</strong>, Lea Hering, Justus Thies, Michael J. Black</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2023</div>
+                        <div class="description">
+                            MIME takes 3D human motion capture and generates plausible 3D scenes that are consistent with the motion. Why? Most mocap sessions capture the person but not the scene.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Yi_MIME_Human-Aware_3D_Scene_Generation_CVPR_2023_paper.html" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('mime_abs')" class="paper-link">Abstract</a>
+                            <a href="https://mime.is.tue.mpg.de/" class="paper-link">Project</a>
+                            <a href="https://drive.google.com/file/d/1LfaS9ijbTJZ4rDacJa3Syzljj1lRiYss/view?usp=sharing" class="paper-link">Video</a>
+                            <a href="javascript:togglebib('mime')" class="paper-link togglebib">BibTeX</a>
+                            <a href="assets/poster_v5_final_print.pdf" class="paper-link">Poster</a>
+                        </div>
+                        <p style="text-align: justify;"><i id="mime_abs" style="display: none;">Generating realistic 3D worlds occupied by moving humans has many applications in games, architecture, and synthetic data creation. But generating such scenes is expensive and labor intensive. Recent work generates human poses and motions given a 3D scene. Here, we take the opposite approach and generate 3D indoor scenes given 3D human motion. Such motions can come from archival motion capture or from IMU sensors worn on the body, effectively turning human movement in a "scanner" of the 3D world. Intuitively, human movement indicates the free-space in a room and human contact indicates surfaces or objects that support activities such as sitting, lying or touching. We propose MIME (Mining Interaction and Movement to infer 3D Environments), which is a generative model of indoor scenes that produces furniture layouts that are consistent with the human movement. MIME uses an auto-regressive transformer architecture that takes the already generated objects in the scene as well as the human motion as input, and outputs the next plausible object. To train MIME, we build a dataset by populating the 3D FRONT scene dataset with 3D humans. Our experiments show that MIME produces more diverse and plausible 3D scenes than a recent generative scene method that does not know about human movement. Code and data will be available for research.</i></p>
+                        <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{yi2022mime,
 title = {{MIME}: Human-Aware {3D} Scene Generation},
 author = {Yi, Hongwei and Huang, Chun-Hao P. and Tripathi, Shashank and
-Hering, Lea and
-Thies, Justus and Black, Michael J.},
+Hering, Lea and Thies, Justus and Black, Michael J.},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and
 Pattern
 Recognition (CVPR)},
@@ -834,77 +701,63 @@ pages={12965-12976},
 month = {June},
 year = {2023}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/peri_arch3.png">
-                                        <img src="assets/peri_arch3.png" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://link.springer.com/chapter/10.1007/978-3-031-25075-0_6"
-                                            id="PERI">
-                                            <heading>PERI: Part Aware Emotion Recognition in the Wild</heading>
-                                        </a><br>
-                                        Akshita Mittel, <strong>Shashank Tripathi</strong><br>
-                                        <em><a href="https://eccv2022.ecva.net/">European Conference on Computer Vision
-                                                Workshops (ECCVW)
-                                                2022 </a></href> </em>
-                                        <!-- <em>(under submission)</a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        An in-the-wild emotion recognition network that leverages both body pose and
-                                        facial landmarks using a novel part aware spatial (PAS) image representation and
-                                        context infusion (Cont-In) blocks.
-                                        <br>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/peri_arch3.png" alt="PERI: Part Aware Emotion Recognition in the Wild">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-25075-0_6" id="PERI">PERI: Part Aware Emotion Recognition in the Wild</a></h3>
+                        <div class="authors">Akshita Mittel, <strong>Shashank Tripathi</strong></div>
+                        <div class="venue">European Conference on Computer Vision Workshops (ECCVW) 2022</div>
+                        <div class="description">
+                            An in-the-wild emotion recognition network that leverages both body pose and facial landmarks using a novel part aware spatial (PAS) image representation and context infusion (Cont-In) blocks.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/2210.10130" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('peri_abs')" class="paper-link">Abstract</a>
+                            <!-- <a href="https://rawalkhirodkar.github.io/ochmr">project</a> | -->
+                            <!-- <a href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s">video</a> -->
+                            <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
+                            <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
 
-                                    </p>
-
-                                    <div class="paper" id="peri">
-                                        <a href="https://arxiv.org/abs/2210.10130">paper</a> |
-                                        <a href="javascript:toggleblock(&#39;peri_abs&#39;)">abstract</a>
-                                        <!-- <a href="https://rawalkhirodkar.github.io/ochmr">project</a> | -->
-                                        <!-- <a href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s">video</a> -->
-                                        <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
-                                        <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
 
-                                        <p align="justify"><i id="peri_abs" style="display: none;"> Emotion recognition
-                                                aims to interpret the emotional states of a person based on various
-                                                inputs including audio, visual, and textual cues. This paper focuses on
-                                                emotion recognition using visual features. To leverage the correlation
-                                                between facial expression and the emotional state of a person,
-                                                pioneering methods rely primarily on facial features. However, facial
-                                                features are often unreliable in natural unconstrained scenarios, such
-                                                as in crowded scenes, as the face lacks pixel resolution and contains
-                                                artifacts due to occlusion and blur. To address this, in the wild
-                                                emotion recognition exploits full-body person crops as well as the
-                                                surrounding scene context. In a bid to use body pose for emotion
-                                                recognition, such methods fail to realize the potential that facial
-                                                expressions, when available, offer. Thus, the aim of this paper is
-                                                two-fold. First, we demonstrate our method, PERI, to leverage both body
-                                                pose and facial landmarks. We create part aware spatial (PAS) images by
-                                                extracting key regions from the input image using a mask generated from
-                                                both body pose and facial landmarks. This allows us to exploit body pose
-                                                in addition to facial context whenever available. Second, to reason from
-                                                the PAS images, we introduce context infusion (Cont-In) blocks. These
-                                                blocks attend to part-specific information, and pass them onto the
-                                                intermediate features of an emotion recognition network. Our approach is
-                                                conceptually simple and can be applied to any existing emotion
-                                                recognition method. We provide our results on the publicly available in
-                                                the wild EMOTIC dataset. Compared to existing methods, PERI achieves
-                                                superior performance and leads to significant improvements in the mAP of
-                                                emotion categories, while decreasing Valence, Arousal and Dominance
-                                                errors. Importantly, we observe that our method improves performance in
-                                                both images with fully visible faces as well as in images with occluded
-                                                or blurred faces. </i></p>
+                            <p align="justify"><i id="peri_abs" style="display: none;"> Emotion recognition
+                                    aims to interpret the emotional states of a person based on various
+                                    inputs including audio, visual, and textual cues. This paper focuses on
+                                    emotion recognition using visual features. To leverage the correlation
+                                    between facial expression and the emotional state of a person,
+                                    pioneering methods rely primarily on facial features. However, facial
+                                    features are often unreliable in natural unconstrained scenarios, such
+                                    as in crowded scenes, as the face lacks pixel resolution and contains
+                                    artifacts due to occlusion and blur. To address this, in the wild
+                                    emotion recognition exploits full-body person crops as well as the
+                                    surrounding scene context. In a bid to use body pose for emotion
+                                    recognition, such methods fail to realize the potential that facial
+                                    expressions, when available, offer. Thus, the aim of this paper is
+                                    two-fold. First, we demonstrate our method, PERI, to leverage both body
+                                    pose and facial landmarks. We create part aware spatial (PAS) images by
+                                    extracting key regions from the input image using a mask generated from
+                                    both body pose and facial landmarks. This allows us to exploit body pose
+                                    in addition to facial context whenever available. Second, to reason from
+                                    the PAS images, we introduce context infusion (Cont-In) blocks. These
+                                    blocks attend to part-specific information, and pass them onto the
+                                    intermediate features of an emotion recognition network. Our approach is
+                                    conceptually simple and can be applied to any existing emotion
+                                    recognition method. We provide our results on the publicly available in
+                                    the wild EMOTIC dataset. Compared to existing methods, PERI achieves
+                                    superior performance and leads to significant improvements in the mAP of
+                                    emotion categories, while decreasing Valence, Arousal and Dominance
+                                    errors. Importantly, we observe that our method improves performance in
+                                    both images with fully visible faces as well as in images with occluded
+                                    or blurred faces. </i></p>
 
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{mitell2022peri,
 title = {{PERI}: Part Aware Emotion Recognition in the Wild},
 author = {Mittel, Akshita and Tripathi, Shashank},
@@ -913,72 +766,61 @@ year = {2023},
 publisher="Springer Nature Switzerland",
 pages="76--92",
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/teaser_ochmr_square.png">
-                                        <img src="assets/teaser_ochmr_square.png" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Khirodkar_Occluded_Human_Mesh_Recovery_CVPR_2022_paper.html"
-                                            id="OCHMR">
-                                            <heading>Occluded Human Mesh Recovery</heading>
-                                        </a><br>
-                                        Rawal Khirodkar, <strong>Shashank Tripathi</strong>, Kris Kitani<br>
-                                        <em><a href="http://cvpr2022.thecvf.com/">Computer Vision and Pattern
-                                                Recognition (CVPR)
-                                                2022 </a></href> </em>
-                                        <!-- <em>(under submission)</a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        A novel top-down mesh recovery architecture capable of leveraging image spatial
-                                        context for handling multi-person occlusion and crowding.
-                                        <br>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/teaser_ochmr_square.png" alt="Occluded Human Mesh Recovery">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Khirodkar_Occluded_Human_Mesh_Recovery_CVPR_2022_paper.html" id="OCHMR">Occluded Human Mesh Recovery</a></h3>
+                        <div class="authors">Rawal Khirodkar, <strong>Shashank Tripathi</strong>, Kris Kitani</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2022</div>
+                        <div class="description">
+                            A novel top-down mesh recovery architecture capable of leveraging image spatial
+                            context for handling multi-person occlusion and crowding.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/2203.13349" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('ochmr_abs')" class="paper-link">Abstract</a>
+                            <a href="https://rawalkhirodkar.github.io/ochmr" class="paper-link">Project</a>
+                            <!-- <a href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s">video</a> -->
+                            <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
+                            <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
 
-                                    </p>
-
-                                    <div class="paper" id="ochmr">
-                                        <a href="https://arxiv.org/abs/2203.13349">paper</a> |
-                                        <a href="javascript:toggleblock(&#39;ochmr_abs&#39;)">abstract</a> |
-                                        <a href="https://rawalkhirodkar.github.io/ochmr">project</a> |
-                                        <!-- <a href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s">video</a> -->
-                                        <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
-                                        <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
 
-                                        <p align="justify"><i id="ochmr_abs" style="display: none;"> Top-down methods
-                                                for monocular human mesh recovery have two stages: (1) detect human
-                                                bounding boxes; (2) treat each bounding box as an independent
-                                                single-human mesh recovery task. Unfortunately, the single-human
-                                                assumption does not hold in images with multi-human occlusion and
-                                                crowding. Consequently, top-down methods have difficulties in recovering
-                                                accurate 3D human meshes under severe person-person occlusion. To
-                                                address this, we present Occluded Human Mesh Recovery (OCHMR) - a novel
-                                                top-down mesh recovery approach that incorporates image spatial context
-                                                to overcome the limitations of the single-human assumption. The approach
-                                                is conceptually simple and can be applied to any existing top-down
-                                                architecture. Along with the input image, we condition the top-down
-                                                model on spatial context from the image in the form of body-center
-                                                heatmaps. To reason from the predicted body centermaps, we introduce
-                                                Contextual Normalization (CoNorm) blocks to adaptively modulate
-                                                intermediate features of the top-down model. The contextual conditioning
-                                                helps our model disambiguate between two severely overlapping human
-                                                bounding-boxes, making it robust to multi-person occlusion. Compared
-                                                with state-of-the-art methods, OCHMR achieves superior performance on
-                                                challenging multi-person benchmarks like 3DPW, CrowdPose and OCHuman.
-                                                Specifically, our proposed contextual reasoning architecture applied to
-                                                the SPIN model with ResNet-50 backbone results in 75.2 PMPJPE on
-                                                3DPW-PC, 23.6 AP on CrowdPose and 37.7 AP on OCHuman datasets, a
-                                                significant improvement of 6.9 mm, 6.4 AP and 20.8 AP respectively over
-                                                the baseline. Code and models will be released. </i></p>
+                            <p align="justify"><i id="ochmr_abs" style="display: none;"> Top-down methods
+                                    for monocular human mesh recovery have two stages: (1) detect human
+                                    bounding boxes; (2) treat each bounding box as an independent
+                                    single-human mesh recovery task. Unfortunately, the single-human
+                                    assumption does not hold in images with multi-human occlusion and
+                                    crowding. Consequently, top-down methods have difficulties in recovering
+                                    accurate 3D human meshes under severe person-person occlusion. To
+                                    address this, we present Occluded Human Mesh Recovery (OCHMR) - a novel
+                                    top-down mesh recovery approach that incorporates image spatial context
+                                    to overcome the limitations of the single-human assumption. The approach
+                                    is conceptually simple and can be applied to any existing top-down
+                                    architecture. Along with the input image, we condition the top-down
+                                    model on spatial context from the image in the form of body-center
+                                    heatmaps. To reason from the predicted body centermaps, we introduce
+                                    Contextual Normalization (CoNorm) blocks to adaptively modulate
+                                    intermediate features of the top-down model. The contextual conditioning
+                                    helps our model disambiguate between two severely overlapping human
+                                    bounding-boxes, making it robust to multi-person occlusion. Compared
+                                    with state-of-the-art methods, OCHMR achieves superior performance on
+                                    challenging multi-person benchmarks like 3DPW, CrowdPose and OCHuman.
+                                    Specifically, our proposed contextual reasoning architecture applied to
+                                    the SPIN model with ResNet-50 backbone results in 75.2 PMPJPE on
+                                    3DPW-PC, 23.6 AP on CrowdPose and 37.7 AP on OCHuman datasets, a
+                                    significant improvement of 6.9 mm, 6.4 AP and 20.8 AP respectively over
+                                    the baseline. Code and models will be released. </i></p>
 
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{khirodkar_ochmr_2022,
 title = {Occluded Human Mesh Recovery},
 author = {Khirodkar, Rawal and Tripathi, Shashank and Kitani, Kris},
@@ -989,76 +831,65 @@ year = {2022},
 doi = {},
 month_numeric = {6}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/agora_teaser.png">
-                                        <img src="assets/agora_teaser.png" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://cvml.page.link/agora" id="AGORA">
-                                            <heading>AGORA: Avatars in Geography Optimized for Regression Analysis
-                                            </heading>
-                                        </a><br>
-                                        Priyanka Patel, Chun-Hao P. Huang, Joachim Tesch, David T. Hoffman, <strong>Shashank Tripathi</strong> and Michael J. Black<br>
-                                        <em><a href="http://cvpr2020.thecvf.com/">Computer Vision and Pattern
-                                                Recognition (CVPR)
-                                                2021 </a></href> </em>
-                                        <!-- <em>(under submission)</a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        A synthetic dataset with high realism and highly accurate ground truth
-                                        containing 4240 textured scans and SMPLX fits.
-                                        <br>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/agora_teaser.png" alt="AGORA: Avatars in Geography Optimized for Regression Analysis">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://cvml.page.link/agora" id="AGORA">AGORA: Avatars in Geography Optimized for Regression Analysis</a></h3>
+                        <div class="authors">Priyanka Patel, Chun-Hao P. Huang, Joachim Tesch, David T. Hoffman, <strong>Shashank Tripathi</strong> and Michael J. Black</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2021</div>
+                        <div class="description">
+                            A synthetic dataset with high realism and highly accurate ground truth
+                            containing 4240 textured scans and SMPLX fits.
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/2104.14643" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('agora_abs')" class="paper-link">Abstract</a>
+                            <a href="https://agora.is.tue.mpg.de/" class="paper-link">Project</a>
+                            <a
+                                href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s" class="paper-link">Video</a>
+                            <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
+                            <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
 
-                                    </p>
-
-                                    <div class="paper" id="agora">
-                                        <a href="https://arxiv.org/abs/2104.14643">paper</a> |
-                                        <a href="javascript:toggleblock(&#39;agora_abs&#39;)">abstract</a> |
-                                        <a href="https://agora.is.tue.mpg.de/">project</a> |
-                                        <a
-                                            href="https://www.https://www.youtube.com/watch?v=Q_43QXR1pzY&t=42s">video</a>
-                                        <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
-                                        <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
 
-                                        <p align="justify"><i id="agora_abs" style="display: none;"> While the accuracy
-                                                of 3D human pose estimation from images has steadily improved on
-                                                benchmark datasets, the best methods still fail in many real-world
-                                                scenarios. This suggests that there is a domain gap between current
-                                                datasets and common scenes containing people. To obtain ground-truth 3D
-                                                pose, current datasets limit the complexity of clothing, environmental
-                                                conditions, number of subjects, and occlusion. Moreover, current
-                                                datasets evaluate sparse 3D joint locations corresponding to the major
-                                                joints of the body, ignoring the hand pose and the face shape. To
-                                                evaluate the current state-of-the-art methods on more challenging
-                                                images, and to drive the field to address new problems, we introduce
-                                                AGORA, a synthetic dataset with high realism and highly accurate ground
-                                                truth. Here we use 4240 commercially-available, high-quality, textured
-                                                human scans in diverse poses and natural clothing; this includes 257
-                                                scans of children. We create reference 3D poses and body shapes by
-                                                fitting the SMPL-X body model (with face and hands) to the 3D scans,
-                                                taking into account clothing. We create around 14K training and 3K test
-                                                images by rendering between 5 and 15 people per image us- ing either
-                                                image-based lighting or rendered 3D environments, taking care to make
-                                                the images physically plausible and photoreal. In total, AGORA consists
-                                                of 173K individual person crops. We evaluate existing state-of-the- art
-                                                methods for 3D human pose estimation on this dataset. and find that most
-                                                methods perform poorly on images of children. Hence, we extend the
-                                                SMPL-X model to better capture the shape of children. Additionally, we
-                                                fine- tune methods on AGORA and show improved performance on both AGORA
-                                                and 3DPW, confirming the realism of the dataset. We provide all the
-                                                registered 3D reference training data, rendered images, and a web-based
-                                                evaluation site at https://agora.is.tue.mpg.de/. </i></p>
+                            <p align="justify"><i id="agora_abs" style="display: none;"> While the accuracy
+                                    of 3D human pose estimation from images has steadily improved on
+                                    benchmark datasets, the best methods still fail in many real-world
+                                    scenarios. This suggests that there is a domain gap between current
+                                    datasets and common scenes containing people. To obtain ground-truth 3D
+                                    pose, current datasets limit the complexity of clothing, environmental
+                                    conditions, number of subjects, and occlusion. Moreover, current
+                                    datasets evaluate sparse 3D joint locations corresponding to the major
+                                    joints of the body, ignoring the hand pose and the face shape. To
+                                    evaluate the current state-of-the-art methods on more challenging
+                                    images, and to drive the field to address new problems, we introduce
+                                    AGORA, a synthetic dataset with high realism and highly accurate ground
+                                    truth. Here we use 4240 commercially-available, high-quality, textured
+                                    human scans in diverse poses and natural clothing; this includes 257
+                                    scans of children. We create reference 3D poses and body shapes by
+                                    fitting the SMPL-X body model (with face and hands) to the 3D scans,
+                                    taking into account clothing. We create around 14K training and 3K test
+                                    images by rendering between 5 and 15 people per image us- ing either
+                                    image-based lighting or rendered 3D environments, taking care to make
+                                    the images physically plausible and photoreal. In total, AGORA consists
+                                    of 173K individual person crops. We evaluate existing state-of-the- art
+                                    methods for 3D human pose estimation on this dataset. and find that most
+                                    methods perform poorly on images of children. Hence, we extend the
+                                    SMPL-X model to better capture the shape of children. Additionally, we
+                                    fine- tune methods on AGORA and show improved performance on both AGORA
+                                    and 3DPW, confirming the realism of the dataset. We provide all the
+                                    registered 3D reference training data, rendered images, and a web-based
+                                    evaluation site at https://agora.is.tue.mpg.de/. </i></p>
 
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{tripathi2019learning,
 title={Learning to generate synthetic data via compositing},
 author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and
@@ -1069,79 +900,67 @@ Recognition},
 pages={461--470},
 year={2019}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle">
-                                    <a href="assets/pose_combined.gif">
-                                        <img src="assets/pose_combined.gif" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://cvml.page.link/pose" id="PoseNet3D">
-                                            <heading>PoseNet3D: Learning Temporally Consistent 3D Human Pose via
-                                                Knowledge Distillation</heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, <a href="https://www.siddhantranade.com/">Siddhant
-                                            Ranade</a>, Ambrish
-                                        Tyagi and Amit Agrawal<br>
-                                        <em><a href="http://cvpr2020.thecvf.com/">International Conference on 3D Vision
-                                                (3DV), 2020 </a></href> </em>
-                                        <br>
-                                        <em>
-                                            <font color="red">(Oral presentation)</font></a></href>
-                                        </em>
-                                        <!-- <em>(under submission)</a></href> </em> -->
-                                        <br>
-                                        <br>
-                                        Temporally consistent recovery of 3D human pose from 2D joints without using 3D
-                                        data in any
-                                        form<br>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/pose_combined.gif" alt="PoseNet3D: Learning Temporally Consistent 3D Human Pose via Knowledge Distillation">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://cvml.page.link/pose" id="PoseNet3D">PoseNet3D: Learning Temporally Consistent 3D Human Pose via Knowledge Distillation</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, <a href="https://www.siddhantranade.com/">Siddhant
+                            Ranade</a>, Ambrish
+                        Tyagi and Amit Agrawal</div>
+                        <div class="venue">International Conference on 3D Vision (3DV), 2020</div>
+                        <div class="award">(Oral presentation)</div>
+                        <div class="description">
+                            Temporally consistent recovery of 3D human pose from 2D joints without using 3D
+                            data in any
+                            form
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/2003.03473" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('posenet3d_abs')" class="paper-link">Abstract</a>
+                            <a
+                                href="https://www.youtube.com/playlist?list=PL46Tof4i1hsHK6D-y8oBSRK-DpmvfyVlf" class="paper-link">videos</a>
+                            <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
+                            <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
 
-                                    </p>
-
-                                    <div class="paper" id="posenet3d">
-                                        <a href="https://arxiv.org/abs/2003.03473">paper</a> |
-                                        <a href="javascript:toggleblock(&#39;posenet3d_abs&#39;)">abstract</a> |
-                                        <a
-                                            href="https://www.youtube.com/playlist?list=PL46Tof4i1hsHK6D-y8oBSRK-DpmvfyVlf">videos</a>
-                                        <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
-                                        <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
 
-                                        <p align="justify"><i id="posenet3d_abs" style="display: none;"> Recovering 3D
-                                                human pose
-                                                from 2D joints is a highly unconstrained problem. We propose a novel
-                                                neural network
-                                                architecture, PoseNet3D, that takes 2D joints as input and outputs 3D
-                                                skeletons and SMPL
-                                                pose parameters. By casting our learning approach in a Knowledge
-                                                Distillation framework,
-                                                we avoid using any 3D data such as paired 2D-3D data, unpaired 3D data,
-                                                motion capture
-                                                sequences or multi-view images during training. We first train a teacher
-                                                network that
-                                                outputs 3D skeletons, using only 2D poses for training. The teacher
-                                                network distills its
-                                                knowledge to a student network that predicts 3D pose in SMPL
-                                                representation. Finally,
-                                                both the teacher and the student networks are jointly fine tuned in an
-                                                end-to-end manner
-                                                using self-consistency and adversarial losses, improving the accuracy of
-                                                the individual
-                                                networks. Results on Human3.6M dataset for 3D human pose estimation
-                                                demonstrate that our
-                                                approach reduces the 3D joint prediction error by 18% or more compared
-                                                to previous
-                                                methods. Qualitative results show that the recovered 3D poses and meshes
-                                                are natural,
-                                                realistic, and flow smoothly over consecutive frames. </i></p>
+                            <p align="justify"><i id="posenet3d_abs" style="display: none;"> Recovering 3D
+                                    human pose
+                                    from 2D joints is a highly unconstrained problem. We propose a novel
+                                    neural network
+                                    architecture, PoseNet3D, that takes 2D joints as input and outputs 3D
+                                    skeletons and SMPL
+                                    pose parameters. By casting our learning approach in a Knowledge
+                                    Distillation framework,
+                                    we avoid using any 3D data such as paired 2D-3D data, unpaired 3D data,
+                                    motion capture
+                                    sequences or multi-view images during training. We first train a teacher
+                                    network that
+                                    outputs 3D skeletons, using only 2D poses for training. The teacher
+                                    network distills its
+                                    knowledge to a student network that predicts 3D pose in SMPL
+                                    representation. Finally,
+                                    both the teacher and the student networks are jointly fine tuned in an
+                                    end-to-end manner
+                                    using self-consistency and adversarial losses, improving the accuracy of
+                                    the individual
+                                    networks. Results on Human3.6M dataset for 3D human pose estimation
+                                    demonstrate that our
+                                    approach reduces the 3D joint prediction error by 18% or more compared
+                                    to previous
+                                    methods. Qualitative results show that the recovered 3D poses and meshes
+                                    are natural,
+                                    realistic, and flow smoothly over consecutive frames. </i></p>
 
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{tripathi2019learning,
 title={Learning to generate synthetic data via compositing},
 author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and
@@ -1152,78 +971,68 @@ Recognition},
 pages={461--470},
 year={2019}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                        href="assets/terse_teaser.png"><img src="assets/terse_teaser.png"
-                                            width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://arxiv.org/abs/1904.05475" id="TERSE">
-                                            <heading>Learning to Generate Synthetic Data via Compositing</heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, <a href="https://siddharthachandra.github.io/">Siddhartha
-                                            Chandra</a>,
-                                        Amit Agrawal, Ambrish Tyagi, <a href="https://rehg.org/"> James Rehg</a> and
-                                        Visesh
-                                        Chari<br>
-                                        <em><a href="http://cvpr2019.thecvf.com/">Computer Vision and Pattern
-                                                Recognition (CVPR)
-                                                2019 </a></href> </em>
-                                        <br>
-                                        <br>
-                                        Efficient, task-aware and realisitic synthesis of composite images for training
-                                        classification and object detection models<br>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/terse_teaser.png" alt="Learning to Generate Synthetic Data via Compositing">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://arxiv.org/abs/1904.05475" id="TERSE">Learning to Generate Synthetic Data via Compositing</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, <a href="https://siddharthachandra.github.io/">Siddhartha
+                            Chandra</a>, Amit Agrawal, Ambrish Tyagi, <a href="https://rehg.org/"> James Rehg</a> and Visesh
+                        Chari</div>
+                        <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2019</div>
+                        <div class="description">
+                            Efficient, task-aware and realisitic synthesis of composite images for training
+                            classification and object detection models
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/1904.05475" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('terse_abs')" class="paper-link">Abstract</a>
+                            <!--                            <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> |-->
+                            <a href="assets/poster_v5_final_print.pdf" class="paper-link">Poster</a>
 
-                                    </p>
-
-                                    <div class="paper" id="terse">
-                                        <a href="https://arxiv.org/abs/1904.05475">paper</a> |
-                                        <a href="javascript:toggleblock(&#39;terse_abs&#39;)">abstract</a> |
-                                        <!--                            <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> |-->
-                                        <a href="assets/poster_v5_final_print.pdf">poster</a>
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
 
-                                        <p align="justify"><i id="terse_abs" style="display: none;"> We present a
-                                                task-aware
-                                                approach to synthetic data generation. Our framework employs a trainable
-                                                synthesizer
-                                                network that is optimized to produce meaningful training samples by
-                                                assessing the
-                                                strengths and weaknesses of a `target' network. The synthesizer and
-                                                target networks are
-                                                trained in an adversarial manner wherein each network is updated with a
-                                                goal to outdo
-                                                the other. Additionally, we ensure the synthesizer generates realistic
-                                                data by pairing
-                                                it with a discriminator trained on real-world images. Further, to make
-                                                the target
-                                                classifier invariant to blending artefacts, we introduce these artefacts
-                                                to background
-                                                regions of the training images so the target does not over-fit to them.
-                                                We demonstrate the efficacy of our approach by applying it to different
-                                                target networks
-                                                including a classification network on AffNIST, and two object detection
-                                                networks (SSD,
-                                                Faster-RCNN) on different datasets. On the AffNIST benchmark, our
-                                                approach is able to
-                                                surpass the baseline results with just half the training examples. On
-                                                the VOC person
-                                                detection benchmark, we show improvements of up to 2.7% as a result of
-                                                our data
-                                                augmentation. Similarly on the GMU detection benchmark, we report a
-                                                performance boost of
-                                                3.5% in mAP over the baseline method, outperforming the previous state
-                                                of the art
-                                                approaches by up to 7.5% on specific categories. </i></p>
+                            <p align="justify"><i id="terse_abs" style="display: none;"> We present a
+                                    task-aware
+                                    approach to synthetic data generation. Our framework employs a trainable
+                                    synthesizer
+                                    network that is optimized to produce meaningful training samples by
+                                    assessing the
+                                    strengths and weaknesses of a `target' network. The synthesizer and
+                                    target networks are
+                                    trained in an adversarial manner wherein each network is updated with a
+                                    goal to outdo
+                                    the other. Additionally, we ensure the synthesizer generates realistic
+                                    data by pairing
+                                    it with a discriminator trained on real-world images. Further, to make
+                                    the target
+                                    classifier invariant to blending artefacts, we introduce these artefacts
+                                    to background
+                                    regions of the training images so the target does not over-fit to them.
+                                    We demonstrate the efficacy of our approach by applying it to different
+                                    target networks
+                                    including a classification network on AffNIST, and two object detection
+                                    networks (SSD,
+                                    Faster-RCNN) on different datasets. On the AffNIST benchmark, our
+                                    approach is able to
+                                    surpass the baseline results with just half the training examples. On
+                                    the VOC person
+                                    detection benchmark, we show improvements of up to 2.7% as a result of
+                                    our data
+                                    augmentation. Similarly on the GMU detection benchmark, we report a
+                                    performance boost of
+                                    3.5% in mAP over the baseline method, outperforming the previous state
+                                    of the art
+                                    approaches by up to 7.5% on specific categories. </i></p>
 
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
     @inproceedings{tripathi2019learning,
     title={Learning to generate synthetic data via compositing},
     author={Tripathi, Shashank and Chandra, Siddhartha and Agrawal, Amit and
@@ -1234,156 +1043,129 @@ year={2019}
     pages={461--470},
     year={2019}
     }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                        href="assets/c2f_img.PNG"><img src="assets/c2f_img.PNG" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p>
-                                        <a href="https://www.eurekaselect.com/node/159218/article/c2f-coarse-to-fine-vision-control-system-for-automated-microassembly"
-                                            id="C2F">
-                                            <heading>C2F: Coarse-to-Fine Vision Control System for Automated
-                                                Microassembly</heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, Devesh Jain and Himanshu Dutt Sharma<br>
-                                        <em><a
-                                                href="https://benthamscience.com/journals/nanoscience-and-nanotechnology-asia/">Nanotechnology
-                                                and Nanoscience-Asia 2018 </a></href> </em>
-                                        <br>
-                                        <br>
-                                        Automated, visual-servoing based closed loop system to perform 3D
-                                        micromanipulation and
-                                        microassembly tasks<br>
-
-                                    </p>
-
-                                    <div class="paper" id="c2f">
-                                        <a
-                                            href="https://drive.google.com/file/d/0B0keZAN_TLL9VmZ2dlAxRlYzYjA/view">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;c2f_abs&#39;)">abstract</a> |
-                                        <a href="https://www.youtube.com/watch?v=lAagBmqj_Nw">video</a>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/c2f_img.PNG" alt="C2F: Coarse-to-Fine Vision Control System for Automated Microassembly">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://www.eurekaselect.com/node/159218/article/c2f-coarse-to-fine-vision-control-system-for-automated-microassembly" id="C2F">C2F: Coarse-to-Fine Vision Control System for Automated Microassembly</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, Devesh Jain and Himanshu Dutt Sharma</div>
+                        <div class="venue">Nanotechnology and Nanoscience-Asia 2018</div>
+                        <div class="description">
+                            Automated, visual-servoing based closed loop system to perform 3D
+                            micromanipulation and
+                            microassembly tasks
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://drive.google.com/file/d/0B0keZAN_TLL9VmZ2dlAxRlYzYjA/view" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('c2f_abs')" class="paper-link">Abstract</a>
+                            <a href="https://www.youtube.com/watch?v=lAagBmqj_Nw" class="paper-link">Video</a>
 
 
-                                        <!-- <a shape="rect" href="javascript:togglebib(&#39;c2f&#39;)" class="togglebib">bibtex</a> -->
+                            <!-- <a shape="rect" href="javascript:togglebib(&#39;c2f&#39;)" class="togglebib">bibtex</a> -->
 
 
-                                        <p align="justify"><i id="c2f_abs" style="display: none;">In this paper, authors
-                                                present the
-                                                development of a completely automated system to perform 3D
-                                                micromanipulation and
-                                                microassembly tasks. The microassembly workstation consists of a 3
-                                                degree-of-freedom
-                                                (DOF) MM3A® micromanipulator arm attached to a microgripper, two 2 DOF
-                                                PI® linear
-                                                micromotion stages, one optical microscope coupled with a CCD image
-                                                sensor, and two CMOS
-                                                cameras for coarse vision. The whole control strategy is subdivided into
-                                                sequential
-                                                vision based routines: manipulator detection and coarse alignment,
-                                                autofocus and fine
-                                                alignment of microgripper, target object detection, and performing the
-                                                required assembly
-                                                tasks. A section comparing various objective functions useful in the
-                                                autofocusing regime
-                                                is included. The control system is built entirely in the image frame,
-                                                eliminating the
-                                                need for system calibration, hence improving speed of operation. A
-                                                micromanipulation
-                                                experiment performing pick- and-place of a micromesh is illustrated.
-                                                This demonstrates a
-                                                three-fold reduction in setup and run time for fundamental
-                                                micromanipulation tasks, as
-                                                compared to manual operation. Accuracy, repeatability and reliability of
-                                                the programmed
-                                                system is analyzed.</i></p>
-                                    </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            <p align="justify"><i id="c2f_abs" style="display: none;">In this paper, authors
+                                    present the
+                                    development of a completely automated system to perform 3D
+                                    micromanipulation and
+                                    microassembly tasks. The microassembly workstation consists of a 3
+                                    degree-of-freedom
+                                    (DOF) MM3A® micromanipulator arm attached to a microgripper, two 2 DOF
+                                    PI® linear
+                                    micromotion stages, one optical microscope coupled with a CCD image
+                                    sensor, and two CMOS
+                                    cameras for coarse vision. The whole control strategy is subdivided into
+                                    sequential
+                                    vision based routines: manipulator detection and coarse alignment,
+                                    autofocus and fine
+                                    alignment of microgripper, target object detection, and performing the
+                                    required assembly
+                                    tasks. A section comparing various objective functions useful in the
+                                    autofocusing regime
+                                    is included. The control system is built entirely in the image frame,
+                                    eliminating the
+                                    need for system calibration, hence improving speed of operation. A
+                                    micromanipulation
+                                    experiment performing pick- and-place of a micromesh is illustrated.
+                                    This demonstrates a
+                                    three-fold reduction in setup and run time for fundamental
+                                    micromanipulation tasks, as
+                                    compared to manual operation. Accuracy, repeatability and reliability of
+                                    the programmed
+                                    system is analyzed.</i></p>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                        href="assets/isbi_image.png"><img src="assets/isbi_image.PNG" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7950682"
-                                            id="ALZHEIMERS">
-                                            <heading>Sub-cortical Shape Morphology and Voxel-based Features for
-                                                Alzheimer's Disease
-                                                Classification
-                                            </heading>
-                                        </a><br>
-                                        <strong>Shashank Tripathi</strong>, Seyed Hossein Nozadi, <a
-                                            href="https://www.researchgate.net/profile/Mahsa_Shakeri2">Mahsa Shakeri</a>
-                                        and <a href="http://www.polymtl.ca/expertises/en/kadoury-samuel">Samuel
-                                            Kadoury</a><br>
-                                        <em><a href="https://biomedicalimaging.org/2017/">IEEE International Symposium
-                                                on Biomedical
-                                                Imaging (ISBI) 2017 </a></href> </em>
-                                        <br>
-                                        <br>
-                                        Alzheimer's disease patient classification using a combination of grey-matter
-                                        voxel-based
-                                        intensity variations and 3D structural (shape) features extracted from MRI brain
-                                        scans <br>
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/isbi_image.png" alt="Sub-cortical Shape Morphology and Voxel-based Features for Alzheimer's Disease Classification">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7950682" id="ALZHEIMERS">Sub-cortical Shape Morphology and Voxel-based Features for Alzheimer's Disease Classification</a></h3>
+                        <div class="authors"><strong>Shashank Tripathi</strong>, Seyed Hossein Nozadi, <a href="https://www.researchgate.net/profile/Mahsa_Shakeri2">Mahsa Shakeri</a>
+                        and <a href="http://www.polymtl.ca/expertises/en/kadoury-samuel">Samuel
+                            Kadoury</a></div>
+                        <div class="venue">IEEE International Symposium on Biomedical
+                            Imaging (ISBI) 2017</div>
+                        <div class="description">
+                            Alzheimer's disease patient classification using a combination of grey-matter
+                            voxel-based
+                            intensity variations and 3D structural (shape) features extracted from MRI brain scans
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7950682" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('sub_cortical_abs')" class="paper-link">Abstract</a>
+                            <!--                            <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+                            <a href="assets/sub_cortical_poster.pdf" class="paper-link">Poster</a>
 
-                                    </p>
-
-                                    <div class="paper" id="sub_cortical">
-                                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7950682">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;sub_cortical_abs&#39;)">abstract</a> |
-                                        <!--                            <a shape="rect" href="javascript:togglebib(&#39;sub_cortical&#39;)"-->
-                                        <!--                               class="togglebib">bibtex</a> |-->
-                                        <a href="assets/sub_cortical_poster.pdf">poster</a>
-
-                                        <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
+                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
 
 
-                                        <p align="justify"><i id="sub_cortical_abs" style="display: none;">
-                                                Neurodegenerative
-                                                pathologies, such as Alzheimer’s disease, are linked with morphological
-                                                alterations and
-                                                tissue variations in subcortical structures which can be assessed from
-                                                medical imaging
-                                                and biological data. In this work, we present an unsupervised framework
-                                                for the
-                                                classification of Alzheimer’s disease (AD) patients, stratifying
-                                                patients into four
-                                                diagnostic groups, namely: AD, early Mild Cognitive Impairment (MCI),
-                                                late MCI and
-                                                normal controls by combining shape and voxel-based features from 12
-                                                sub-cortical areas.
-                                                An automated anatomical labeling using an atlas-based segmentation
-                                                approach is proposed
-                                                to extract multiple regions of interest known to be linked with AD
-                                                progression. We take
-                                                advantage of gray-matter voxel-based intensity variations and structural
-                                                alterations
-                                                extracted with a spherical harmonics framework to learn the
-                                                discriminative features
-                                                between multiple diagnostic classes. The proposed method is validated on
-                                                600 patients
-                                                from the ADNI database by training binary SVM classifiers of
-                                                dimensionality reduced
-                                                features, using both linear and RBF kernels. Results show near
-                                                state-of-the-art
-                                                approaches in classification accuracy (>88%), especially for the more
-                                                challenging
-                                                discrimination tasks: AD vs. LMCI (76.81%), NC vs. EMCI (75.46%) and
-                                                EMCI vs. LMCI
-                                                (70.95%). By combining multimodality features, this pipeline
-                                                demonstrates the potential
-                                                by exploiting complementary features to improve cognitive assessment.
-                                            </i></p>
+                            <p align="justify"><i id="sub_cortical_abs" style="display: none;">
+                                    Neurodegenerative
+                                    pathologies, such as Alzheimer’s disease, are linked with morphological
+                                    alterations and
+                                    tissue variations in subcortical structures which can be assessed from
+                                    medical imaging
+                                    and biological data. In this work, we present an unsupervised framework
+                                    for the
+                                    classification of Alzheimer’s disease (AD) patients, stratifying
+                                    patients into four
+                                    diagnostic groups, namely: AD, early Mild Cognitive Impairment (MCI),
+                                    late MCI and
+                                    normal controls by combining shape and voxel-based features from 12
+                                    sub-cortical areas.
+                                    An automated anatomical labeling using an atlas-based segmentation
+                                    approach is proposed
+                                    to extract multiple regions of interest known to be linked with AD
+                                    progression. We take
+                                    advantage of gray-matter voxel-based intensity variations and structural
+                                    alterations
+                                    extracted with a spherical harmonics framework to learn the
+                                    discriminative features
+                                    between multiple diagnostic classes. The proposed method is validated on
+                                    600 patients
+                                    from the ADNI database by training binary SVM classifiers of
+                                    dimensionality reduced
+                                    features, using both linear and RBF kernels. Results show near
+                                    state-of-the-art
+                                    approaches in classification accuracy (>88%), especially for the more
+                                    challenging
+                                    discrimination tasks: AD vs. LMCI (76.81%), NC vs. EMCI (75.46%) and
+                                    EMCI vs. LMCI
+                                    (70.95%). By combining multimodality features, this pipeline
+                                    demonstrates the potential
+                                    by exploiting complementary features to improve cognitive assessment.
+                                </i></p>
 
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{tripathi2017sub,
 title={Sub-cortical shape morphology and voxel-based features for
 Alzheimer's disease
@@ -1397,78 +1179,68 @@ pages={991--994},
 year={2017},
 organization={IEEE}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                            <tr>
-                                <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                        href="assets/miccai_img.png"><img src="assets/miccai_img.png" width="200"></a>
-                                </td>
-                                <td width="58%" valign="top">
-                                    <p><a href="https://link.springer.com/chapter/10.1007/978-3-319-51237-2_2"
-                                            id="DEEP_SPECTRAL">
-                                            <heading>Deep Spectral-Based Shape Features for Alzheimer’s Disease
-                                                Classification</heading>
-                                        </a><br>
-                                        <a href="https://www.researchgate.net/profile/Mahsa_Shakeri2">Mahsa Shakeri</a>,
-                                        <a href="https://profs.etsmtl.ca/hlombaert/">Hervé Lombaert</a>, <strong>Shashank Tripathi</strong> and
-                                        <a href="http://www.polymtl.ca/expertises/en/kadoury-samuel">Samuel
-                                            Kadoury</a><br>
-                                        <em><a href="http://www.miccai2016.org/en/">MICCAI Spectral and Shape Analysis
-                                                in Medical
-                                                Imaging (SeSAMI) 2016</a></em>
-                                        <br>
-                                        <br>
-                                        Alzheimer's disease classification by using deep learning variational
-                                        auto-encoder on shape
-                                        based features<br>
-
-                                    </p>
-
-                                    <div class="paper" id="deepspectral">
-                                        <a
-                                            href="https://link.springer.com/chapter/10.1007/978-3-319-51237-2_2">paper</a>
-                                        |
-                                        <a href="javascript:toggleblock(&#39;deepspectral_abs&#39;)">abstract</a>
-                                        <!--                            <a shape="rect" href="javascript:togglebib(&#39;deepspectral&#39;)"-->
-                                        <!--                               class="togglebib">bibtex</a> |-->
-                                        <!-- <a href="https://github.com/debidatta/syndata-generation">code</a> |
+                <article class="publication">
+                    <div class="publication-image">
+                        <img src="assets/miccai_img.png" alt="Deep Spectral-Based Shape Features for Alzheimer’s Disease Classification">
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://link.springer.com/chapter/10.1007/978-3-319-51237-2_2" id="DEEP_SPECTRAL">Deep Spectral-Based Shape Features for Alzheimer’s Disease Classification</a></h3>
+                        <div class="authors"><a href="https://www.researchgate.net/profile/Mahsa_Shakeri2">Mahsa Shakeri</a>,
+                            <a href="https://profs.etsmtl.ca/hlombaert/">Hervé Lombaert</a>, <strong>Shashank Tripathi</strong> and
+                            <a href="http://www.polymtl.ca/expertises/en/kadoury-samuel">Samuel
+                            Kadoury</a></div>
+                        <div class="venue">MICCAI Spectral and Shape Analysis
+                            in Medical Imaging (SeSAMI) 2016</div>
+                        <div class="description">
+                            Alzheimer's disease classification by using deep learning variational
+                            auto-encoder on shape
+                            based features
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-319-51237-2_2" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('deepspectral_abs')" class="paper-link">Abstract</a>
+                            <!--                            <a shape="rect" href="javascript:togglebib(&#39;deepspectral&#39;)"-->
+                            <!--                               class="togglebib">bibtex</a> |-->
+                            <!-- <a href="https://github.com/debidatta/syndata-generation">code</a> |
                             <a href="assets/cutpaste_poster.pdf">poster</a> -->
 
 
-                                        <p align="justify"><i id="deepspectral_abs" style="display: none;">Alzheimer’s
-                                                disease (AD)
-                                                and mild cognitive impairment (MCI) are the most prevalent
-                                                neurodegenerative brain
-                                                diseases in elderly population. Recent studies on medical imaging and
-                                                biological data
-                                                have shown morphological alterations of subcortical structures in
-                                                patients with these
-                                                pathologies. In this work, we take advantage of these structural
-                                                deformations for
-                                                classification purposes. First, triangulated surface meshes are
-                                                extracted from segmented
-                                                hippocampus structures in MRI and point-to-point correspondences are
-                                                established among
-                                                population of surfaces using a spectral matching method. Then, a deep
-                                                learning
-                                                variational auto-encoder is applied on the vertex coordinates of the
-                                                mesh models to
-                                                learn the low dimensional feature representation. A multi-layer
-                                                perceptrons using
-                                                softmax activation is trained simultaneously to classify Alzheimer’s
-                                                patients from
-                                                normal subjects. Experiments on ADNI dataset demonstrate the potential
-                                                of the proposed
-                                                method in classification of normal individuals from early MCI (EMCI),
-                                                late MCI (LMCI),
-                                                and AD subjects with classification rates outperforming standard SVM
-                                                based approach.</i>
-                                        </p>
+                            <p align="justify"><i id="deepspectral_abs" style="display: none;">Alzheimer’s
+                                    disease (AD)
+                                    and mild cognitive impairment (MCI) are the most prevalent
+                                    neurodegenerative brain
+                                    diseases in elderly population. Recent studies on medical imaging and
+                                    biological data
+                                    have shown morphological alterations of subcortical structures in
+                                    patients with these
+                                    pathologies. In this work, we take advantage of these structural
+                                    deformations for
+                                    classification purposes. First, triangulated surface meshes are
+                                    extracted from segmented
+                                    hippocampus structures in MRI and point-to-point correspondences are
+                                    established among
+                                    population of surfaces using a spectral matching method. Then, a deep
+                                    learning
+                                    variational auto-encoder is applied on the vertex coordinates of the
+                                    mesh models to
+                                    learn the low dimensional feature representation. A multi-layer
+                                    perceptrons using
+                                    softmax activation is trained simultaneously to classify Alzheimer’s
+                                    patients from
+                                    normal subjects. Experiments on ADNI dataset demonstrate the potential
+                                    of the proposed
+                                    method in classification of normal individuals from early MCI (EMCI),
+                                    late MCI (LMCI),
+                                    and AD subjects with classification rates outperforming standard SVM
+                                    based approach.</i>
+                            </p>
 
-                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+                            <div style="white-space: pre-wrap; display: none;" class="bib">
 @inproceedings{shakeri2016deep,
 title={Deep spectral-based shape features for alzheimer’s disease
 classification},
@@ -1481,184 +1253,184 @@ pages={15--24},
 year={2016},
 organization={Springer}
 }
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <h2 id="patents">Patents</h2>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2 id="patents">Patents</h2>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                            <table width="100%" align="center" border="0" cellpadding="20">
-                                <tbody>
-                                    <tr>
-                                        <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                                href="https://patents.google.com/patent/US10909349B1"><img
-                                                    src="assets/3d_patent.png" width="200"></a>
-                                        </td>
-                                        <td width="70%" valign="center">
-                                            <p>
-                                                <a href="https://patents.google.com/patent/US10909349B1">
-                                                    <heading>Generation of synthetic image data using three-dimensional
-                                                        models
-                                                    </heading>
-                                                </a><br>
-                                            </p>
+                <table width="100%" align="center" border="0" cellpadding="20">
+                    <tbody>
+                        <tr>
+                            <td style="padding:20px;width:20%;vertical-align:middle"><a
+                                    href="https://patents.google.com/patent/US10909349B1"><img
+                                        src="assets/3d_patent.png" width="200"></a>
+                            </td>
+                            <td width="70%" valign="center">
+                                <p>
+                                    <a href="https://patents.google.com/patent/US10909349B1">
+                                        <heading>Generation of synthetic image data using three-dimensional
+                                            models
+                                        </heading>
+                                    </a><br>
+                                </p>
 
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                                href="https://patents.google.com/patent/US10860836B1"><img
-                                                    src="assets/2d_patent.png" width="200"></a>
-                                        </td>
-                                        <td width="70%" valign="center">
-                                            <p>
-                                                <a href="https://patents.google.com/patent/US10860836B1">
-                                                    <heading>Generation of synthetic image data for computer vision
-                                                        models
-                                                    </heading>
-                                                </a><br>
-                                            </p>
-
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                            </td>
+                        </tr>
 
 
-                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <h2 id="misc">Miscellaneous</h2>
-                                            Some other unpublished work:
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <tr>
+                            <td style="padding:20px;width:20%;vertical-align:middle"><a
+                                    href="https://patents.google.com/patent/US10860836B1"><img
+                                        src="assets/2d_patent.png" width="200"></a>
+                            </td>
+                            <td width="70%" valign="center">
+                                <p>
+                                    <a href="https://patents.google.com/patent/US10860836B1">
+                                        <heading>Generation of synthetic image data for computer vision
+                                            models
+                                        </heading>
+                                    </a><br>
+                                </p>
 
-                            <table width="100%" align="center" border="0" cellpadding="20">
-                                <tbody>
-                                    <tr>
-                                        <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                                href="assets/supercnn_img.png"><img src="assets/supercnn_img.png"
-                                                    width="200"></a>
-                                        </td>
-                                        <td width="58%" valign="center">
-                                            <p>
-                                                <a href="assets/learning_salient_objects.pdf">
-                                                    <heading>Learning Salient Objects in a Scene using
-                                                        Superpixel-augmented
-                                                        Convolutional Neural Networks
-                                                    </heading>
-                                                </a><br>
-                                            </p>
-                                            <div class="paper" id="super_cnn">
-                                                <a href="assets/learning_salient_objects.pdf"> report </a> |
-                                                <a href="assets/SuperCNN.pdf"> slides </a> |
-                                                <a href="https://github.com/sha2nkt/SuperCNN"> code </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
 
 
-                                            </div>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2 id="misc">Miscellaneous</h2>
+                                Some other unpublished work:
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                                href="assets/tracking_combined.gif"><img
-                                                    src="assets/tracking_combined.gif" width="200"></a>
-
-                                        </td>
-                                        <td width="58%" valign="center">
-                                            <p>
-                                                <a href="assets/tracking.pdf">
-                                                    <heading>Moving object detection, tracking and classification from
-                                                        an unsteady
-                                                        camera
-                                                    </heading>
-                                                </a><br>
-                                            </p>
-                                            <div class="paper" id="tracking">
-                                                <a href="assets/tracking.pdf"> slides </a> |
-                                                <a href="https://www.youtube.com/watch?v=g_nTKhVyPHw"> video </a>
-
-
-                                        </td>
+                <table width="100%" align="center" border="0" cellpadding="20">
+                    <tbody>
+                        <tr>
+                            <td style="padding:20px;width:20%;vertical-align:middle"><a
+                                    href="assets/supercnn_img.png"><img src="assets/supercnn_img.png"
+                                        width="200"></a>
+                            </td>
+                            <td width="58%" valign="center">
+                                <p>
+                                    <a href="assets/learning_salient_objects.pdf">
+                                        <heading>Learning Salient Objects in a Scene using
+                                            Superpixel-augmented
+                                            Convolutional Neural Networks
+                                        </heading>
+                                    </a><br>
+                                </p>
+                                <div class="paper" id="super_cnn">
+                                    <a href="assets/learning_salient_objects.pdf"> report </a> |
+                                    <a href="assets/SuperCNN.pdf"> slides </a> |
+                                    <a href="https://github.com/sha2nkt/SuperCNN"> code </a>
 
 
-                                    </tr>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:20px;width:20%;vertical-align:middle"><a
+                                    href="assets/tracking_combined.gif"><img
+                                        src="assets/tracking_combined.gif" width="200"></a>
+
+                            </td>
+                            <td width="58%" valign="center">
+                                <p>
+                                    <a href="assets/tracking.pdf">
+                                        <heading>Moving object detection, tracking and classification from
+                                            an unsteady
+                                            camera
+                                        </heading>
+                                    </a><br>
+                                </p>
+                                <div class="paper" id="tracking">
+                                    <a href="assets/tracking.pdf"> slides </a> |
+                                    <a href="https://www.youtube.com/watch?v=g_nTKhVyPHw"> video </a>
 
 
-                                    <tr>
-                                        <td style="padding:20px;width:20%;vertical-align:middle"><a
-                                                href="assets/model_combined.gif"><img src="assets/model_combined.gif"
-                                                    width="200"></a>
-                                        </td>
-                                        <td width="58%" valign="center">
-                                            <p>
-                                                <a href="assets/deep-rl-final.pdf">
-                                                    <heading>Towards integrating model dynamics for sample efficient
-                                                        reinforcement
-                                                        learning
-                                                    </heading>
-                                                </a><br>
-                                            </p>
-                                            <div class="paper" id="model_based">
-                                                <a href="assets/deep-rl-final.pdf"> report </a> |
-                                                <a href="https://github.com/sha2nkt/QD_learning"> code </a>
-                                            </div>
+                            </td>
 
-                                        </td>
-                                    </tr>
 
-                                </tbody>
-                            </table>
+                        </tr>
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
 
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody>
-            <tr>
-                <td>
-                    <br>
-                    <p align="right">
-                        <font size="2">
-                            <a href="https://www.cs.berkeley.edu/~barron/">adapted from Jon Barron's awesome webpage</a>
-                        </font>
-                    </p>
+                        <tr>
+                            <td style="padding:20px;width:20%;vertical-align:middle"><a
+                                    href="assets/model_combined.gif"><img src="assets/model_combined.gif"
+                                        width="200"></a>
+                            </td>
+                            <td width="58%" valign="center">
+                                <p>
+                                    <a href="assets/deep-rl-final.pdf">
+                                        <heading>Towards integrating model dynamics for sample efficient
+                                            reinforcement
+                                            learning
+                                        </heading>
+                                    </a><br>
+                                </p>
+                                <div class="paper" id="model_based">
+                                    <a href="assets/deep-rl-final.pdf"> report </a> |
+                                    <a href="https://github.com/sha2nkt/QD_learning"> code </a>
+                                </div>
 
-                </td>
-            </tr>
+                            </td>
+                        </tr>
 
-            <script xml:space="preserve" language="JavaScript">
-                hideallbibs();
-            </script>
-            <script xml:space="preserve" language="JavaScript">
-                hideblock('pa13_abs');
-            </script>
-            <script xml:space="preserve" language="JavaScript">
-                hideblock('cuboid_abs');
-            </script>
-            <script xml:space="preserve" language="JavaScript">
-                hideblock('mftcn_abs');
-            </script>
-            <script xml:space="preserve" language="JavaScript">
-                hideblock('temporal_abs');
-            </script>
+                    </tbody>
+                </table>
+
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tbody>
+    <tr>
+        <td>
+            <br>
+            <p align="right">
+                <font size="2">
+                    <a href="https://www.cs.berkeley.edu/~barron/">adapted from Jon Barron's awesome webpage</a>
+                </font>
+            </p>
+
+        </td>
+    </tr>
+
+    <script xml:space="preserve" language="JavaScript">
+        hideallbibs();
+    </script>
+    <script xml:space="preserve" language="JavaScript">
+        hideblock('pa13_abs');
+    </script>
+    <script xml:space="preserve" language="JavaScript">
+        hideblock('cuboid_abs');
+    </script>
+    <script xml:space="preserve" language="JavaScript">
+        hideblock('mftcn_abs');
+    </script>
+    <script xml:space="preserve" language="JavaScript">
+        hideblock('temporal_abs');
+    </script>
 
 
 </body>
