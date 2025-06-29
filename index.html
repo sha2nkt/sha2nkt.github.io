@@ -190,6 +190,63 @@
 
                             <tr>
                                 <td style="padding:20px;width:20%;vertical-align:middle">
+                                    <a href="assets/interactvlm_teaser.png">
+                                        <img src="assets/interactvlm_teaser.png" width="200"></a>
+                                </td>
+                                <td width="58%" valign="top">
+                                    <p><a href="https://interactvlm.is.tue.mpg.de/" id="INTERACTVLM">
+                                            <heading>InteractVLM: 3D Interaction Reasoning from 2D Foundational Models</heading>
+                                        </a><br>
+                                        Sai Kumar Dwivedi, Dimitrije Antić, <strong>Shashank Tripathi</strong>, Omid Taheri, Cordelia Schmid, Michael J. Black, Dimitrios Tzionas<br>
+                                        <em><a href="https://cvpr.thecvf.com/Conferences/2025">Computer Vision and
+                                                Pattern
+                                                Recognition (CVPR)
+                                                2025 </a></href> </em>
+                                        <!--                            <br>-->
+                                        <!--                            <em><font color="red">(Oral presentation)</font></a></href> </em>-->
+                                        <br>
+                                        <em>
+                                            <font color="red">(Winner of the contact estimation tracks at CVPR 2025 - <a
+                                            href="https://rhobin-challenge.github.io/">see here</a>)</font></a></href>
+                                        </em>
+                                        <br>
+                                        <br>
+                                        InteractVLM is a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate joint reconstruction by leveraging large foundational model.
+                                        <br>
+                                    </p>
+
+                                    <div class="paper" id="interactvlm">
+                                        <a
+                                            href="https://interactvlm.is.tue.mpg.de/media/upload/paper.pdf">paper</a>
+                                        |
+                                        <a href="javascript:toggleblock(&#39;interactvlm_abs&#39;)">abstract</a> |
+                                        <a href="https://interactvlm.is.tue.mpg.de/">project</a> |
+                                        <a
+                                            href="https://interactvlm.is.tue.mpg.de/media/upload/InteractVLM_Poster.pdf">poster</a>
+                                        |
+                                        <!--                            <a href="https://pico.is.tue.mpg.de/">dataset</a> |-->
+                                        <a href="https://www.youtube.com/watch?v=brxygxM1nRk">video</a> |
+                                        <a shape="rect" href="javascript:togglebib(&#39;interactvlm&#39;)"
+                                            class="togglebib">bibtex</a>
+
+                                        <p align="justify"><i id="interactvlm_abs" style="display: none;"> We introduce InteractVLM, a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate human-object joint reconstruction in 3D. This is challenging due to occlusions, depth ambiguities, and widely varying object shapes. Existing methods rely on 3D contact annotations collected via expensive motion-capture systems or tedious manual labeling, limiting scalability and generalization. To overcome this, InteractVLM harnesses the broad visual knowledge of large Vision-Language Models (VLMs), fine-tuned with limited 3D contact data. However, directly applying these models is non-trivial, as they reason only in 2D, while human-object contact is inherently 3D. Thus we introduce a novel Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D space via multi-view rendering, (2) trains a novel multi-view localization model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D. Additionally, we propose a new task called Semantic Human Contact estimation, where human contact predictions are conditioned explicitly on object semantics, enabling richer interaction modeling. InteractVLM outperforms existing work on contact estimation and also facilitates 3D reconstruction from an in-the wild image. Code and models are available.
+                                            </i></p>
+
+                                        <div style="white-space: pre-wrap; display: none;" class="bib">
+@inproceedings{dwivedi_interactvlm_2025,
+  title     = {{InteractVLM}: {3D} Interaction Reasoning from {2D} Foundational Models},
+  author    = {Dwivedi, Sai Kumar and Antić, Dimitrije and Tripathi, Shashank and Taheri, Omid and Schmid, Cordelia and Black, Michael J. and Tzionas, Dimitrios},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2025},
+}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:20px;width:20%;vertical-align:middle">
                                     <a href="assets/pico_teaser.gif">
                                         <img src="assets/pico_teaser.gif" width="200"></a>
                                 </td>
