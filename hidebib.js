@@ -14,13 +14,27 @@ function hideallbibs()
 
 function togglebib(paperid)
 {
-    var paper = document.getElementById(paperid) ;
-    var bib = paper.getElementsByClassName('bib') ;
-    if (bib.length > 0) {
-        if (bib [0] .style.display == 'none') {
-            bib [0] .style.display = 'block' ;
+    // Try to find the bib div directly by ID first
+    var bib = document.getElementById(paperid);
+    if (bib && bib.classList.contains('bib')) {
+        if (bib.style.display == 'none' || bib.style.display == '') {
+            bib.style.display = 'block';
         } else {
-            bib [0] .style.display = 'none' ;
+            bib.style.display = 'none';
+        }
+        return;
+    }
+    
+    // Fallback to original method for backwards compatibility
+    var paper = document.getElementById(paperid);
+    if (paper) {
+        var bibElements = paper.getElementsByClassName('bib');
+        if (bibElements.length > 0) {
+            if (bibElements[0].style.display == 'none' || bibElements[0].style.display == '') {
+                bibElements[0].style.display = 'block';
+            } else {
+                bibElements[0].style.display = 'none';
+            }
         }
     }
 }
