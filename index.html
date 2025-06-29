@@ -115,22 +115,134 @@
                                         <br>
 
                                     </p>
-                                    <p align="center">
-                                        <a href="mailto:shashank.tripathi123@gmail.com">Email</a> &nbsp;/&nbsp;
-                                        <!-- <a href="assets/DebidattaDwibedi_CV.pdf">CV</a> &nbsp;/&nbsp; -->
-                                        <a href="https://scholar.google.com/citations?user=CANstcsAAAAJ&hl=en">Google
-                                            Scholar</a>
-                                        &nbsp/&nbsp
-                                        <a href="https://github.com/sha2nkt"> GitHub</a>&nbsp;/&nbsp;
-                                        <a href="https://www.linkedin.com/in/shashanktripathi123/"> LinkedIn </a> /
-                                        <a href="https://twitter.com/sha2nk_t"> Twitter </a> /
-                                        <a href="assets/CV_Shashank_LongPhD_V33.pdf"> CV </a>
-                                        <br>
-                                        <br>
-                                        <a href="#publications"> Publications </a> /
-                                        <a href="#patents"> Patents </a> /
-                                        <a href="#misc"> Misc </a>
-                                        <!-- <a href="https://www.twitter.com/debidatta/"> Twitter </a> -->
+                                    <p align="center" style="margin: 20px 0;">
+                                        <!-- Add Font Awesome CSS -->
+                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+                                        <style>
+                                            .nav-button {
+                                                display: inline-flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                padding: 8px 16px;
+                                                margin: 4px;
+                                                background: linear-gradient(135deg, #A8E6CF 0%, #8ED4BC 100%);
+                                                color: #2C3E50;
+                                                text-decoration: none;
+                                                border-radius: 25px;
+                                            }
+
+                                            /* First row buttons - grey gradient */
+                                            .button-group:first-of-type .nav-button {
+                                                background: linear-gradient(135deg, #E0E0E0 0%, #BDBDBD 100%);
+                                                color: #424242;
+                                            }
+
+                                            .button-group:first-of-type .nav-button:hover {
+                                                background: linear-gradient(135deg, #BDBDBD 0%, #9E9E9E 100%);
+                                            }
+
+                                            /* Second row buttons - beige gradient */
+                                            .button-group:last-of-type .nav-button {
+                                                background: linear-gradient(135deg, #E8DCD1 0%, #D4C3B3 100%);
+                                                color: #4A4A4A;
+                                            }
+
+                                            .button-group:last-of-type .nav-button:hover {
+                                                background: linear-gradient(135deg, #D4C3B3 0%, #C0AD99 100%);
+                                                font-size: 15px;
+                                                font-weight: 500;
+                                                transition: all 0.3s ease;
+                                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                                                border: none;
+                                            }
+
+                                            .nav-button i {
+                                                margin-right: 8px;
+                                                font-size: 16px;
+                                            }
+
+                                            .nav-button:hover {
+                                                background: linear-gradient(135deg, #8ED4BC 0%, #7BC5AB 100%);
+                                                transform: translateY(-2px);
+                                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                                                color: #2C3E50;
+                                            }
+
+                                            .nav-button:active {
+                                                transform: translateY(0);
+                                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                                            }
+
+                                            .button-group {
+                                                margin: 8px 0;
+                                                text-align: center;
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+                                                flex-wrap: wrap;
+                                                gap: 4px;
+                                            }
+
+                                            /* Special styling for different button types */
+                                            .nav-button[href*="mailto"] {
+                                                background: linear-gradient(135deg, #FFB5E8 0%, #FFA8DC 100%);
+                                            }
+
+                                            .nav-button[href*="scholar"] {
+                                                background: linear-gradient(135deg, #B5EAD7 0%, #A7E1CD 100%);
+                                            }
+
+                                            .nav-button[href*="github"] {
+                                                background: linear-gradient(135deg, #E2F0CB 0%, #D4E5B9 100%);
+                                            }
+
+                                            .nav-button[href*="linkedin"] {
+                                                background: linear-gradient(135deg, #C7CEEA 0%, #B6C0E2 100%);
+                                            }
+
+                                            .nav-button[href*="twitter"] {
+                                                background: linear-gradient(135deg, #FFDAC1 0%, #FFC8A2 100%);
+                                            }
+
+                                            .nav-button[href*="CV"] {
+                                                background: linear-gradient(135deg, #FF9AA2 0%, #FF8B93 100%);
+                                            }
+                                        </style>
+
+                                        <div class="button-group"></div>
+                                        <div class="button-group">
+                                            <a href="mailto:shashank.tripathi123@gmail.com" class="nav-button">
+                                                <i class="fas fa-envelope"></i>Email
+                                            </a>
+                                            <a href="https://scholar.google.com/citations?user=CANstcsAAAAJ&hl=en" class="nav-button">
+                                                <i class="fas fa-graduation-cap"></i>Google Scholar
+                                            </a>
+                                            <a href="https://github.com/sha2nkt" class="nav-button">
+                                                <i class="fab fa-github"></i>GitHub
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/shashanktripathi123/" class="nav-button">
+                                                <i class="fab fa-linkedin"></i>LinkedIn
+                                            </a>
+                                            <a href="https://twitter.com/sha2nk_t" class="nav-button">
+                                                <i class="fab fa-twitter"></i>Twitter
+                                            </a>
+                                            <a href="assets/CV_Shashank_LongPhD_V33.pdf" class="nav-button">
+                                                <i class="fas fa-file-alt"></i>CV
+                                            </a>
+                                        </div>
+
+                                        <div class="button-group">
+                                            <a href="#publications" class="nav-button">
+                                                <i class="fas fa-book"></i>Publications
+                                            </a>
+                                            <a href="#patents" class="nav-button">
+                                                <i class="fas fa-award"></i>Patents
+                                            </a>
+                                            <a href="#misc" class="nav-button">
+                                                <i class="fas fa-ellipsis-h"></i>Misc
+                                            </a>
+                                        </div>
                                     </p>
 
                                     <!--
