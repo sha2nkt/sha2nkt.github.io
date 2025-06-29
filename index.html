@@ -545,6 +545,67 @@
             border-left: 3px solid var(--accent-color);
             overflow-x: auto;
         }
+
+        /* News Section */
+        .news-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 20px 0;
+            margin: 30px 0;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .news-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .news-item {
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(52, 152, 219, 0.1);
+            font-size: 0.9rem;
+            line-height: 1.4;
+            display: flex;
+            align-items: flex-start;
+            gap: 0;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .news-item:first-child {
+            padding-top: 0;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-right: 10px;
+            min-width: 80px;
+            flex-shrink: 0;
+        }
+
+        .news-text {
+            color: var(--text-color);
+            flex: 1;
+        }
+
+        .news-icon {
+            /* color: var(--accent-color); */
+            margin-right: 10px;
+            font-size: 1.1em;
+            vertical-align: middle;
+        }
+        /* Google Analytics */
     </style>
     
     <script type="text/javascript" src="hidebib.js"></script>
@@ -609,6 +670,44 @@
                 
                 <div class="profile-image">
                     <img src="assets/shashank_2.png" alt="Shashank Tripathi">
+                </div>
+            </section>
+
+            <!-- Recent News Section -->
+            <section id="news" class="news-section">
+                <div class="container">
+                    <h2 class="section-title">
+                        <i class="fas fa-newspaper news-icon"></i>
+                        Recent News
+                    </h2>
+                    <div class="news-content">
+                        <ul class="news-list">
+                            <li class="news-item">
+                                <span class="news-date">Jun 2025:</span>
+                                <span class="news-text">🏆 Selected for the <a href="https://cvpr.thecvf.com/Conferences/2025/CallForDoctoralConsortium">Doctoral Consortium</a> at CVPR 2025</span>
+                            </li>
+                            <li class="news-item">
+                                <span class="news-date">Jun 2025:</span>
+                                <span class="news-text">🏆 <a href="https://interactvlm.is.tue.mpg.de/">InteractVLM</a> won the Human Contact Estimation Challenge at CVPR 2025</span>
+                            </li>
+                            <li class="news-item">
+                                <span class="news-date">Jun 2025:</span>
+                                <span class="news-text">🏆 Received the <a href="https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee#all-outstanding-reviewer">Outstanding Reviewer Award</a> for CVPR 2025</span>
+                            </li>
+                            <li class="news-item">
+                                <span class="news-date">Jun 2025:</span>
+                                <span class="news-text">🎉 2 papers accepted in CVPR 2025 - <a href="https://pico.is.tue.mpg.de/">PICO</a>, <a href="https://interactvlm.is.tue.mpg.de/">InteractVLM</a></span>
+                            </li>
+                            <li class="news-item">
+                                <span class="news-date">Jun 2025:</span>
+                                <span class="news-text">🎤 Organized two workshops at CVPR 2025: <a href="https://sites.google.com/view/3d-humans-cvpr2025">3D HUMANS</a>, <a href="https://rhobin-challenge.github.io/">RHOBIN</a></span>
+                            </li>
+                            <li class="news-item">
+                                <span class="news-date">Oct 2024:</span>
+                                <span class="news-text">💼 Started internship at Meta Zurich</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -847,10 +946,10 @@ year = {2023}
 
                 <article class="publication">
                     <div class="publication-image">
-                        <img src="assets/bite_teaser_2.gif" alt="BITE: Beyond Priors for Improved Three-D Dog Pose Estimation">
+                        <img src="assets/bite_teaser_2.gif" alt="BITE: Beyond Priors for Improved Three-Dog Pose Estimation">
                     </div>
                     <div class="publication-content">
-                        <h3><a href="https://bite.is.tue.mpg.de/" id="BITE">BITE: Beyond Priors for Improved Three-D Dog Pose Estimation</a></h3>
+                        <h3><a href="https://bite.is.tue.mpg.de/" id="BITE">BITE: Beyond Priors for Improved Three-Dog Pose Estimation</a></h3>
                         <div class="authors">Nadine Rüegg, <strong>Shashank Tripathi</strong>, Konrad Schindler, Michael J. Black, Silvia Zuffi</div>
                         <div class="venue">Computer Vision and Pattern Recognition (CVPR) 2023</div>
                         <div class="description">
@@ -936,13 +1035,7 @@ year = {2023}
                             <!-- <a shape="rect" href="javascript:togglebib(&#39;terse&#39;)" class="togglebib">bibtex</a> | -->
                             <!-- <a href="assets/poster_v5_final_print.pdf">poster</a> -->
 
-                            <!-- <a href="https://sites.google.com/corp/view/actionablerepresentations/"> project </a> -->
-
-
-                            <p align="justify"><i id="peri_abs" style="display: none;"> Emotion recognition
-                                    aims to interpret the emotional states of a person based on various
-                                    inputs including audio, visual, and textual cues. This paper focuses on
-                                    emotion recognition using visual features. To leverage the correlation
+                            <!-- <a href="https://sites.google.com/corp/view/actionabl
                                     between facial expression and the emotional state of a person,
                                     pioneering methods rely primarily on facial features. However, facial
                                     features are often unreliable in natural unconstrained scenarios, such
@@ -1603,6 +1696,7 @@ organization={Springer}
         hideblock('mftcn_abs');
     </script>
 </body>
+
 </html>
     <script xml:space="preserve" language="JavaScript">
         hideblock('temporal_abs');
