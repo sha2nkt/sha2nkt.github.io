@@ -682,6 +682,131 @@
             }
         }
 
+        /* Job Market Notification Bar */
+        .job-market-notification {
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+            background-size: 400% 400%;
+            color: white;
+            text-align: center;
+            padding: 12px 18px;
+            cursor: pointer;
+            position: relative;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            animation: gradientShift 4s ease infinite;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+            max-width: 100%;
+        }
+
+        .job-market-notification::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shimmer 3s linear infinite;
+            transform: rotate(45deg);
+        }
+
+        .job-market-notification::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(255,255,255,0.05) 20%, 
+                rgba(255,255,255,0.1) 50%, 
+                rgba(255,255,255,0.05) 80%, 
+                transparent 100%);
+            animation: wave 2s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .job-market-notification:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            animation-duration: 2s;
+        }
+
+        .job-market-notification i {
+            margin-right: 8px;
+            animation: gentlePulse 2s ease-in-out infinite;
+            position: relative;
+            z-index: 1;
+        }
+
+        .job-market-notification span {
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        @keyframes gentlePulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+
+        /* Toast notification for feedback */
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #27ae60;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        @media (max-width: 768px) {
+            .job-market-notification {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+                margin-bottom: 18px;
+            }
+
+            .toast {
+                top: 10px;
+                right: 10px;
+                left: 10px;
+                font-size: 0.9rem;
+            }
+        }
+
         /* Google Analytics */
     </style>
     
@@ -701,6 +826,77 @@
 
         ga('create', 'UA-90857215-1', 'auto');
         ga('send', 'pageview');
+    </script>
+    
+    <script>
+        // Function to copy email to clipboard and show feedback
+        function copyEmail() {
+            const email = 'shashank.tripathi123@gmail.com';
+            
+            // Try to use the modern clipboard API
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(function() {
+                    showToast('Email copied to clipboard!');
+                }).catch(function(err) {
+                    // Fallback for older browsers
+                    fallbackCopyText(email);
+                });
+            } else {
+                // Fallback for older browsers
+                fallbackCopyText(email);
+            }
+        }
+        
+        // Fallback method for copying text
+        function fallbackCopyText(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            textArea.style.top = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showToast('Email copied to clipboard!');
+            } catch (err) {
+                showToast('Failed to copy email. Please copy manually: ' + text);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+        
+        // Function to show toast notification
+        function showToast(message) {
+            // Remove any existing toast
+            const existingToast = document.querySelector('.toast');
+            if (existingToast) {
+                existingToast.remove();
+            }
+            
+            // Create new toast
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            
+            // Show toast with animation
+            setTimeout(() => {
+                toast.classList.add('show');
+            }, 100);
+            
+            // Hide toast after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => {
+                    if (toast.parentNode) {
+                        toast.parentNode.removeChild(toast);
+                    }
+                }, 300);
+            }, 3000);
+        }
     </script>
 </head>
 
@@ -738,6 +934,11 @@
             <!-- About Section -->
             <section id="about" class="profile-section">
                 <div class="profile-text">
+                    <!-- Job Market Notification Bar -->
+                    <div class="job-market-notification" onclick="copyEmail()" title="Click to copy email address" style="margin-bottom: 20px; border-radius: 12px;">
+                        <i class="fas fa-briefcase"></i>
+                        <span>I am currently on the job market. Feel free to connect!</span>
+                    </div>
                     <p>I am a PhD student (2021-) at the <strong>Max Planck Institute for Intelligent Systems</strong> where I am advised by MPI Director <a href="https://ps.is.mpg.de/person/black">Michael Black</a>. Earlier, I worked as an Applied Scientist at Amazon (2019-2021). I earned my Masters (2017-2019) from the Robotics Institute, Carnegie Mellon University, working with Prof. <a href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>. I am a recipient of the <a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta Research PhD Fellowship award</a> in 2023.</p>
 
                     <p>At Amazon Lab126, I closely collaborated with Prof. <a href="https://rehg.org/">James Rehg</a>, Dr. <a href="https://scholar.google.com/citations?user=Q3puGtcAAAAJ&hl=en">Amit Agrawal</a> and Dr. <a href="https://scholar.google.com/citations?user=GaSWCoUAAAAJ&hl=en">Ambrish Tyagi</a>. In 2023, I spent time at <a href="https://www.unrealengine.com/en-US/">Epic Games</a> as a research intern working with Dr. <a href="https://www.linkedin.com/in/carstenstoll/">Carsten Stoll</a>, Dr. <a href="https://christophlassner.de/">Christoph Lassner</a> and Dr. <a href="https://theorangeduck.com/">Daniel Holden</a>. Recently, I interned at Meta Zurich where I worked with <a href="https://btekin.github.io/">Bugra Tekin</a> on impoving spatial understanding and visual grounding in 3D foundation models.</p> 
