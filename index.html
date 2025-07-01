@@ -373,6 +373,43 @@
             text-align: center;
         }
 
+        /* Work Experience Section */
+        .experience-logos {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .experience-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .experience-logo img {
+            height: 80px;
+            width: auto;
+            max-width: 180px;
+            object-fit: contain;
+        }
+
+        .experience-text {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
+        .experience-logo:hover .experience-text {
+            opacity: 1;
+        }
+
         /* Publications */
         .publication {
             display: grid;
@@ -521,6 +558,17 @@
             
             .header {
                 padding: 60px 0 40px;
+            }
+
+            .experience-logos {
+                gap: 40px;
+                margin-top: 25px;
+                justify-content: center;
+            }
+
+            .experience-logo img {
+                height: 60px;
+                max-width: 140px;
             }
         }
 
@@ -944,6 +992,20 @@
                     <p>At Amazon Lab126, I closely collaborated with Prof. <a href="https://rehg.org/">James Rehg</a>, Dr. <a href="https://scholar.google.com/citations?user=Q3puGtcAAAAJ&hl=en">Amit Agrawal</a> and Dr. <a href="https://scholar.google.com/citations?user=GaSWCoUAAAAJ&hl=en">Ambrish Tyagi</a>. In 2023, I spent time at <a href="https://www.unrealengine.com/en-US/">Epic Games</a> as a research intern working with Dr. <a href="https://www.linkedin.com/in/carstenstoll/">Carsten Stoll</a>, Dr. <a href="https://christophlassner.de/">Christoph Lassner</a> and Dr. <a href="https://theorangeduck.com/">Daniel Holden</a>. Recently, I interned at Meta Zurich where I worked with <a href="https://btekin.github.io/">Bugra Tekin</a> on impoving spatial understanding and visual grounding in 3D foundation models.</p> 
                         
                     <p>It has been my great fortune to have worked with excellent mentors and advisors.</p>
+                    
+                    <!-- Work Experience Section -->
+                    <h3 style="margin-top: 30px; margin-bottom: 20px; color: var(--primary-color); font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 500;">Work Experience</h3>
+                    <div class="experience-logos">
+                        <div class="experience-logo">
+                            <img src="assets/Amazon_logo.png" alt="Amazon" title="Amazon Lab126 - Applied Scientist (2019-2021)">
+                        </div>
+                        <div class="experience-logo">
+                            <img src="assets/Epic_Games_logo.png" alt="Epic Games" title="Epic Games - Research Intern (2023)">
+                        </div>
+                        <div class="experience-logo">
+                            <img src="assets/Meta-Logo.png" alt="Meta" title="Meta Zurich - Research Intern (2024)">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="profile-image">
