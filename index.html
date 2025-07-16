@@ -1023,6 +1023,10 @@
                     <div class="news-content">
                         <ul class="news-list">
                             <li class="news-item">
+                                <span class="news-date">Oct 2025:</span>
+                                <span class="news-text">🎉 1 paper accepted in ICCV 2025 - <a href="https://anticdimi.github.io/sdfit/">SDFit</a></span>
+                            </li>
+                            <li class="news-item">
                                 <span class="news-date">Jun 2025:</span>
                                 <span class="news-text">🏆 Selected for the <a href="https://cvpr.thecvf.com/Conferences/2025/CallForDoctoralConsortium">Doctoral Consortium</a> at CVPR 2025</span>
                             </li>
@@ -1066,6 +1070,41 @@
             <!-- Publications Section -->
             <section id="publications">
                 <h2 class="section-title">Publications</h2>
+
+                <!-- SDFit Publication -->
+                <article class="publication">
+                    <div class="publication-image">
+                        <a href="assets/sdfit_thumb.png">
+                            <img src="assets/sdfit_thumb.png" alt="SDFit Teaser">
+                        </a>
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://anticdimi.github.io/sdfit/">SDFit: 3D Object Pose and Shape by Fitting a Morphable SDF to a Single Image</a></h3>
+                        <div class="authors">Dimitrije Antić, Georgios Paschalidis, <strong>Shashank Tripathi</strong>, Theo Gevers, Sai Kumar Dwivedi, Dimitrios Tzionas</div>
+                        <div class="venue">IEEE/CVF International Conference on Computer Vision (ICCV) 2025</div>
+                        <div class="description">SDFit is a novel optimization framework that uses a morphable signed-distance-function prior and 2D–3D correspondences from foundational models to iteratively recover and refine 3D object shape and pose from a single image</div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/2409.16178" class="paper-link">Paper</a>
+                            <a href="javascript:toggleblock('sdfit_abs')" class="paper-link">Abstract</a>
+                            <a href="https://anticdimi.github.io/sdfit/" class="paper-link">Project</a>
+                            <!-- <a href="https://interactvlm.is.tue.mpg.de/media/upload/InteractVLM_Poster.pdf" class="paper-link">Poster</a> -->
+                            <!-- <a href="https://www.youtube.com/watch?v=brxygxM1nRk" class="paper-link">Video</a> -->
+                            <a href="javascript:togglebib('sdfit')" class="paper-link">BibTex</a>
+                        </div>
+                        <div class="abstract" id="sdfit_abs" style="display: none;">
+                            Recovering 3D object pose and shape from a single image is a challenging and highly ill-posed problem. This is due to strong (self-)occlusions, depth ambiguities, the vast intra- and inter-class shape variance, and lack of 3D ground truth for natural images. While existing methods train deep networks on synthetic datasets to predict 3D shapes, they often struggle to generalize to real-world scenarios, lack an explicit feedback loop for refining noisy estimates, and primarily focus on geometry without explicitly considering pixel alignment. To this end, we make two key observations: (1) a robust solution requires a model that imposes a strong category-specific shape prior to constrain the search space, and (2) foundational models embed 2D images and 3D shapes in joint spaces; both help resolve ambiguities. Hence, we propose SDFit, a novel optimization framework that is built on three key innovations: First, we use a learned morphable signed-distance-function (mSDF) model that acts as a strong shape prior, thus constraining the shape space. Second, we use foundational models to establish rich 2D-to-3D correspondences between image features and the mSDF. Third, we develop a fitting pipeline that iteratively refines both shape and pose, aligning the mSDF to the image. We evaluate SDFit on the Pix3D, Pascal3D+, and COMIC image datasets. SDFit performs on par with SotA methods, while demonstrating exceptional robustness to occlusions and requiring no retraining for unseen images. Therefore, SDFit contributes new insights for generalizing in the wild, paving the way for future research. Code will be released.
+                        </div>
+                        <div style="white-space: pre-wrap; display: none;" class="bib" id="sdfit">
+@inproceedings{antic2025sdfit,
+  title     = {{SDFit}: {3D} Object Pose and Shape by Fitting a Morphable {SDF} to a Single Image},
+  author    = {Anti\'{c}, Dimitrije and Paschalidis, Georgios and Tripathi, Shashank and Gevers, Theo and Dwivedi, Sai Kumar and Tzionas, Dimitrios},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month     = {Oct},
+  year      = {2025},
+}
+                        </div>
+                    </div>
+                </article>
 
                 <!-- InteractVLM Publication -->
                 <article class="publication">
